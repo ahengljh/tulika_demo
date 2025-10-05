@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Compact NUS Logo -->
+  <!-- Shield shape with NUS colors -->
+  <g transform="translate(50, 50)">
+    <!-- Outer shield -->
+    <path d="M -30 -35 L 30 -35 L 30 10 L 0 35 L -30 10 Z" fill="#003D7C"/>
+
+    <!-- Inner shield -->
+    <path d="M -25 -30 L 25 -30 L 25 7 L 0 28 L -25 7 Z" fill="#EF7C00"/>
+
+    <!-- NUS text -->
+    <text x="0" y="2" text-anchor="middle" fill="#003D7C" font-family="Arial, sans-serif" font-size="20" font-weight="bold">NUS</text>
+  </g>
+</svg>

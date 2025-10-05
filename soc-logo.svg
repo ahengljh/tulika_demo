@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 100" width="350" height="100">
+  <!-- School of Computing Logo -->
+  <rect x="0" y="0" width="350" height="100" fill="white"/>
+
+  <!-- Computing icon -->
+  <g transform="translate(20, 20)">
+    <!-- Monitor/Screen -->
+    <rect x="0" y="0" width="60" height="45" fill="none" stroke="#003D7C" stroke-width="3" rx="3"/>
+    <rect x="5" y="5" width="50" height="35" fill="#EF7C00" opacity="0.2"/>
+
+    <!-- Code symbols -->
+    <text x="10" y="20" font-family="monospace" font-size="14" fill="#003D7C" font-weight="bold">&lt;/&gt;</text>
+    <text x="10" y="35" font-family="monospace" font-size="14" fill="#EF7C00" font-weight="bold">01</text>
+
+    <!-- Base -->
+    <rect x="20" y="45" width="20" height="5" fill="#003D7C"/>
+    <rect x="15" y="50" width="30" height="3" fill="#003D7C"/>
+
+    <!-- Connection dots -->
+    <circle cx="60" cy="25" r="2" fill="#EF7C00"/>
+    <circle cx="65" cy="25" r="2" fill="#EF7C00"/>
+    <circle cx="70" cy="25" r="2" fill="#EF7C00"/>
+  </g>
+
+  <!-- Text -->
+  <g transform="translate(100, 25)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#003D7C">
+      SCHOOL OF
+    </text>
+    <text x="0" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#003D7C">
+      COMPUTING
+    </text>
+    <text x="0" y="50" font-family="Arial, sans-serif" font-size="12" fill="#EF7C00">
+      National University of Singapore
+    </text>
+  </g>
+
+  <!-- Decorative lines -->
+  <line x1="100" y1="80" x2="320" y2="80" stroke="#EF7C00" stroke-width="2"/>
+</svg>
