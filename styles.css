@@ -186,10 +186,11 @@ p {
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, var(--nus-blue) 0%, var(--nus-orange) 100%);
-    padding: 100px 0 50px; /* Adjusted for single header */
+    padding: 120px 0 60px; /* Adjusted padding - more space from top */
     color: white;
     text-align: center;
     margin-top: 0;
+    position: relative;
 }
 
 .hero-container {
@@ -361,11 +362,17 @@ p {
 
 /* Sections */
 .section {
-    padding: 80px 0;
+    padding: 100px 0 80px; /* Extra top padding for better visual spacing */
+    scroll-margin-top: 70px; /* Offset for fixed navbar */
 }
 
 .section-alt {
     background: var(--bg-light);
+}
+
+/* Specific adjustments for first section after hero */
+#about {
+    padding-top: 80px;
 }
 
 .section-title {
@@ -1141,7 +1148,12 @@ p {
     }
 
     .hero {
-        padding: 80px 0 40px; /* Adjusted for single header */
+        padding: 100px 0 40px; /* More top padding for mobile */
+    }
+
+    .section {
+        padding: 80px 0 60px; /* Adjusted section padding for mobile */
+        scroll-margin-top: 60px;
     }
 
     .logo-img {

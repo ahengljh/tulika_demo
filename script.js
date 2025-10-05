@@ -19,11 +19,20 @@ document.querySelectorAll('.nav-link').forEach(link => {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        const targetId = this.getAttribute('href');
+        const target = document.querySelector(targetId);
+
         if (target) {
-            const offsetTop = target.offsetTop - 80; // Account for fixed navbar
+            // Get the navbar height dynamically
+            const navbar = document.querySelector('.navbar');
+            const navbarHeight = navbar ? navbar.offsetHeight : 0;
+
+            // Calculate position with offset
+            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+            const offsetPosition = targetPosition - navbarHeight - 20; // Extra 20px for visual breathing room
+
             window.scrollTo({
-                top: offsetTop,
+                top: offsetPosition,
                 behavior: 'smooth'
             });
         }
@@ -34,12 +43,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 function highlightNavLink() {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.nav-link');
+    const navbar = document.querySelector('.navbar');
+    const navbarHeight = navbar ? navbar.offsetHeight : 0;
 
     let current = '';
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        if (window.scrollY >= sectionTop - 100) {
+        // Check if section is in viewport (with navbar offset consideration)
+        if (window.scrollY >= (sectionTop - navbarHeight - 100)) {
             current = section.getAttribute('id');
         }
     });
