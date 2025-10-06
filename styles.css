@@ -891,6 +891,378 @@ p {
     line-height: 1.5;
 }
 
+/* Hero Content Full Width */
+.hero-content-full {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-description {
+    font-size: 1.125rem;
+    margin: 1.5rem 0 2rem;
+    opacity: 0.95;
+    line-height: 1.6;
+}
+
+/* Overview Section */
+.overview-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+.overview-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.key-innovations {
+    margin-top: 3rem;
+}
+
+.innovation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.innovation-card {
+    text-align: center;
+    padding: 2rem;
+    background: var(--bg-white);
+    border-radius: 1rem;
+    transition: var(--transition);
+    border: 1px solid var(--border-color);
+}
+
+.innovation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--nus-orange);
+}
+
+.innovation-card i {
+    font-size: 2.5rem;
+    color: var(--nus-orange);
+    margin-bottom: 1rem;
+}
+
+.innovation-card h4 {
+    margin-bottom: 0.5rem;
+}
+
+/* Project Showcase */
+.projects-showcase {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.project-showcase {
+    background: var(--bg-white);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: var(--shadow-md);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--nus-orange);
+}
+
+.project-title {
+    font-size: 1.75rem;
+    color: var(--nus-blue);
+}
+
+.project-badge {
+    background: var(--nus-orange);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.project-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.feature-list {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.feature-list li {
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.feature-list i {
+    color: var(--nus-orange);
+}
+
+.project-metrics {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.metric {
+    text-align: center;
+}
+
+.metric-value {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--nus-blue);
+}
+
+.metric-label {
+    font-size: 0.875rem;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Papers Section */
+.papers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.paper-card {
+    background: var(--bg-white);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.paper-card.featured {
+    grid-column: span 2;
+    border: 2px solid var(--nus-orange);
+}
+
+.paper-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.paper-type {
+    color: var(--nus-orange);
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.paper-title {
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.paper-authors {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.paper-venue {
+    color: var(--nus-blue);
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.paper-abstract {
+    padding: 1rem 0;
+    border-top: 1px solid var(--border-color);
+    margin-top: 1rem;
+}
+
+.paper-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.paper-link {
+    color: var(--nus-blue);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    transition: var(--transition);
+}
+
+.paper-link:hover {
+    background: var(--nus-orange);
+    color: white;
+    border-color: var(--nus-orange);
+}
+
+/* Tools Section */
+.tools-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.tool-card {
+    background: var(--bg-white);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--nus-orange);
+}
+
+.tool-icon {
+    font-size: 3rem;
+    color: var(--nus-orange);
+    margin-bottom: 1rem;
+}
+
+.tool-stats {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+    font-size: 0.875rem;
+    color: var(--text-light);
+}
+
+.tool-link {
+    color: var(--nus-blue);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.tool-link:hover {
+    color: var(--nus-orange);
+}
+
+/* Presentations Section */
+.presentations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.presentation-card {
+    background: var(--bg-white);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.presentation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.presentation-thumbnail {
+    background: linear-gradient(135deg, var(--nus-blue), var(--nus-orange));
+    padding: 3rem;
+    text-align: center;
+    color: white;
+}
+
+.presentation-content {
+    padding: 2rem;
+}
+
+.presentation-event {
+    color: var(--nus-orange);
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.presentation-links {
+    margin-top: 1.5rem;
+}
+
+.presentation-link {
+    color: var(--nus-blue);
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.presentation-link:hover {
+    color: var(--nus-orange);
+}
+
+/* Opportunities Section */
+.contact-methods {
+    margin-top: 2rem;
+}
+
+.opportunities {
+    background: var(--bg-light);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.opportunity-list {
+    list-style: none;
+    margin: 1.5rem 0;
+}
+
+.opportunity-list li {
+    padding: 0.75rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.opportunity-list i {
+    color: var(--nus-orange);
+}
+
+.member-focus {
+    font-size: 0.875rem;
+    color: var(--text-light);
+}
+
 /* Team Section */
 .team-category {
     margin-bottom: 3rem;
@@ -1224,6 +1596,26 @@ p {
     }
 
     .awards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-content {
+        grid-template-columns: 1fr;
+    }
+
+    .papers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .paper-card.featured {
+        grid-column: span 1;
+    }
+
+    .presentations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tools-grid {
         grid-template-columns: 1fr;
     }
 
