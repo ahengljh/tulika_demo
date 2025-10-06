@@ -1164,6 +1164,13 @@ p {
     color: var(--text-light);
 }
 
+.tool-note {
+    margin-top: 1rem;
+    color: var(--text-muted);
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
 .tool-link {
     color: var(--nus-blue);
     text-decoration: none;
