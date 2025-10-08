@@ -191,6 +191,7 @@ p {
     text-align: center;
     margin-top: 64px; /* Push down below the fixed navbar */
     position: relative;
+    z-index: 100;
 }
 
 .hero-container {
@@ -351,8 +352,8 @@ p {
 
 .btn-secondary {
     background: transparent;
-    color: white;
-    border: 2px solid white;
+    color: var(--nus-blue);
+    border: 2px solid var(--nus-blue);
 }
 
 .btn-secondary:hover {
@@ -1706,6 +1707,8 @@ p {
     padding: 6rem 0 3rem 0;
     margin-top: 64px;
     text-align: center;
+    position: relative;
+    z-index: 100;
 }
 
 .page-header h1 {
@@ -2246,16 +2249,17 @@ p {
 .timeline {
     position: relative;
     margin: 2.5rem 0;
+    padding-left: 0;
 }
 
 .timeline::before {
     content: '';
     position: absolute;
     left: 80px;
-    top: 0;
-    bottom: 0;
+    top: 10px;
+    bottom: 10px;
     width: 3px;
-    background: #e0e0e0;
+    background: linear-gradient(to bottom, #e0e0e0, #e0e0e0);
 }
 
 .timeline .timeline-item {
@@ -2266,13 +2270,18 @@ p {
     position: relative;
 }
 
+.timeline .timeline-item::before {
+    display: none;
+}
+
 .timeline .timeline-date {
     font-size: 1.25rem;
     font-weight: 700;
     color: var(--nus-blue);
     min-width: 60px;
     position: relative;
-    z-index: 1;
+    z-index: 2;
+    text-align: right;
 }
 
 .timeline .timeline-date::after {
@@ -2285,6 +2294,7 @@ p {
     border-radius: 50%;
     background: white;
     border: 3px solid var(--nus-orange);
+    z-index: 2;
 }
 
 .timeline .timeline-item.completed .timeline-date::after {
@@ -2631,6 +2641,14 @@ p {
     color: #e0e0e0;
     text-align: center;
     margin-bottom: 1.5rem;
+}
+
+.member-photo-large img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--border-color);
 }
 
 .member-info h3 {
@@ -3001,6 +3019,9 @@ p {
     overflow: hidden;
     border: 2px solid #e0e0e0;
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .gallery-item:hover {
@@ -3013,6 +3034,10 @@ p {
     width: 100%;
     height: auto;
     display: block;
+    padding: 2rem 1.5rem;
+    box-sizing: border-box;
+    flex: 1;
+    object-fit: contain;
 }
 
 .gallery-item-large {
@@ -3033,6 +3058,24 @@ p {
     width: 100%;
     height: auto;
     display: block;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Centered gallery layout for overview content */
+.overview-content .gallery-item-large {
+    text-align: center;
+}
+
+.overview-content .gallery-item-large img {
+    margin: 0 auto;
+}
+
+/* Ensure images don't overflow on mobile */
+@media (max-width: 768px) {
+    .gallery-item-large img {
+        max-width: 100%;
+    }
 }
 
 .image-caption {
@@ -3043,6 +3086,10 @@ p {
     text-align: center;
     font-style: italic;
     margin: 0;
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Image grid for multiple items */

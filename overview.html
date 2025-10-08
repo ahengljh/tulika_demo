@@ -228,12 +228,76 @@
                     </div>
                 </div>
 
+                <h2>WalkingWizard: Real-World Application</h2>
+
+                <div class="overview-content">
+                    <div class="overview-text">
+                        <p>
+                            The PACE 1.0 chip has been successfully integrated into <strong>WalkingWizard</strong>,
+                            a truly wearable EEG headset designed for everyday use, enabling real-time on-device
+                            processing for emotion monitoring and cognitive state assessment in mobile scenarios.
+                        </p>
+                    </div>
+                    <div class="gallery-item-large">
+                        <img src="images/page3_img2.png" alt="WalkingWizard in Use" style="max-width: 600px; margin: 0 auto;">
+                        <p class="image-caption">WalkingWizard EEG System with PACE Integration</p>
+                    </div>
+                </div>
+
                 <h2>Performance Comparison</h2>
 
                 <div class="image-gallery">
                     <div class="gallery-item-large">
                         <img src="images/page2_img1_highlighted.png" alt="Performance Comparison Table">
                         <p class="image-caption">Performance Comparison Against State-of-the-Art Accelerator Chips (PACE column highlighted)</p>
+                    </div>
+                </div>
+
+                <h2>PACE Architecture Overview</h2>
+
+                <div class="overview-content">
+                    <div class="overview-text">
+                        <p>
+                            The PACE accelerator features an <strong>8×8 matrix of processing elements (PEs)</strong>
+                            with 8 data memory modules, co-optimized for edge computing workloads. Each PE supports
+                            17 instructions carefully selected through analysis of major kernels for edge AI applications.
+                        </p>
+                    </div>
+                    <div class="gallery-item-large">
+                        <img src="images/page4_img1.png" alt="PACE Block Diagram" style="max-width: 700px; margin: 0 auto;">
+                        <p class="image-caption">PACE Accelerator Block Diagram and Supported Instructions</p>
+                    </div>
+                </div>
+
+                <h2>PACE-V SoC: RISC-V Integration</h2>
+
+                <div class="overview-content">
+                    <div class="overview-text">
+                        <p>
+                            To maximize efficiency, PACE is integrated with a <strong>RISC-V processor (Rocket CPU)</strong>
+                            in a complete System-on-Chip design. This eliminates external microcontroller overhead,
+                            providing high-bandwidth data transfer with on-chip SRAM (512KB) and optimized boot flow.
+                        </p>
+                    </div>
+                    <div class="gallery-item-large">
+                        <img src="images/page7_img1.png" alt="PACE-V SoC Integration" style="max-width: 700px; margin: 0 auto;">
+                        <p class="image-caption">PACE and RISC-V Core Integration Architecture</p>
+                    </div>
+                </div>
+
+                <h2>Chip Implementation</h2>
+
+                <div class="overview-content">
+                    <div class="overview-text">
+                        <p>
+                            The PACE 1.0 chip was successfully fabricated in December 2023 using <strong>UMC 40nm CMOS technology</strong>.
+                            The chip measures <strong>3.96mm × 2.4mm</strong> with PACE occupying about 30% of the die area,
+                            achieving <strong>360 GOPS/W measured efficiency</strong>.
+                        </p>
+                    </div>
+                    <div class="gallery-item-large">
+                        <img src="images/page8_img1.png" alt="PACE Chip Layout" style="max-width: 650px; margin: 0 auto;">
+                        <p class="image-caption">PACE 1.0 Chip Layout (3.96mm × 2.4mm in 40nm CMOS)</p>
                     </div>
                 </div>
 
@@ -255,6 +319,49 @@
                         <div class="impact-label">Publications</div>
                         <p>In top-tier conferences and journals</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PACE 2.0 Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">PACE 2.0: Next-Generation Design</h2>
+
+            <div class="overview-content">
+                <div class="overview-text">
+                    <p class="lead">
+                        PACE 2.0 represents a significant evolution, targeting <strong>2000 GOPS/W efficiency</strong> through
+                        advanced SIMD architecture with 8-lane floating-point operations and integrated Address Generation Units.
+                        Designed in <strong>12nm technology</strong>, it achieves 38% improvement over state-of-the-art.
+                    </p>
+                </div>
+                <div class="gallery-item-large">
+                    <img src="images/page13_img1.png" alt="PACE 2.0 Layout" style="max-width: 650px; margin: 0 auto;">
+                    <p class="image-caption">PACE 2.0 Chip Layout (1.04mm² in 12nm, 8×8 PE Array)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compiler Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Morpher: World-Class Compiler Framework</h2>
+
+            <div class="overview-content">
+                <div class="overview-text">
+                    <p class="lead">
+                        Morpher is our <strong>open-source integrated compilation and simulation framework</strong> for CGRA accelerators,
+                        offering quality mapping with <strong>13× faster compilation</strong> compared to state-of-the-art approaches.
+                        Adopted by <strong>10+ research groups worldwide</strong>, it supports end-to-end design flow from architecture
+                        specification to hardware validation.
+                    </p>
+                </div>
+                <div class="gallery-item-large">
+                    <img src="images/page14_img1.png" alt="Morpher Framework" style="max-width: 700px; margin: 0 auto;">
+                    <p class="image-caption">Morpher: Open-Source Integrated Compilation and Simulation Framework</p>
                 </div>
             </div>
         </div>
