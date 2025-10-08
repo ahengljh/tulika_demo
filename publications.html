@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - PACE Project | NUS</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Research publications from the PACE project including papers from DAC, HPCA, ASPLOS, and more">
+    <meta name="keywords" content="PACE Publications, CGRA Research, Computer Architecture Papers">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="overview.html" class="nav-logo">
+                    <img src="nus-logo.svg" alt="NUS" class="logo-img">
+                    <span class="logo-text">PACE Project</span>
+                </a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="overview.html" class="nav-link">Overview</a></li>
+                
+                
+                <li><a href="pace1.html" class="nav-link">PACE 1.0</a></li>
+                <li><a href="pace2.html" class="nav-link">PACE 2.0</a></li>
+                <li><a href="walkingwizard.html" class="nav-link">WalkingWizard</a></li>
+                <li><a href="compiler.html" class="nav-link">Compiler</a></li>
+                <li><a href="publications.html" class="nav-link active">Publications</a></li>
+                <li><a href="team.html" class="nav-link">Team</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Research Publications</h1>
+            <p class="page-subtitle">Advancing the State-of-the-Art in CGRA Technology</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container">
+            <div class="content-wrapper">
+                <h2>Featured Publications</h2>
+                <p class="lead">
+                    Our research has resulted in 30+ publications in top-tier conferences and journals,
+                    advancing the field of CGRA accelerators and edge computing.
+                </p>
+
+                <div class="papers-grid">
+                    <!-- Hot Chips 2024 -->
+                    <div class="paper-card featured">
+                        <div class="paper-type">
+                            <i class="fas fa-microchip"></i> Hot Chips 2024
+                        </div>
+                        <h3 class="paper-title">PACE: A Scalable and Energy Efficient CGRA in a RISC-V SoC for Edge Computing Applications</h3>
+                        <p class="paper-authors">
+                            Vishnu Nambiar, Yi Sheng Chong, Thilini Bandara, Dhananjaya Wijerathne, Zhaoying Li, Rohan Juneja, Li-Shiuan Peh, Tulika Mitra, Anh Tuan Do
+                        </p>
+                        <p class="paper-venue">Hot Chips 36, August 2024</p>
+                        <div class="paper-links">
+                            <a href="https://www.hotchips.org/hc36/" target="_blank" class="paper-link">
+                                <i class="fas fa-external-link-alt"></i> Conference
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- DAC 2022 -->
+                    <div class="paper-card">
+                        <div class="paper-type">
+                            <i class="fas fa-star"></i> DAC 2022
+                        </div>
+                        <h3 class="paper-title">PANORAMA: Divide-and-Conquer Approach for Mapping Complex Loop Kernels on CGRA</h3>
+                        <p class="paper-authors">
+                            Dhananjaya Wijerathne, Zhaoying Li, Thilini Kaushalya Bandara, Tulika Mitra
+                        </p>
+                        <p class="paper-venue">59th ACM/IEEE Design Automation Conference, 2022</p>
+                        <div class="paper-abstract">
+                            <p>
+                                A fast, scalable compiler based on divide-and-conquer approach achieving 2.6x throughput
+                                improvement with 8.7x faster compilation time.
+                            </p>
+                        </div>
+                        <div class="paper-links">
+                            <a href="https://ieeexplore.ieee.org/document/9903410" target="_blank" class="paper-link">
+                                <i class="fas fa-file-pdf"></i> PDF
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- HPCA 2022 - Distinguished Award -->
+                    <div class="paper-card featured">
+                        <div class="paper-type">
+                            <i class="fas fa-trophy"></i> HPCA 2022 - Distinguished Artifact Award
+                        </div>
+                        <h3 class="paper-title">LISA: Graph Neural Network based Portable Mapping on Spatial Accelerators</h3>
+                        <p class="paper-authors">
+                            Zhaoying Li, Dan Wu, Dhananjaya Wijerathne, Tulika Mitra
+                        </p>
+                        <p class="paper-venue">28th IEEE International Symposium on High-Performance Computer Architecture, 2022</p>
+                        <div class="paper-abstract">
+                            <p>
+                                Portable compilation framework using GNN achieving 594x and 17x compilation time reduction
+                                compared to ILP and SA approaches.
+                            </p>
+                        </div>
+                        <div class="paper-links">
+                            <a href="https://ieeexplore.ieee.org/document/9773209" target="_blank" class="paper-link">
+                                <i class="fas fa-file-pdf"></i> IEEE Xplore
+                            </a>
+                            <a href="https://github.com/ecolab-nus/lisa" target="_blank" class="paper-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- ASPLOS 2022 -->
+                    <div class="paper-card">
+                        <div class="paper-type">
+                            <i class="fas fa-file-alt"></i> ASPLOS 2022
+                        </div>
+                        <h3 class="paper-title">REVAMP: A Systematic Framework for Heterogeneous CGRA Realization</h3>
+                        <p class="paper-authors">
+                            Thilini Kaushalya Bandara, Dhananjaya Wijerathne, Tulika Mitra, Li-Shiuan Peh
+                        </p>
+                        <p class="paper-venue">27th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, 2022</p>
+                        <div class="paper-abstract">
+                            <p>
+                                Automated design space exploration achieving 52.4% power reduction and 38.1% area reduction
+                                through systematic heterogeneous CGRA optimization.
+                            </p>
+                        </div>
+                        <div class="paper-links">
+                            <a href="https://dl.acm.org/doi/10.1145/3503222.3507772" target="_blank" class="paper-link">
+                                <i class="fas fa-file-pdf"></i> ACM DL
+                            </a>
+                            <a href="https://www.comp.nus.edu.sg/~tulika/asplos22.pdf" target="_blank" class="paper-link">
+                                <i class="fas fa-file-pdf"></i> PDF
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- ICCAD 2023 -->
+                    <div class="paper-card">
+                        <div class="paper-type">
+                            <i class="fas fa-file-alt"></i> ICCAD 2023
+                        </div>
+                        <h3 class="paper-title">FLEX: Introducing FLEXible Execution on CGRA with Spatio-Temporal Vector Dataflow</h3>
+                        <p class="paper-authors">
+                            Thilini Kaushalya Bandara, Dan Wu, Tulika Mitra, Li-Shiuan Peh
+                        </p>
+                        <p class="paper-venue">42nd ACM/IEEE International Conference on Computer Aided Design, 2023</p>
+                        <div class="paper-abstract">
+                            <p>
+                                Flexible execution paradigm achieving ~53% and ~38% improvement in average power efficiency
+                                compared to spatio-temporal and spatial baselines.
+                            </p>
+                        </div>
+                        <div class="paper-links">
+                            <a href="https://ieeexplore.ieee.org/document/10323720" target="_blank" class="paper-link">
+                                <i class="fas fa-file-pdf"></i> PDF
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- HPCA 2024 -->
+                    <div class="paper-card">
+                        <div class="paper-type">
+                            <i class="fas fa-file-alt"></i> HPCA 2024
+                        </div>
+                        <h3 class="paper-title">ASADI: Accelerating Sparse Attention using Diagonal-based In-situ Computing</h3>
+                        <p class="paper-authors">
+                            Huize Li, Zhaoying Li, Zhenyu Bai, Tulika Mitra
+                        </p>
+                        <p class="paper-venue">30th IEEE International Symposium on High-Performance Computer Architecture, 2024</p>
+                        <div class="paper-abstract">
+                            <p>
+                                Novel sparse attention accelerator achieving 18.6× performance improvement and 2.9× energy
+                                savings using diagonal-based in-situ computing with ReRAM.
+                            </p>
+                        </div>
+                        <div class="paper-links">
+                            <a href="https://ieeexplore.ieee.org/document/10476432" target="_blank" class="paper-link">
+                                <i class="fas fa-file-pdf"></i> IEEE Xplore
+                            </a>
+                            <a href="https://www.comp.nus.edu.sg/~tulika/HPCA24.pdf" target="_blank" class="paper-link">
+                                <i class="fas fa-file-pdf"></i> PDF
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- TCAD 2022 - HiMap -->
+                    <div class="paper-card">
+                        <div class="paper-type">
+                            <i class="fas fa-file-alt"></i> TCAD 2022
+                        </div>
+                        <h3 class="paper-title">HiMap: Fast and Scalable High-Quality Mapping on CGRA via Hierarchical Abstraction</h3>
+                        <p class="paper-authors">
+                            Dhananjaya Wijerathne, Zhaoying Li, Anuj Pathania, Tulika Mitra, Lothar Thiele
+                        </p>
+                        <p class="paper-venue">IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 41(10), 2022</p>
+                        <div class="paper-abstract">
+                            <p>
+                                Hierarchical mapping approach achieving 17.3x performance and 5x energy efficiency improvement
+                                with compilation time under 15 minutes for 64x64 CGRAs.
+                            </p>
+                        </div>
+                        <div class="paper-links">
+                            <a href="https://ieeexplore.ieee.org/document/9721501" target="_blank" class="paper-link">
+                                <i class="fas fa-file-pdf"></i> PDF
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- TODAES 2024 - Flip -->
+                    <div class="paper-card">
+                        <div class="paper-type">
+                            <i class="fas fa-file-alt"></i> TODAES 2024
+                        </div>
+                        <h3 class="paper-title">Flip: Data-Centric Edge CGRA Accelerator</h3>
+                        <p class="paper-authors">
+                            Dan Wu, Peng Chen, Thilini Kaushalya Bandara, Zhaoying Li, Tulika Mitra
+                        </p>
+                        <p class="paper-venue">ACM Transactions on Design Automation of Electronic Systems, 29(1), January 2024</p>
+                        <div class="paper-abstract">
+                            <p>
+                                Data-centric CGRA architecture for graph processing achieving up to 36x speedup with 19% area
+                                overhead and 2.2x better area efficiency than state-of-the-art graph processors.
+                            </p>
+                        </div>
+                        <div class="paper-links">
+                            <a href="https://dl.acm.org/doi/10.1145/3631118" target="_blank" class="paper-link">
+                                <i class="fas fa-file-pdf"></i> ACM DL
+                            </a>
+                            <a href="https://arxiv.org/abs/2309.10623" target="_blank" class="paper-link">
+                                <i class="fas fa-file-alt"></i> arXiv
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- DAC 2024 - SWAT -->
+                    <div class="paper-card">
+                        <div class="paper-type">
+                            <i class="fas fa-file-alt"></i> DAC 2024
+                        </div>
+                        <h3 class="paper-title">SWAT: Scalable and Efficient Window Attention-based Transformers Acceleration on FPGAs</h3>
+                        <p class="paper-authors">
+                            Zhenyu Bai, Pranav Dangi, Huize Li, Tulika Mitra
+                        </p>
+                        <p class="paper-venue">61st ACM/IEEE Design Automation Conference, 2024</p>
+                        <div class="paper-abstract">
+                            <p>
+                                FPGA-based transformer accelerator achieving up to 22× and 5.7× improvements in latency
+                                and energy efficiency through dataflow-aware design.
+                            </p>
+                        </div>
+                        <div class="paper-links">
+                            <a href="https://arxiv.org/abs/2405.17025" target="_blank" class="paper-link">
+                                <i class="fas fa-file-alt"></i> arXiv
+                            </a>
+                            <a href="https://www.comp.nus.edu.sg/~tulika/DAC_2024_DIA.pdf" target="_blank" class="paper-link">
+                                <i class="fas fa-file-pdf"></i> PDF
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- ASPLOS 2025 - Plaid -->
+                    <div class="paper-card">
+                        <div class="paper-type">
+                            <i class="fas fa-file-alt"></i> ASPLOS 2025
+                        </div>
+                        <h3 class="paper-title">Enhancing CGRA Efficiency Through Aligned Compute and Communication Provisioning</h3>
+                        <p class="paper-authors">
+                            Zhaoying Li, Pranav Dangi, Chenyang Yin, Thilini Kaushalya Bandara, Rohan Juneja, Cheng Tan, Zhenyu Bai, Tulika Mitra
+                        </p>
+                        <p class="paper-venue">30th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, 2025</p>
+                        <div class="paper-abstract">
+                            <p>
+                                Plaid architecture achieving 43% power reduction and 46% area savings by aligning compute
+                                and communication capabilities through collective processing units.
+                            </p>
+                        </div>
+                        <div class="paper-links">
+                            <a href="https://dl.acm.org/doi/10.1145/3669940.3707230" target="_blank" class="paper-link">
+                                <i class="fas fa-file-pdf"></i> ACM DL
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- MICRO 2024 - ICED -->
+                    <div class="paper-card">
+                        <div class="paper-type">
+                            <i class="fas fa-file-alt"></i> MICRO 2024
+                        </div>
+                        <h3 class="paper-title">ICED: An Integrated CGRA Framework Enabling DVFS-Aware Acceleration</h3>
+                        <p class="paper-authors">
+                            Cheng Tan, Miaomiao Jiang, Deepak Patil, Yanghui Ou, Zhaoying Li, Lei Ju, Tulika Mitra, Hyunchul Park, Antonino Tumeo, Jeff Zhang
+                        </p>
+                        <p class="paper-venue">57th IEEE/ACM International Symposium on Microarchitecture, 2024</p>
+                        <div class="paper-abstract">
+                            <p>
+                                DVFS-aware framework achieving 2.3× utilization improvement and 1.32× energy efficiency
+                                enhancement with power island support for spatio-temporal CGRAs.
+                            </p>
+                        </div>
+                        <div class="paper-links">
+                            <a href="https://ieeexplore.ieee.org/document/10764442" target="_blank" class="paper-link">
+                                <i class="fas fa-file-pdf"></i> IEEE Xplore
+                            </a>
+                            <a href="https://www.comp.nus.edu.sg/~tulika/MICRO24.pdf" target="_blank" class="paper-link">
+                                <i class="fas fa-file-pdf"></i> PDF
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- PACT 2024 - ZeD -->
+                    <div class="paper-card">
+                        <div class="paper-type">
+                            <i class="fas fa-file-alt"></i> PACT 2024
+                        </div>
+                        <h3 class="paper-title">ZeD: A Generalized Accelerator for Variably Sparse Matrix Computations in ML</h3>
+                        <p class="paper-authors">
+                            Pranav Dangi, Zhenyu Bai, Rohan Juneja, Dhananjaya Wijerathne, Tulika Mitra
+                        </p>
+                        <p class="paper-venue">33rd IEEE/ACM International Conference on Parallel Architectures and Compilation Techniques, 2024</p>
+                        <div class="paper-abstract">
+                            <p>
+                                Bit-tree compression format and zero-detection hardware achieving 3.2× performance per area
+                                improvement for variably sparse ML workloads.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Research Impact</h2>
+                <div class="impact-metrics">
+                    <div class="metric-box">
+                        <div class="metric-number">30+</div>
+                        <div class="metric-label">Publications</div>
+                        <p>In top-tier venues including DAC, HPCA, ASPLOS, MICRO</p>
+                    </div>
+                    <div class="metric-box">
+                        <div class="metric-number">1</div>
+                        <div class="metric-label">Distinguished Award</div>
+                        <p>HPCA 2022 Distinguished Artifact Award for LISA</p>
+                    </div>
+                    <div class="metric-box">
+                        <div class="metric-number">1000+</div>
+                        <div class="metric-label">Citations</div>
+                        <p>Significant impact on CGRA research community</p>
+                    </div>
+                </div>
+
+                <div class="next-steps">
+                    <h3>Explore Further</h3>
+                    <div class="next-links">
+                        <a href="https://github.com/ecolab-nus/morpher" target="_blank" class="next-link">
+                            <i class="fab fa-github"></i>
+                            <span>Open Source Code</span>
+                        </a>
+                        <a href="team.html" class="next-link">
+                            <i class="fas fa-users"></i>
+                            <span>Research Team</span>
+                        </a>
+                        <a href="contact.html" class="next-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>Collaborate</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <img src="soc-logo.svg" alt="School of Computing" style="height: 40px; opacity: 0.8;">
+                    </div>
+                    <p>&copy; 2025 PACE Project, National University of Singapore</p>
+                    <p>Institute of Microelectronics (IME), A*STAR</p>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <a href="pace1.html" class="footer-link">PACE 1.0</a>
+                        <a href="pace2.html" class="footer-link">PACE 2.0</a>
+                        <a href="publications.html" class="footer-link">Publications</a>
+                        <a href="https://github.com/ecolab-nus/morpher" target="_blank" class="footer-link">GitHub</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <a href="mailto:tulika@comp.nus.edu.sg" class="footer-link">Email</a>
+                        <a href="team.html" class="footer-link">Team</a>
+                        <a href="contact.html" class="footer-link">Collaborate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

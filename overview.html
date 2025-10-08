@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PACE Project - Next-Generation IoT Edge Computing | NUS</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="PACE: Next-Generation IoT Edge Computing through Efficient Software Programmable Accelerators. Building highly efficient CGRA chips achieving 50X improvement in compute efficiency for edge AI.">
+    <meta name="keywords" content="PACE, CGRA, Edge Computing, IoT, Hardware Accelerators, NUS, RISC-V, WalkingWizard, EEG, Brain-Computer Interface">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="PACE - Next-Generation Edge Computing Accelerators">
+    <meta property="og:description" content="Delivering server-class processing capability to resource-scarce edge devices through CGRA technology">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="overview.html" class="nav-logo">
+                    <img src="nus-logo.svg" alt="NUS" class="logo-img">
+                    <span class="logo-text">PACE Project</span>
+                </a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="overview.html" class="nav-link active">Overview</a></li>
+                <li><a href="pace1.html" class="nav-link">PACE 1.0</a></li>
+                <li><a href="pace2.html" class="nav-link">PACE 2.0</a></li>
+                <li><a href="walkingwizard.html" class="nav-link">WalkingWizard</a></li>
+                <li><a href="compiler.html" class="nav-link">Compiler</a></li>
+                <li><a href="publications.html" class="nav-link">Publications</a></li>
+                <li><a href="team.html" class="nav-link">Team</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content-full">
+                <h1 class="hero-title">PACE: Next-Generation IoT Edge Computing</h1>
+                <h2 class="hero-subtitle">Efficient Software Programmable Accelerators</h2>
+                <p class="hero-description">
+                    Delivering highly efficient software programmable accelerators based on Coarse-Grained
+                    Reconfigurable Architecture (CGRA) that offer near ASIC-like compute efficiency
+                    while allowing full software programmability
+                </p>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">50X</span>
+                        <span class="stat-label">Efficiency Improvement</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">360</span>
+                        <span class="stat-label">GOPS/W (PACE 1.0)</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">2000</span>
+                        <span class="stat-label">GOPS/W Target (v2.0)</span>
+                    </div>
+                </div>
+
+                <div class="hero-links">
+                    <a href="pace1.html" class="btn btn-primary">
+                        <i class="fas fa-microchip"></i> PACE 1.0 Chip
+                    </a>
+                    <a href="pace2.html" class="btn btn-secondary">
+                        <i class="fas fa-rocket"></i> PACE 2.0 Roadmap
+                    </a>
+                    <a href="publications.html" class="btn btn-secondary">
+                        <i class="fas fa-file-pdf"></i> Publications
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Objectives -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Project Objectives</h2>
+
+            <div class="overview-content">
+                <div class="overview-text">
+                    <p class="lead">
+                        The overall objective of the PACE project is to deliver highly efficient software programmable
+                        accelerators based on Coarse-Grained Reconfigurable Architecture (CGRA) that can offer near
+                        ASIC-like compute efficiency while allowing full software programmability.
+                    </p>
+                </div>
+
+                <div class="highlight-box">
+                    <h3><i class="fas fa-bullseye"></i> Concrete Goal</h3>
+                    <p>
+                        Bring server-class processing capability to resource-scarce edge devices at ultra-low power
+                        through a synergistic cross-layer approach. We expect to reach up to <strong>50X improvement
+                        in compute efficiency</strong> compared to general-purpose processors in state-of-the-art edge devices.
+                    </p>
+                </div>
+
+                <div class="key-innovations">
+                    <h3>Technical Approach</h3>
+                    <p>
+                        We realize this breakthrough in powerful edge computing by adopting an end-to-end approach with
+                        leading-edge innovations spanning:
+                    </p>
+
+                    <div class="approach-grid">
+                        <div class="approach-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h4>Applications</h4>
+                            <p>Optimizing for edge AI and IoT workloads</p>
+                        </div>
+                        <div class="approach-item">
+                            <i class="fas fa-brain"></i>
+                            <h4>Algorithms</h4>
+                            <p>Developing efficient mapping strategies</p>
+                        </div>
+                        <div class="approach-item">
+                            <i class="fas fa-code"></i>
+                            <h4>Compiler</h4>
+                            <p>World-class Morpher framework</p>
+                        </div>
+                        <div class="approach-item">
+                            <i class="fas fa-microchip"></i>
+                            <h4>Architecture</h4>
+                            <p>Innovative CGRA designs</p>
+                        </div>
+                        <div class="approach-item">
+                            <i class="fas fa-bolt"></i>
+                            <h4>Circuits</h4>
+                            <p>Ultra-low power implementation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Achievements -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Key Achievements</h2>
+
+            <div class="innovation-grid">
+                <div class="innovation-card">
+                    <i class="fas fa-check-circle" style="color: #28a745; font-size: 3rem;"></i>
+                    <h4>PACE 1.0 Success</h4>
+                    <p>Silicon-proven chip achieving 360 GOPS/W, successfully fabricated and tested</p>
+                    <a href="pace1.html" class="btn btn-sm btn-outline">Learn More →</a>
+                </div>
+                <div class="innovation-card">
+                    <i class="fas fa-rocket" style="color: #007bff; font-size: 3rem;"></i>
+                    <h4>PACE 2.0 Innovation</h4>
+                    <p>Next-gen design targeting 2000 GOPS/W with 12nm process and SIMD architecture</p>
+                    <a href="pace2.html" class="btn btn-sm btn-outline">Explore →</a>
+                </div>
+                <div class="innovation-card">
+                    <i class="fas fa-brain" style="color: #6f42c1; font-size: 3rem;"></i>
+                    <h4>Real-World Impact</h4>
+                    <p>Deployed in WalkingWizard EEG systems for brain-computer interfaces</p>
+                    <a href="walkingwizard.html" class="btn btn-sm btn-outline">Discover →</a>
+                </div>
+                <div class="innovation-card">
+                    <i class="fas fa-code-branch" style="color: #fd7e14; font-size: 3rem;"></i>
+                    <h4>Open Source Tools</h4>
+                    <p>World-class Morpher compiler framework available for community use</p>
+                    <a href="compiler.html" class="btn btn-sm btn-outline">Access →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Deliverables -->
+    <section class="section">
+        <div class="container">
+            <div class="content-wrapper">
+                <h2>Key Deliverables</h2>
+
+                <div class="deliverables-timeline">
+                    <div class="timeline-item completed">
+                        <div class="timeline-marker">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>PACE 1.0 Accelerator Chip</h3>
+                            <p class="status">Status: <strong>Completed</strong></p>
+                            <ul>
+                                <li>500 GOPS/W peak performance (achieved 360 GOPS/W measured)</li>
+                                <li>1hr battery life at weight of 1kg</li>
+                                <li>Bit-width configurable ALU</li>
+                                <li>Buffer-less router architecture</li>
+                                <li>Successfully fabricated in Dec 2023</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item ongoing">
+                        <div class="timeline-marker">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>PACE 2.0 CGRA Accelerator</h3>
+                            <p class="status">Status: <strong>On-going</strong></p>
+                            <ul>
+                                <li>2000 GOPS/W target efficiency</li>
+                                <li>12nm process technology</li>
+                                <li>Near-memory compute macro</li>
+                                <li>Fine-grained power management</li>
+                                <li>SIMD architecture with floating point support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Performance Comparison</h2>
+
+                <div class="image-gallery">
+                    <div class="gallery-item-large">
+                        <img src="images/page2_img1_highlighted.png" alt="Performance Comparison Table">
+                        <p class="image-caption">Performance Comparison Against State-of-the-Art Accelerator Chips (PACE column highlighted)</p>
+                    </div>
+                </div>
+
+                <h2>Project Impact</h2>
+
+                <div class="impact-cards">
+                    <div class="impact-card">
+                        <div class="impact-number">50X</div>
+                        <div class="impact-label">Efficiency Improvement</div>
+                        <p>Compared to general-purpose processors</p>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-number">10+</div>
+                        <div class="impact-label">Research Groups</div>
+                        <p>Using our open-source tools globally</p>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-number">30+</div>
+                        <div class="impact-label">Publications</div>
+                        <p>In top-tier conferences and journals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Highlights -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Recent Highlights</h2>
+
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Award-Winning Research</h3>
+                    <p>HPCA 2022 Distinguished Artifact Award for LISA framework</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Chip Fabrication Complete</h3>
+                    <p>PACE 1.0 successfully taped out in December 2023 and tested</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Global Collaboration</h3>
+                    <p>Morpher adopted by 10+ research groups worldwide</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section">
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="next-steps">
+                    <h3>Explore the PACE Ecosystem</h3>
+                    <p class="lead">
+                        Discover our breakthrough innovations in edge computing technology
+                    </p>
+                    <div class="next-links">
+                        <a href="pace1.html" class="next-link">
+                            <i class="fas fa-microchip"></i>
+                            <span>PACE 1.0 Chip Details</span>
+                        </a>
+                        <a href="pace2.html" class="next-link">
+                            <i class="fas fa-rocket"></i>
+                            <span>PACE 2.0 Roadmap</span>
+                        </a>
+                        <a href="walkingwizard.html" class="next-link">
+                            <i class="fas fa-brain"></i>
+                            <span>WalkingWizard Integration</span>
+                        </a>
+                        <a href="compiler.html" class="next-link">
+                            <i class="fas fa-code"></i>
+                            <span>Compiler Technology</span>
+                        </a>
+                        <a href="publications.html" class="next-link">
+                            <i class="fas fa-file-pdf"></i>
+                            <span>Publications</span>
+                        </a>
+                        <a href="contact.html" class="next-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>Get in Touch</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <img src="soc-logo.svg" alt="School of Computing" style="height: 40px; opacity: 0.8;">
+                    </div>
+                    <p>&copy; 2025 PACE Project, National University of Singapore</p>
+                    <p>Institute of Microelectronics (IME), A*STAR</p>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <a href="pace1.html" class="footer-link">PACE 1.0</a>
+                        <a href="pace2.html" class="footer-link">PACE 2.0</a>
+                        <a href="publications.html" class="footer-link">Publications</a>
+                        <a href="https://github.com/ecolab-nus/morpher" target="_blank" class="footer-link">GitHub</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <a href="mailto:tulika@comp.nus.edu.sg" class="footer-link">Email</a>
+                        <a href="team.html" class="footer-link">Team</a>
+                        <a href="contact.html" class="footer-link">Collaborate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
