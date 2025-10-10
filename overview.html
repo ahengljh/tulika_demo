@@ -91,349 +91,372 @@
     </section>
 
     <!-- Project Objectives -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">Project Objectives</h2>
-
-            <div class="overview-content">
-                <div class="overview-text">
-                    <p class="lead">
-                        The overall objective of the PACE project is to deliver highly efficient software programmable
-                        accelerators based on Coarse-Grained Reconfigurable Architecture (CGRA) that can offer near
-                        ASIC-like compute efficiency while allowing full software programmability.
-                    </p>
+    <section class="tech-section-modern">
+        <div class="container-wide">
+            <div class="section-header-modern">
+                <div class="header-text">
+                    <h2>Project Objectives</h2>
+                    <p class="section-subtitle">Breakthrough in powerful edge computing through synergistic cross-layer approach</p>
                 </div>
-
-                <div class="highlight-box">
-                    <h3><i class="fas fa-bullseye"></i> Concrete Goal</h3>
-                    <p>
-                        Bring server-class processing capability to resource-scarce edge devices at ultra-low power
-                        through a synergistic cross-layer approach. We expect to reach up to <strong>50X improvement
-                        in compute efficiency</strong> compared to general-purpose processors in state-of-the-art edge devices.
-                    </p>
+                <div class="header-stats">
+                    <div class="stat-badge"><strong>50X</strong> Efficiency Goal</div>
+                    <div class="stat-badge"><strong>Server-Class</strong> on Edge</div>
                 </div>
+            </div>
 
-                <div class="key-innovations">
-                    <h3>Technical Approach</h3>
-                    <p>
-                        We realize this breakthrough in powerful edge computing by adopting an end-to-end approach with
-                        leading-edge innovations spanning:
-                    </p>
+            <p class="intro-text">
+                The overall objective of the PACE project is to deliver highly efficient software programmable accelerators
+                based on Coarse-Grained Reconfigurable Architecture (CGRA) that can offer <strong>near ASIC-like compute
+                efficiency</strong> (i.e., performance-per-watt) while allowing full software programmability. The concrete goal
+                is to <strong>bring server-class processing capability to resource-scarce edge devices at ultra-low power</strong>
+                through a synergistic cross-layer approach. We expect to reach up to <strong>50× improvement in compute efficiency</strong>
+                compared to general-purpose processors in state-of-the-art edge devices. We will realize this breakthrough in
+                powerful edge computing by adopting an <strong>end-to-end approach with leading-edge innovations spanning applications,
+                algorithms, compiler, architecture, and circuits</strong>.
+            </p>
+        </div>
+    </section>
 
-                    <div class="approach-grid">
-                        <div class="approach-item">
-                            <i class="fas fa-mobile-alt"></i>
-                            <h4>Applications</h4>
-                            <p>Optimizing for edge AI and IoT workloads</p>
-                        </div>
-                        <div class="approach-item">
-                            <i class="fas fa-brain"></i>
-                            <h4>Algorithms</h4>
-                            <p>Developing efficient mapping strategies</p>
-                        </div>
-                        <div class="approach-item">
-                            <i class="fas fa-code"></i>
-                            <h4>Compiler</h4>
-                            <p>World-class Morpher framework</p>
-                        </div>
-                        <div class="approach-item">
-                            <i class="fas fa-microchip"></i>
-                            <h4>Architecture</h4>
-                            <p>Innovative CGRA designs</p>
-                        </div>
-                        <div class="approach-item">
-                            <i class="fas fa-bolt"></i>
-                            <h4>Circuits</h4>
-                            <p>Ultra-low power implementation</p>
-                        </div>
+    <!-- PACE 1.0 Highlights -->
+    <section class="tech-section-modern alt">
+        <div class="container-wide">
+            <div class="tech-content-row">
+                <div class="content-text">
+                    <div class="tech-title-group">
+                        <span class="status-pill success"><i class="fas fa-check-circle"></i> Completed</span>
+                        <h2>PACE 1.0: Silicon-Proven Success</h2>
                     </div>
+
+                    <p>
+                        The key deliverable of the project is the PACE 1.0 accelerator chip with specifications of <strong>500
+                        GOPS/W and 1hr battery life at weight of 1kg</strong>. We have successfully achieved this goal. The PACE 1.0
+                        chip was sent for fabrication in December 2023 and the PACE accelerator chip that was sent out for fabrication
+                        in Dec 2022 has been tested and measured.
+                    </p>
+
+                    <p>
+                        The PACE CGRA can run at a max frequency of <strong>105 MHz while only consuming 43mW at 1V supply</strong>
+                        (100% PE utilization), achieving a maximum energy efficiency of <strong>360 GOPS/W at 0.6V and 21MHz</strong>.
+                        When process normalization is considered, PACE 1.0 offers a peak energy efficiency of <strong>673 GOPS/W and
+                        ~1090 GOPS/W</strong> when normalized to 28nm and 22nm processes respectively.
+                    </p>
+
+                    <div class="metrics-inline">
+                        <span class="metric-badge green">360 GOPS/W Measured</span>
+                        <span class="metric-badge green">~1090 GOPS/W Normalized</span>
+                        <span class="metric-badge">Complete App Demo</span>
+                    </div>
+
+                    <a href="pace1.html" class="btn-inline">
+                        <i class="fas fa-microchip"></i> View PACE 1.0 Details
+                    </a>
+                </div>
+
+                <div class="content-visual">
+                    <div class="visual-stack">
+                        <img src="images/page2_img1_highlighted.png" alt="Performance Comparison">
+                        <p class="fig-caption">Performance Comparison Against State-of-the-Art</p>
+                    </div>
+                    <div class="visual-stack">
+                        <img src="images/page8_img1.png" alt="Chip Layout">
+                        <p class="fig-caption">PACE 1.0 Chip Layout (3.96mm × 2.4mm)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PACE 2.0 Highlights -->
+    <section class="tech-section-modern">
+        <div class="container-wide">
+            <div class="tech-content-row reverse">
+                <div class="content-visual">
+                    <img src="images/page13_img2.png" alt="PACE 2.0 Layout">
+                    <p class="fig-caption">PACE 2.0 Chip Layout (1.04mm² in 12nm, 8×8 PE Array)</p>
+                </div>
+
+                <div class="content-text">
+                    <div class="tech-title-group">
+                        <span class="status-pill ongoing"><i class="fas fa-cog fa-spin"></i> On-going</span>
+                        <h2>PACE 2.0: Next-Generation Design</h2>
+                    </div>
+
+                    <p>
+                        PACE 2.0 represents a significant evolution, targeting <strong>2000 GOPS/W efficiency</strong> through
+                        advanced SIMD architecture with 8-lane floating-point operations and integrated Address Generation Units.
+                        Designed in <strong>12nm technology</strong>, it achieves <strong>38% improvement over state-of-the-art</strong>
+                        in normalized efficiency.
+                    </p>
+
+                    <p>
+                        We have moved to 12nm for better efficiency and achieved <strong>~2 TOPS/W in simulations</strong> by employing
+                        SIMD architecture with support for floating point operations for quantized AI workloads. The PE now supports
+                        <strong>8-bit eight lane SIMD operations</strong>, increasing data-width from 16bit to 64bit, with each PE
+                        performing eight parallel 8-bit floating point operations for peak throughput of 0.512 TOPS.
+                    </p>
+
+                    <div class="metrics-inline">
+                        <span class="metric-badge green">1966 GFLOPS/W Normalized</span>
+                        <span class="metric-badge green">38% Better than SOTA</span>
+                        <span class="metric-badge">75% II Improvement (AGU)</span>
+                    </div>
+
+                    <a href="pace2.html" class="btn-inline">
+                        <i class="fas fa-rocket"></i> View PACE 2.0 Details
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Morpher Compiler -->
+    <section class="tech-section-modern alt">
+        <div class="container-wide">
+            <div class="tech-content-row">
+                <div class="content-text">
+                    <div class="tech-title-group">
+                        <span class="status-pill success"><i class="fab fa-github"></i> Open Source</span>
+                        <h2>Morpher: World-Class Compiler Framework</h2>
+                    </div>
+
+                    <p>
+                        Our <strong>Morpher compiler is the best in class in the world</strong> in generating quality mapping,
+                        achieving fast compilation time, offering flexibility to explore different architectural designs, and
+                        providing end-to-end design flow. Morpher is an open-source integrated compilation and simulation framework
+                        that can assist design space exploration and application-level developments of CGRA based systems.
+                    </p>
+
+                    <p>
+                        Made available as open-source in <strong>December 2022</strong>, various research groups across the world
+                        have reached out for collaborations on this toolchain. Morpher achieves <strong>13× faster compilation</strong>
+                        compared to state-of-the-art approaches while maintaining quality mappings through techniques like PANORAMA,
+                        HiMap, and LISA.
+                    </p>
+
+                    <div class="metrics-inline">
+                        <span class="metric-badge green">13× Faster Compilation</span>
+                        <span class="metric-badge green">100% Mapping Success</span>
+                        <span class="metric-badge">10+ Research Groups</span>
+                    </div>
+
+                    <a href="compiler.html" class="btn-inline">
+                        <i class="fas fa-code"></i> View Compiler Details
+                    </a>
+                    <a href="https://github.com/ecolab-nus/morpher" target="_blank" class="btn-inline">
+                        <i class="fab fa-github"></i> GitHub Repository
+                    </a>
+                </div>
+
+                <div class="content-visual">
+                    <img src="images/page14_img1.png" alt="Morpher Framework">
+                    <p class="fig-caption">Morpher: Open-Source Integrated Compilation and Simulation Framework</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WalkingWizard Application -->
+    <section class="tech-section-modern">
+        <div class="container-wide">
+            <div class="tech-content-row reverse">
+                <div class="content-visual">
+                    <div class="visual-stack">
+                        <img src="images/page2_img1.png" alt="WalkingWizard Cap">
+                        <p class="fig-caption">WalkingWizard Wearable EEG System</p>
+                    </div>
+                    <div class="visual-stack">
+                        <img src="images/page3_img2.png" alt="WalkingWizard Usage">
+                        <p class="fig-caption">Real-World Usage in VR Environment</p>
+                    </div>
+                </div>
+
+                <div class="content-text">
+                    <h2>WalkingWizard: Real-World Application</h2>
+
+                    <p>
+                        The PACE 1.0 chip has been successfully integrated with <strong>WalkingWizard</strong>, a truly wearable
+                        EEG headset designed for everyday use. WalkingWizard integrates dry electrodes with flexible PCB assembly
+                        to achieve <strong>accurate EEG sensing even under motion</strong>.
+                    </p>
+
+                    <p>
+                        By incorporating the PACE 1.0 chip, we improve the real-time processing capabilities of WalkingWizard,
+                        enhancing its performance in capturing and analyzing EEG signals during activities such as walking or
+                        engaging in VR environments. This integration facilitates development of <strong>advanced applications
+                        like real-time emotion monitoring and cognitive state assessment</strong>, ultimately pushing the boundaries
+                        of mobile brain-computer interfaces and making EEG technology more accessible for everyday use.
+                    </p>
+
+                    <div class="key-points">
+                        <h4>Integration Benefits</h4>
+                        <ul class="points-list">
+                            <li><strong>Real-Time Processing:</strong> On-device signal processing for emotion monitoring and cognitive
+                            state assessment</li>
+                            <li><strong>Mobile BCI:</strong> Advanced applications for VR interaction and assistive technologies</li>
+                            <li><strong>Extended Operation:</strong> PACE's 43mW power consumption enables all-day wearable use</li>
+                            <li><strong>Motion Tolerance:</strong> Maintains accurate sensing during walking, running, or VR activities</li>
+                        </ul>
+                    </div>
+
+                    <a href="walkingwizard.html" class="btn-inline">
+                        <i class="fas fa-brain"></i> View WalkingWizard Details
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Key Achievements -->
-    <section class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">Key Achievements</h2>
+    <section class="impact-section-modern">
+        <div class="container-wide">
+            <h2 class="section-title-centered">Key Achievements & Impact</h2>
 
-            <div class="innovation-grid">
-                <div class="innovation-card">
-                    <i class="fas fa-check-circle" style="color: #28a745; font-size: 3rem;"></i>
-                    <h4>PACE 1.0 Success</h4>
-                    <p>Silicon-proven chip achieving 360 GOPS/W, successfully fabricated and tested</p>
-                    <a href="pace1.html" class="btn btn-sm btn-outline">Learn More →</a>
-                </div>
-                <div class="innovation-card">
-                    <i class="fas fa-rocket" style="color: #007bff; font-size: 3rem;"></i>
-                    <h4>PACE 2.0 Innovation</h4>
-                    <p>Next-gen design targeting 2000 GOPS/W with 12nm process and SIMD architecture</p>
-                    <a href="pace2.html" class="btn btn-sm btn-outline">Explore →</a>
-                </div>
-                <div class="innovation-card">
-                    <i class="fas fa-brain" style="color: #6f42c1; font-size: 3rem;"></i>
-                    <h4>Real-World Impact</h4>
-                    <p>Deployed in WalkingWizard EEG systems for brain-computer interfaces</p>
-                    <a href="walkingwizard.html" class="btn btn-sm btn-outline">Discover →</a>
-                </div>
-                <div class="innovation-card">
-                    <i class="fas fa-code-branch" style="color: #fd7e14; font-size: 3rem;"></i>
-                    <h4>Open Source Tools</h4>
-                    <p>World-class Morpher compiler framework available for community use</p>
-                    <a href="compiler.html" class="btn btn-sm btn-outline">Access →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Key Deliverables -->
-    <section class="section">
-        <div class="container">
-            <div class="content-wrapper">
-                <h2>Key Deliverables</h2>
-
-                <div class="deliverables-timeline">
-                    <div class="timeline-item completed">
-                        <div class="timeline-marker">
-                            <i class="fas fa-check"></i>
-                        </div>
-                        <div class="timeline-content">
-                            <h3>PACE 1.0 Accelerator Chip</h3>
-                            <p class="status">Status: <strong>Completed</strong></p>
-                            <ul>
-                                <li>500 GOPS/W peak performance (achieved 360 GOPS/W measured)</li>
-                                <li>1hr battery life at weight of 1kg</li>
-                                <li>Bit-width configurable ALU</li>
-                                <li>Buffer-less router architecture</li>
-                                <li>Successfully fabricated in Dec 2023</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item ongoing">
-                        <div class="timeline-marker">
-                            <i class="fas fa-spinner fa-spin"></i>
-                        </div>
-                        <div class="timeline-content">
-                            <h3>PACE 2.0 CGRA Accelerator</h3>
-                            <p class="status">Status: <strong>On-going</strong></p>
-                            <ul>
-                                <li>2000 GOPS/W target efficiency</li>
-                                <li>12nm process technology</li>
-                                <li>Near-memory compute macro</li>
-                                <li>Fine-grained power management</li>
-                                <li>SIMD architecture with floating point support</li>
-                            </ul>
-                        </div>
-                    </div>
+            <div class="impact-grid-horizontal">
+                <div class="impact-card-modern">
+                    <div class="impact-icon-large"><i class="fas fa-trophy"></i></div>
+                    <h3>World-First System Stack</h3>
+                    <p>Complete CGRA system from application optimization to chip tape-out - first in the world to achieve this comprehensive goal</p>
                 </div>
 
-                <h2>WalkingWizard: Real-World Application</h2>
-
-                <div class="overview-content">
-                    <div class="overview-text">
-                        <p>
-                            The PACE 1.0 chip has been successfully integrated into <strong>WalkingWizard</strong>,
-                            a truly wearable EEG headset designed for everyday use, enabling real-time on-device
-                            processing for emotion monitoring and cognitive state assessment in mobile scenarios.
-                        </p>
-                    </div>
-                    <div class="gallery-item-large">
-                        <img src="images/page3_img2.png" alt="WalkingWizard in Use" style="max-width: 600px; margin: 0 auto;">
-                        <p class="image-caption">WalkingWizard EEG System with PACE Integration</p>
-                    </div>
+                <div class="impact-card-modern">
+                    <div class="impact-icon-large"><i class="fas fa-microchip"></i></div>
+                    <h3>Silicon Validation</h3>
+                    <p>PACE 1.0 successfully fabricated in 40nm CMOS, tested and measured, achieving 360 GOPS/W efficiency</p>
                 </div>
 
-                <h2>Performance Comparison</h2>
-
-                <div class="image-gallery">
-                    <div class="gallery-item-large">
-                        <img src="images/page2_img1_highlighted.png" alt="Performance Comparison Table">
-                        <p class="image-caption">Performance Comparison Against State-of-the-Art Accelerator Chips (PACE column highlighted)</p>
-                    </div>
+                <div class="impact-card-modern">
+                    <div class="impact-icon-large"><i class="fab fa-github"></i></div>
+                    <h3>Open Source Tools</h3>
+                    <p>Morpher compiler framework adopted by 10+ research groups globally, enabling widespread CGRA innovation</p>
                 </div>
 
-                <h2>PACE Architecture Overview</h2>
-
-                <div class="overview-content">
-                    <div class="overview-text">
-                        <p>
-                            The PACE accelerator features an <strong>8×8 matrix of processing elements (PEs)</strong>
-                            with 8 data memory modules, co-optimized for edge computing workloads. Each PE supports
-                            17 instructions carefully selected through analysis of major kernels for edge AI applications.
-                        </p>
-                    </div>
-                    <div class="gallery-item-large">
-                        <img src="images/page4_img1.png" alt="PACE Block Diagram" style="max-width: 700px; margin: 0 auto;">
-                        <p class="image-caption">PACE Accelerator Block Diagram and Supported Instructions</p>
-                    </div>
-                </div>
-
-                <h2>PACE-V SoC: RISC-V Integration</h2>
-
-                <div class="overview-content">
-                    <div class="overview-text">
-                        <p>
-                            To maximize efficiency, PACE is integrated with a <strong>RISC-V processor (Rocket CPU)</strong>
-                            in a complete System-on-Chip design. This eliminates external microcontroller overhead,
-                            providing high-bandwidth data transfer with on-chip SRAM (512KB) and optimized boot flow.
-                        </p>
-                    </div>
-                    <div class="gallery-item-large">
-                        <img src="images/page7_img1.png" alt="PACE-V SoC Integration" style="max-width: 700px; margin: 0 auto;">
-                        <p class="image-caption">PACE and RISC-V Core Integration Architecture</p>
-                    </div>
-                </div>
-
-                <h2>Chip Implementation</h2>
-
-                <div class="overview-content">
-                    <div class="overview-text">
-                        <p>
-                            The PACE 1.0 chip was successfully fabricated in December 2023 using <strong>UMC 40nm CMOS technology</strong>.
-                            The chip measures <strong>3.96mm × 2.4mm</strong> with PACE occupying about 30% of the die area,
-                            achieving <strong>360 GOPS/W measured efficiency</strong>.
-                        </p>
-                    </div>
-                    <div class="gallery-item-large">
-                        <img src="images/page8_img1.png" alt="PACE Chip Layout" style="max-width: 650px; margin: 0 auto;">
-                        <p class="image-caption">PACE 1.0 Chip Layout (3.96mm × 2.4mm in 40nm CMOS)</p>
-                    </div>
-                </div>
-
-                <h2>Project Impact</h2>
-
-                <div class="impact-cards">
-                    <div class="impact-card">
-                        <div class="impact-number">50X</div>
-                        <div class="impact-label">Efficiency Improvement</div>
-                        <p>Compared to general-purpose processors</p>
-                    </div>
-                    <div class="impact-card">
-                        <div class="impact-number">10+</div>
-                        <div class="impact-label">Research Groups</div>
-                        <p>Using our open-source tools globally</p>
-                    </div>
-                    <div class="impact-card">
-                        <div class="impact-number">30+</div>
-                        <div class="impact-label">Publications</div>
-                        <p>In top-tier conferences and journals</p>
-                    </div>
+                <div class="impact-card-modern">
+                    <div class="impact-icon-large"><i class="fas fa-file-alt"></i></div>
+                    <h3>30+ Publications</h3>
+                    <p>Published in top-tier venues: DAC, ASPLOS, HPCA, AAAI, ICCAD, TCAD with Distinguished Artifact Awards</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- PACE 2.0 Section -->
-    <section class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">PACE 2.0: Next-Generation Design</h2>
+    <!-- Technical Approach -->
+    <section class="tech-section-modern">
+        <div class="container-wide">
+            <h2 class="section-title-centered">
+                <i class="fas fa-layer-group"></i> End-to-End Cross-Layer Approach
+            </h2>
 
-            <div class="overview-content">
-                <div class="overview-text">
-                    <p class="lead">
-                        PACE 2.0 represents a significant evolution, targeting <strong>2000 GOPS/W efficiency</strong> through
-                        advanced SIMD architecture with 8-lane floating-point operations and integrated Address Generation Units.
-                        Designed in <strong>12nm technology</strong>, it achieves 38% improvement over state-of-the-art.
-                    </p>
-                </div>
-                <div class="gallery-item-large">
-                    <img src="images/page13_img1.png" alt="PACE 2.0 Layout" style="max-width: 650px; margin: 0 auto;">
-                    <p class="image-caption">PACE 2.0 Chip Layout (1.04mm² in 12nm, 8×8 PE Array)</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Compiler Section -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">Morpher: World-Class Compiler Framework</h2>
-
-            <div class="overview-content">
-                <div class="overview-text">
-                    <p class="lead">
-                        Morpher is our <strong>open-source integrated compilation and simulation framework</strong> for CGRA accelerators,
-                        offering quality mapping with <strong>13× faster compilation</strong> compared to state-of-the-art approaches.
-                        Adopted by <strong>10+ research groups worldwide</strong>, it supports end-to-end design flow from architecture
-                        specification to hardware validation.
-                    </p>
-                </div>
-                <div class="gallery-item-large">
-                    <img src="images/page14_img1.png" alt="Morpher Framework" style="max-width: 700px; margin: 0 auto;">
-                    <p class="image-caption">Morpher: Open-Source Integrated Compilation and Simulation Framework</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Recent Highlights -->
-    <section class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">Recent Highlights</h2>
-
-            <div class="highlights-grid">
-                <div class="highlight-card">
-                    <div class="highlight-icon">
-                        <i class="fas fa-trophy"></i>
+            <div class="innovations-grid-compact">
+                <div class="innovation-mini-card">
+                    <div class="mini-card-header">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h4>Applications</h4>
                     </div>
-                    <h3>Award-Winning Research</h3>
-                    <p>HPCA 2022 Distinguished Artifact Award for LISA framework</p>
+                    <p class="mini-desc">Optimizing for edge AI and IoT workloads with data-free KD, continual learning, and structured sparsity</p>
+                    <div class="mini-stats">
+                        <span>11.44% accuracy ↑</span>
+                        <span>16× memory ↓</span>
+                    </div>
                 </div>
-                <div class="highlight-card">
-                    <div class="highlight-icon">
+
+                <div class="innovation-mini-card">
+                    <div class="mini-card-header">
+                        <i class="fas fa-brain"></i>
+                        <h4>Algorithms</h4>
+                    </div>
+                    <p class="mini-desc">Efficient mapping strategies including PANORAMA, HiMap, and LISA for quality compilation</p>
+                    <div class="mini-stats">
+                        <span>13× faster compile</span>
+                        <span>100% success rate</span>
+                    </div>
+                </div>
+
+                <div class="innovation-mini-card">
+                    <div class="mini-card-header">
+                        <i class="fas fa-code"></i>
+                        <h4>Compiler</h4>
+                    </div>
+                    <p class="mini-desc">World-class Morpher framework with hierarchical mapping and portable compilation</p>
+                    <div class="mini-stats">
+                        <span>Open source</span>
+                        <span>10+ groups</span>
+                    </div>
+                </div>
+
+                <div class="innovation-mini-card">
+                    <div class="mini-card-header">
                         <i class="fas fa-microchip"></i>
+                        <h4>Architecture</h4>
                     </div>
-                    <h3>Chip Fabrication Complete</h3>
-                    <p>PACE 1.0 successfully taped out in December 2023 and tested</p>
+                    <p class="mini-desc">Innovative CGRA designs: REVAMP, FLEX, AM-CGRA, Flip, ICED, Plaid</p>
+                    <div class="mini-stats">
+                        <span>52% power ↓</span>
+                        <span>46% area ↓</span>
+                    </div>
                 </div>
-                <div class="highlight-card">
-                    <div class="highlight-icon">
-                        <i class="fas fa-users"></i>
+
+                <div class="innovation-mini-card">
+                    <div class="mini-card-header">
+                        <i class="fas fa-bolt"></i>
+                        <h4>Circuits</h4>
                     </div>
-                    <h3>Global Collaboration</h3>
-                    <p>Morpher adopted by 10+ research groups worldwide</p>
+                    <p class="mini-desc">Ultra-low power implementation with NOP clock-gating and optimized ALU design</p>
+                    <div class="mini-stats">
+                        <span>24% idle power ↓</span>
+                        <span>19% PE power ↓</span>
+                    </div>
+                </div>
+
+                <div class="innovation-mini-card">
+                    <div class="mini-card-header">
+                        <i class="fas fa-brain"></i>
+                        <h4>Real-World</h4>
+                    </div>
+                    <p class="mini-desc">WalkingWizard EEG integration demonstrating mobile BCI capabilities</p>
+                    <div class="mini-stats">
+                        <span>Motion-tolerant</span>
+                        <span>Real-time</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Call to Action -->
-    <section class="section">
-        <div class="container">
-            <div class="content-wrapper">
-                <div class="next-steps">
-                    <h3>Explore the PACE Ecosystem</h3>
-                    <p class="lead">
-                        Discover our breakthrough innovations in edge computing technology
-                    </p>
-                    <div class="next-links">
-                        <a href="pace1.html" class="next-link">
-                            <i class="fas fa-microchip"></i>
-                            <span>PACE 1.0 Chip Details</span>
-                        </a>
-                        <a href="pace2.html" class="next-link">
-                            <i class="fas fa-rocket"></i>
-                            <span>PACE 2.0 Roadmap</span>
-                        </a>
-                        <a href="walkingwizard.html" class="next-link">
-                            <i class="fas fa-brain"></i>
-                            <span>WalkingWizard Integration</span>
-                        </a>
-                        <a href="compiler.html" class="next-link">
-                            <i class="fas fa-code"></i>
-                            <span>Compiler Technology</span>
-                        </a>
-                        <a href="publications.html" class="next-link">
-                            <i class="fas fa-file-pdf"></i>
-                            <span>Publications</span>
-                        </a>
-                        <a href="contact.html" class="next-link">
-                            <i class="fas fa-envelope"></i>
-                            <span>Get in Touch</span>
-                        </a>
-                    </div>
-                </div>
+    <section class="quick-links-section">
+        <div class="container-wide">
+            <h3>Explore the PACE Ecosystem</h3>
+            <div class="quick-links-grid-modern">
+                <a href="pace1.html" class="quick-link-modern">
+                    <i class="fas fa-microchip"></i>
+                    <strong>PACE 1.0 Chip</strong>
+                    <span>Silicon-proven details</span>
+                </a>
+                <a href="pace2.html" class="quick-link-modern">
+                    <i class="fas fa-rocket"></i>
+                    <strong>PACE 2.0 Roadmap</strong>
+                    <span>Next-gen architecture</span>
+                </a>
+                <a href="walkingwizard.html" class="quick-link-modern">
+                    <i class="fas fa-brain"></i>
+                    <strong>WalkingWizard</strong>
+                    <span>EEG integration</span>
+                </a>
+                <a href="compiler.html" class="quick-link-modern">
+                    <i class="fas fa-code"></i>
+                    <strong>Morpher Compiler</strong>
+                    <span>Open-source tools</span>
+                </a>
+                <a href="publications.html" class="quick-link-modern">
+                    <i class="fas fa-file-pdf"></i>
+                    <strong>Publications</strong>
+                    <span>30+ research papers</span>
+                </a>
+                <a href="contact.html" class="quick-link-modern">
+                    <i class="fas fa-envelope"></i>
+                    <strong>Get in Touch</strong>
+                    <span>Collaborate with us</span>
+                </a>
             </div>
         </div>
     </section>

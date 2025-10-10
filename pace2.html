@@ -32,8 +32,6 @@
             </button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="overview.html" class="nav-link">Overview</a></li>
-                
-                
                 <li><a href="pace1.html" class="nav-link">PACE 1.0</a></li>
                 <li><a href="pace2.html" class="nav-link active">PACE 2.0</a></li>
                 <li><a href="walkingwizard.html" class="nav-link">WalkingWizard</a></li>
@@ -46,344 +44,682 @@
     </nav>
 
     <!-- Page Header -->
-    <section class="page-header">
+    <section class="page-header compact">
         <div class="container">
             <h1>PACE 2.0 Development</h1>
-            <p class="page-subtitle">Next-Generation CGRA Architecture</p>
+            <p class="page-subtitle">Next-Generation CGRA Targeting 2000 GOPS/W with 12nm Process</p>
             <div class="status-badge ongoing">
                 <i class="fas fa-spinner fa-spin"></i> On-going Development
             </div>
         </div>
     </section>
 
-    <!-- Main Content -->
-    <section class="section">
-        <div class="container">
-            <div class="content-wrapper">
-                <h2>Revolutionary Performance Target</h2>
-                <p class="lead">
-                    PACE 2.0 represents a major leap forward in efficiency, targeting <strong>2000 GOPS/W</strong>
-                    with advanced architectural innovations and a move to 12nm process technology.
-                </p>
+    <!-- Main Overview -->
+    <section class="tech-section-modern">
+        <div class="container-wide">
+            <div class="tech-content-row">
+                <div class="content-text">
+                    <h2>Revolutionary Performance Target</h2>
 
-                <div class="specs-grid">
-                    <div class="spec-card highlight">
-                        <div class="spec-icon">
-                            <i class="fas fa-rocket"></i>
-                        </div>
-                        <div class="spec-value">2000</div>
-                        <div class="spec-unit">GOPS/W</div>
-                        <div class="spec-label">Target Efficiency</div>
-                    </div>
-                    <div class="spec-card">
-                        <div class="spec-icon">
-                            <i class="fas fa-microchip"></i>
-                        </div>
-                        <div class="spec-value">12</div>
-                        <div class="spec-unit">nm</div>
-                        <div class="spec-label">Process Node</div>
-                    </div>
-                    <div class="spec-card">
-                        <div class="spec-icon">
-                            <i class="fas fa-tachometer-alt"></i>
-                        </div>
-                        <div class="spec-value">1</div>
-                        <div class="spec-unit">GHz</div>
-                        <div class="spec-label">Target Frequency</div>
-                    </div>
-                    <div class="spec-card">
-                        <div class="spec-icon">
-                            <i class="fas fa-percentage"></i>
-                        </div>
-                        <div class="spec-value">38%</div>
-                        <div class="spec-unit">Better</div>
-                        <div class="spec-label">vs State-of-art</div>
-                    </div>
-                </div>
-
-                <h2>SIMD Processing Element Architecture</h2>
-                <p class="lead">
-                    SIMD-enabled PE featuring 8-lane floating-point operations with 64-bit data path and dedicated instruction memory.
-                </p>
-                <div class="image-gallery">
-                    <div class="gallery-item-large">
-                        <img src="images/page11_img2.png" alt="SIMD PE Block Diagram">
-                        <p class="image-caption">SIMD Processing Element Block Diagram with 8-lane FP Adder and Multiplier</p>
-                    </div>
-                </div>
-
-                <h2>Address Generation Unit (AGU)</h2>
-                <p class="lead">
-                    Hardware acceleration for memory access patterns with 75% improvement in initiation interval.
-                </p>
-                <div class="image-gallery">
-                    <div class="gallery-item-large">
-                        <img src="images/page12_img2.png" alt="AGU Block Diagram">
-                        <p class="image-caption">Address Generation Unit (AGU) Coupled Between PE and Data Memory</p>
-                    </div>
-                </div>
-
-                <h2>Processing Element Analysis</h2>
-                <p class="lead">
-                    Detailed area and power distribution breakdown of the SIMD-enabled processing element.
-                </p>
-                <div class="image-gallery">
-                    <div class="gallery-row">
-                        <div class="gallery-item">
-                            <img src="images/page12_img3.png" alt="PE Area Breakdown">
-                            <p class="image-caption">Area Breakdown of PE</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="images/page12_img1.png" alt="PE Power Breakdown">
-                            <p class="image-caption">Power Breakdown of PE</p>
-                        </div>
-                    </div>
-                </div>
-
-                <h2>PACE 2.0 Chip Implementation</h2>
-                <p class="lead">
-                    First-cut chip layout with 8x8 PE array and detailed area/power breakdown.
-                </p>
-                <div class="image-gallery">
-                    <div class="gallery-item-large">
-                        <img src="images/page13_img2.png" alt="PACE 2.0 Layout">
-                        <p class="image-caption">First-cut Layout of PACE 2.0 Chip - 8x8 PE Array with Data Memory Banks</p>
-                    </div>
-                </div>
-
-                <div class="image-gallery">
-                    <div class="gallery-row">
-                        <div class="gallery-item">
-                            <img src="images/page13_img3.png" alt="PACE Area Breakdown">
-                            <p class="image-caption">Area Breakdown of PACE 2.0</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="images/page13_img1.png" alt="PACE Power Breakdown">
-                            <p class="image-caption">Power Breakdown of PACE 2.0</p>
-                        </div>
-                    </div>
-                </div>
-
-                <h2>Key Architectural Innovations</h2>
-
-                <div class="innovation-cards">
-                    <div class="innovation-detail-card">
-                        <div class="innovation-icon">
-                            <i class="fas fa-layer-group"></i>
-                        </div>
-                        <h3>SIMD Architecture</h3>
-                        <p>Single-Input-Multiple-Data design for higher throughput and efficiency</p>
-                        <ul>
-                            <li>8-bit eight lane SIMD operations per PE</li>
-                            <li>Data-width increased from 16bit to 64bit</li>
-                            <li>Eight parallel 8-bit floating point operations</li>
-                        </ul>
-                    </div>
-
-                    <div class="innovation-detail-card">
-                        <div class="innovation-icon">
-                            <i class="fas fa-memory"></i>
-                        </div>
-                        <h3>Advanced Memory System</h3>
-                        <p>Near-memory computing with intelligent data management</p>
-                        <ul>
-                            <li>Near-memory compute macro</li>
-                            <li>80KB total memory capacity</li>
-                            <li>Optimized data locality</li>
-                        </ul>
-                    </div>
-
-                    <div class="innovation-detail-card">
-                        <div class="innovation-icon">
-                            <i class="fas fa-cogs"></i>
-                        </div>
-                        <h3>Address Generation Unit</h3>
-                        <p>Hardware acceleration for memory access patterns</p>
-                        <ul>
-                            <li>75% improvement in initiation interval</li>
-                            <li>Parallel Load/Store address calculation</li>
-                            <li>Stride and constant address modes</li>
-                        </ul>
-                    </div>
-
-                    <div class="innovation-detail-card">
-                        <div class="innovation-icon">
-                            <i class="fas fa-battery-full"></i>
-                        </div>
-                        <h3>Power Management</h3>
-                        <p>Fine-grained control for maximum efficiency</p>
-                        <ul>
-                            <li>Dynamic voltage and frequency scaling</li>
-                            <li>Per-PE power gating</li>
-                            <li>Intelligent workload distribution</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <h2>Technical Specifications</h2>
-
-                <div class="specs-table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Parameter</th>
-                                <th>PACE 1.0</th>
-                                <th>PACE 2.0 (Target)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>Process Technology</strong></td>
-                                <td>40nm</td>
-                                <td>12nm</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Peak Efficiency</strong></td>
-                                <td>360 GOPS/W</td>
-                                <td>~2000 GOPS/W</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Operating Voltage</strong></td>
-                                <td>0.6V - 1V</td>
-                                <td>0.8V nominal</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Frequency</strong></td>
-                                <td>105 MHz max</td>
-                                <td>1 GHz target</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Peak Throughput</strong></td>
-                                <td>-</td>
-                                <td>0.512 TOPS</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Data Width</strong></td>
-                                <td>16-bit</td>
-                                <td>64-bit</td>
-                            </tr>
-                            <tr>
-                                <td><strong>SIMD Lanes</strong></td>
-                                <td>-</td>
-                                <td>8 lanes</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Total Area</strong></td>
-                                <td>~1.2mm²</td>
-                                <td>1.04mm²</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <h2>Performance Comparison</h2>
-                <div class="performance-comparison">
                     <p>
-                        PACE 2.0 outperforms state-of-the-art accelerators by <strong>38%</strong> in efficiency:
+                        The PACE CGRA is designed in <strong>12nm technology</strong> achieving the target <strong>~2 TOPS/W</strong>
+                        with a target frequency of 1GHz. A <strong>Single-Input-Multiple-Data (SIMD) architecture</strong> is employed
+                        for higher throughput and efficiency, outperforming state-of-the-art by <strong>38%</strong> in normalized
+                        efficiency metrics.
                     </p>
-                    <div class="comparison-table">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Architecture</th>
-                                    <th>Year</th>
-                                    <th>Technology</th>
-                                    <th>Efficiency</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Transpire</td>
-                                    <td>2020</td>
-                                    <td>28nm</td>
-                                    <td>224 GFLOPS/W</td>
-                                </tr>
-                                <tr>
-                                    <td>Reference [2]</td>
-                                    <td>2020</td>
-                                    <td>28nm</td>
-                                    <td>156 GFLOPS/W</td>
-                                </tr>
-                                <tr class="highlight-row">
-                                    <td><strong>PACE 2.0</strong></td>
-                                    <td><strong>2025</strong></td>
-                                    <td><strong>12nm</strong></td>
-                                    <td><strong>1966 GFLOPS/W</strong></td>
-                                </tr>
-                            </tbody>
-                        </table>
+
+                    <p>
+                        To improve power efficiency and manage diverse AI workloads requiring higher throughput, the PE now supports
+                        <strong>8-bit eight lane SIMD operations</strong>, thereby increasing the Data-memory (DM) and Processing-element
+                        (PE) data-width from earlier 16bit to <strong>64bit</strong>. Each PE can perform <strong>eight parallel 8-bit
+                        floating point addition or multiplication</strong>, increasing peak throughput to <strong>0.512 TOPS</strong>
+                        and peak efficiency to <strong>1.96 TOPS/W at nominal 0.8V and 1GHz</strong> operating speed.
+                    </p>
+
+                    <div class="comparison-box">
+                        <h4>PACE 2.0 vs. State-of-the-Art</h4>
+                        <div class="comparison-items">
+                            <div class="comp-item">
+                                <span class="comp-label">Transpire (2020, 28nm)</span>
+                                <span class="comp-value">224 GFLOPS/W</span>
+                            </div>
+                            <div class="comp-item">
+                                <span class="comp-label">Reference [2] (2020, 28nm)</span>
+                                <span class="comp-value">156 GFLOPS/W</span>
+                            </div>
+                            <div class="comp-item highlight-row">
+                                <span class="comp-label"><strong>PACE 2.0 (2025, 12nm)</strong></span>
+                                <span class="comp-value"><strong>1966 GFLOPS/W</strong></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="metrics-inline">
+                        <span class="metric-badge green">1966 GFLOPS/W Normalized</span>
+                        <span class="metric-badge green">38% Better than SOTA</span>
+                        <span class="metric-badge">512 GFLOPS Peak Throughput</span>
+                        <span class="metric-badge">1 GHz Target Frequency</span>
                     </div>
                 </div>
 
-                <h2>Application Support</h2>
-                <div class="application-section">
-                    <h3>Optimized for AI Workloads</h3>
-                    <div class="app-features">
-                        <div class="app-feature">
-                            <i class="fas fa-brain"></i>
-                            <h4>Quantized AI Models</h4>
-                            <p>Native support for FP8 and INT8 operations</p>
-                        </div>
-                        <div class="app-feature">
-                            <i class="fas fa-chart-line"></i>
-                            <h4>Signal Processing</h4>
-                            <p>High-throughput DSP operations</p>
-                        </div>
-                        <div class="app-feature">
-                            <i class="fas fa-video"></i>
-                            <h4>Computer Vision</h4>
-                            <p>Real-time image and video processing</p>
-                        </div>
-                        <div class="app-feature">
-                            <i class="fas fa-wave-square"></i>
-                            <h4>IoT Analytics</h4>
-                            <p>Edge-based sensor data processing</p>
-                        </div>
+                <div class="content-visual">
+                    <div class="visual-stack">
+                        <img src="images/page11_img1.png" alt="PACE 2.0 Comparison">
+                        <p class="fig-caption">PACE 2.0 Performance Comparison Table</p>
+                    </div>
+                    <div class="visual-stack">
+                        <img src="images/page13_img2.png" alt="PACE 2.0 Layout">
+                        <p class="fig-caption">PACE 2.0 Chip Layout (1.04mm² in 12nm, 8×8 PE Array)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIMD Architecture -->
+    <section class="tech-section-modern alt">
+        <div class="container-wide">
+            <div class="tech-content-row reverse">
+                <div class="content-visual">
+                    <img src="images/page11_img2.png" alt="SIMD PE">
+                    <p class="fig-caption">SIMD-Enabled Processing Element with 8-Lane FP Operations</p>
+                </div>
+
+                <div class="content-text">
+                    <h2>SIMD Processing Element Architecture</h2>
+
+                    <p>
+                        The block diagram shows the SIMD enabled processing element (PE) with <strong>multiple lane float operation
+                        support and integrated Address Generation Unit (AGU)</strong>. The first/last column PEs feature a 64-bit
+                        8-lane FP ALU supporting both 8-bit FP addition and 8-bit FP multiplication operations in parallel.
+                    </p>
+
+                    <div class="key-points">
+                        <h4>Key Architectural Features</h4>
+                        <ul class="points-list">
+                            <li><strong>Instruction Memory:</strong> 64-bit × 16 word capacity for storing operation sequences</li>
+                            <li><strong>8-Lane Parallel Processing:</strong> Eight 8-bit FP adders and eight 8-bit FP multipliers
+                            operating simultaneously for maximum throughput</li>
+                            <li><strong>Decoder & Control Logic:</strong> Sophisticated control logic managing the parallel execution
+                            units and data routing</li>
+                            <li><strong>64-bit Router:</strong> Wide data path supporting efficient data movement between PEs with
+                            additional 16-bit scalar ALU for address calculations</li>
+                        </ul>
+                    </div>
+
+                    <div class="specs-compact-grid">
+                        <div class="spec-item"><strong>Data Width:</strong> 64-bit (8× increase)</div>
+                        <div class="spec-item"><strong>SIMD Lanes:</strong> 8 parallel lanes</div>
+                        <div class="spec-item"><strong>FP Operations:</strong> 8-bit addition & multiplication</div>
+                        <div class="spec-item"><strong>Instruction Mem:</strong> 64-bit × 16 words</div>
+                    </div>
+
+                    <div class="info-highlight">
+                        <strong>Standout Feature:</strong> SIMD Float8 and SISD Int16 operations with integrated Address Generation
+                        Unit, enabling efficient mixed-precision computing for diverse AI workloads
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Address Generation Unit -->
+    <section class="tech-section-modern">
+        <div class="container-wide">
+            <div class="tech-content-row">
+                <div class="content-text">
+                    <h2>Address Generation Unit (AGU)</h2>
+
+                    <p>
+                        The first and last column PEs that access the memory now have an <strong>Address-Generation-Unit (AGU)</strong>,
+                        which helps to reduce the number of cycles needed to get the output. Approximately <strong>75% of the PE
+                        instructions</strong> due to Load/store address calculation are now performed by the AGU in parallel. This
+                        translates to <strong>75% improvement in initiation interval (II)</strong>.
+                    </p>
+
+                    <p>
+                        The AGU stores Load/Store instructions in its <strong>Config Memory (CM)</strong> and address in the
+                        <strong>Address Register File (ARF)</strong>. This gives the AGU the capability to perform addressing of
+                        the DM in both <strong>stride and constant address modes</strong>, significantly enhancing memory access
+                        efficiency for common access patterns in AI workloads.
+                    </p>
+
+                    <div class="key-points">
+                        <h4>AGU Components</h4>
+                        <ul class="points-list">
+                            <li><strong>Instruction Memory:</strong> 8-bit × 16 word storage for Load/Store instruction sequences</li>
+                            <li><strong>Address Register File:</strong> 13-bit × 16 words for storing base addresses and stride values</li>
+                            <li><strong>Address Generation Logic:</strong> Hardware units for computing memory addresses in both
+                            constant and stride patterns</li>
+                            <li><strong>Control Signal Generation:</strong> Interfaces with PE for handshaking and synchronization</li>
+                            <li><strong>PE Handshaking:</strong> Coordination mechanism ensuring proper data flow between AGU, PE,
+                            and Data Memory</li>
+                        </ul>
+                    </div>
+
+                    <div class="metrics-inline">
+                        <span class="metric-badge green">75% II Improvement</span>
+                        <span class="metric-badge green">75% Instruction Offload</span>
+                        <span class="metric-badge">Stride & Constant Modes</span>
                     </div>
                 </div>
 
-                <h2>Development Timeline</h2>
-                <div class="timeline">
-                    <div class="timeline-item completed">
-                        <div class="timeline-date">2023</div>
-                        <div class="timeline-content">
-                            <h4>Architecture Design</h4>
-                            <p>SIMD architecture finalized</p>
-                        </div>
+                <div class="content-visual">
+                    <div class="visual-stack">
+                        <img src="images/page12_img2.png" alt="AGU">
+                        <p class="fig-caption">AGU Block Diagram Coupled Between PE and Data Memory</p>
                     </div>
-                    <div class="timeline-item ongoing">
-                        <div class="timeline-date">2024</div>
-                        <div class="timeline-content">
-                            <h4>RTL Development</h4>
-                            <p>Implementation and verification</p>
-                        </div>
+                    <div class="visual-stack">
+                        <img src="images/page12_img1.png" alt="PE Power">
+                        <p class="fig-caption">Power Breakdown of SIMD-Enabled PE</p>
                     </div>
-                    <div class="timeline-item future">
-                        <div class="timeline-date">2025</div>
-                        <div class="timeline-content">
-                            <h4>Tape Out Target</h4>
-                            <p>12nm fabrication</p>
-                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Area and Power Analysis -->
+    <section class="tech-section-modern alt">
+        <div class="container-wide">
+            <div class="tech-content-row reverse">
+                <div class="content-visual">
+                    <img src="images/page12_img3.png" alt="Area Breakdown">
+                    <p class="fig-caption">Area Breakdown of PACE 2.0 Processing Element</p>
+                </div>
+
+                <div class="content-text">
+                    <h2>Area and Power Breakdown</h2>
+
+                    <p>
+                        The PACE layout occupies a total of <strong>1.04mm² area in 12nm technology</strong>. The layout shows
+                        an 8×8 PE array with eight banks of Data Memory (DM) distributed on both sides for optimal access patterns
+                        and minimal routing congestion.
+                    </p>
+
+                    <div class="key-points">
+                        <h4>Area Distribution</h4>
+                        <ul class="points-list">
+                            <li><strong>Processing Elements:</strong> 74% of total PACE area dedicated to the 64 PEs</li>
+                            <li><strong>Memory Subsystem:</strong> 26% of area for data memory modules</li>
+                            <li><strong>Float Point ALU:</strong> 37% of PE area for the 8-lane SIMD FP units</li>
+                            <li><strong>Memories (Router/Config):</strong> 29% of PE area for local storage</li>
+                            <li><strong>Router:</strong> 26% of PE area for interconnect fabric</li>
+                            <li><strong>Scalar ALU:</strong> 7% of PE area for address calculations</li>
+                            <li><strong>AGU:</strong> 1% of PE area for address generation logic</li>
+                        </ul>
+                    </div>
+
+                    <div class="key-points">
+                        <h4>Power Distribution</h4>
+                        <ul class="points-list">
+                            <li><strong>Processing Elements:</strong> 75% of total PACE power during active operation</li>
+                            <li><strong>Memory Subsystem:</strong> 25% of power for data storage and access</li>
+                            <li><strong>Memories:</strong> 49% of PE power for configuration and routing storage</li>
+                            <li><strong>Router:</strong> 27% of PE power for NoC communication</li>
+                            <li><strong>Float Point ALU:</strong> 17% of PE power for SIMD computations</li>
+                            <li><strong>Scalar ALU:</strong> 4% of PE power</li>
+                            <li><strong>AGU:</strong> 3% of PE power for address generation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVAMP: Heterogeneous CGRA -->
+    <section class="tech-section-modern">
+        <div class="container-wide">
+            <div class="tech-content-row">
+                <div class="content-text">
+                    <h2>REVAMP: Heterogeneous CGRA Architecture</h2>
+
+                    <p>
+                        The key distinguishing factor of the final PACE v2.0 architecture is that it will be <strong>heterogeneous
+                        CGRA rather than homogeneous</strong>. Most CGRAs adhere to a canonical structure where homogeneous PEs and
+                        memories communicate through regular interconnect due to simplicity of design. Unfortunately, homogeneity
+                        leads to <strong>substantial idle resources</strong> while mapping irregular applications and creates inefficiency.
+                    </p>
+
+                    <p>
+                        We have mitigated the inefficiency by systematically and judiciously introducing heterogeneity in CGRAs in
+                        tandem with appropriate compiler support. <strong>REVAMP is an automated design space exploration framework</strong>
+                        that helps architects uncover and add pertinent heterogeneity to diverse originally homogeneous CGRAs when fed
+                        with a suite of target applications. REVAMP explores comprehensive optimizations encompassing <strong>compute,
+                        network, and memory heterogeneity</strong>, converting uniform CGRA into more irregular architecture with
+                        improved energy efficiency.
+                    </p>
+
+                    <div class="key-points">
+                        <h4>REVAMP Framework Capabilities</h4>
+                        <ul class="points-list">
+                            <li><strong>Automated Derivation:</strong> Takes homogeneous CGRA and application suite as input, outputs
+                            optimized heterogeneous variant with compiler support</li>
+                            <li><strong>Multi-Dimensional Heterogeneity:</strong> Explores compute heterogeneity (different PE types),
+                            interconnect heterogeneity (varied routing resources), and memory heterogeneity (distributed capacity)</li>
+                            <li><strong>Compiler Co-Design:</strong> Extends compiler support for efficient mapping of loop kernels
+                            on derived heterogeneous CGRA architectures</li>
+                            <li><strong>Demonstrated on 3 CGRAs:</strong> Showcased on ADRES, HyCUBE, and Softbrain, deriving heterogeneous
+                            variants with corresponding compiler optimizations</li>
+                        </ul>
+                    </div>
+
+                    <div class="metrics-inline">
+                        <span class="metric-badge green">52.4% Power Reduction</span>
+                        <span class="metric-badge green">38.1% Area Reduction</span>
+                        <span class="metric-badge green">36% Avg Energy Savings</span>
                     </div>
                 </div>
 
-                <div class="next-steps">
-                    <h3>Learn More</h3>
-                    <div class="next-links">
-                        <a href="pace1.html" class="next-link">
-                            <i class="fas fa-arrow-left"></i>
-                            <span>PACE 1.0 Details</span>
-                        </a>
-                        <a href="compiler.html" class="next-link">
-                            <i class="fas fa-code"></i>
-                            <span>Compiler Support</span>
-                        </a>
-                        <a href="contact.html" class="next-link">
-                            <i class="fas fa-envelope"></i>
-                            <span>Collaborate</span>
-                        </a>
+                <div class="content-visual">
+                    <div class="visual-stack">
+                        <img src="images/page19_img1.png" alt="REVAMP Framework">
+                        <p class="fig-caption">REVAMP Framework for Heterogeneous CGRA Derivation</p>
+                    </div>
+                    <div class="visual-stack">
+                        <img src="images/page19_img2.png" alt="HyCUBE">
+                        <p class="fig-caption">Deriving Heterogeneous HyCUBE from Homogeneous Baseline</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FLEX Architecture -->
+    <section class="tech-section-modern alt">
+        <div class="container-wide">
+            <div class="tech-content-row reverse">
+                <div class="content-visual">
+                    <img src="images/page21_img1.png" alt="FLEX">
+                    <p class="fig-caption">FLEX: Flexible Execution Paradigm from Spatial to Spatio-Temporal</p>
+                </div>
+
+                <div class="content-text">
+                    <h2>FLEX: Spatio-Temporal Vector Dataflow</h2>
+
+                    <p>
+                        CGRAs like HyCUBE and PACE 1.0 tend to follow a <strong>fixed execution model</strong>, either spatio-temporal
+                        or spatial execution, leading to an imbalance in internal resource distribution and limiting efficiency.
+                        Spatio-temporal execution with highest reconfiguration frequency wastes the most energy on re-configuring the
+                        CGRA. In contrast, spatial execution with least reconfiguration degrades performance and spends most energy
+                        on unwanted data movements.
+                    </p>
+
+                    <p>
+                        FLEX bestows a <strong>flexible CGRA execution paradigm with novel spatio-temporal vector dataflow execution</strong>.
+                        In spatio-temporal vector dataflow, a vector of data is processed in sequence, reducing the reconfiguration
+                        frequency significantly. The proposed execution model balances internal resource distribution by significantly
+                        reducing reconfiguration energy compared to spatio-temporal execution and averting performance and data movement
+                        impacts of spatial execution.
+                    </p>
+
+                    <div class="key-points">
+                        <h4>Execution Flexibility</h4>
+                        <ul class="points-list">
+                            <li><strong>Complete Spectrum:</strong> FLEX covers entire spectrum from spatio-temporal (V=1) to spatial
+                            (V=N) through multiple vector sizes (V=2, V=3, V=4, etc.)</li>
+                            <li><strong>Design Space Exploration:</strong> Can be used as framework to choose best execution mode/vector
+                            size for individual application kernels based on requirements</li>
+                            <li><strong>Vectorization Pass:</strong> Loop kernels undergo vectorization to generate Data Flow Graph,
+                            then mapped with different vector sizes for power/performance trade-off analysis</li>
+                        </ul>
+                    </div>
+
+                    <div class="metrics-inline">
+                        <span class="metric-badge green">~53% Power Efficiency ↑ vs Spatio-Temporal</span>
+                        <span class="metric-badge green">~38% Power Efficiency ↑ vs Spatial</span>
+                    </div>
+
+                    <p class="small-note">
+                        Evaluated against HyCUBE (spatio-temporal baseline) and SNAFU from CMU (spatial baseline) with same area budget
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AM-CGRA -->
+    <section class="tech-section-modern">
+        <div class="container-wide">
+            <div class="tech-content-row">
+                <div class="content-text">
+                    <h2>AM-CGRA: Active Message Architecture</h2>
+
+                    <p>
+                        The specialization for regular control flow and memory accesses in CGRAs limit their effectiveness in
+                        executing <strong>irregular workloads</strong>, such as sparse linear algebra and graph analytics with
+                        irregular control flow and memory accesses. To address this limitation, we propose <strong>Active Message
+                        CGRA (AM-CGRA)</strong>, an architecture and compilation technique to execute irregular applications efficiently.
+                    </p>
+
+                    <p>
+                        AM-CGRA <strong>sends messages across the fabric that dynamically deploy and execute instructions on idle
+                        processing elements</strong>. Thus, unlike traditional architecture with static instructions within each PE,
+                        AM-CGRA brings control to idle PEs. The architecture distributes the application's data and control across
+                        multiple PEs, and <strong>load balances by executing messages enroute</strong>.
+                    </p>
+
+                    <div class="key-points">
+                        <h4>Active Message Mechanism</h4>
+                        <ul class="points-list">
+                            <li><strong>Dynamic Instruction Deployment:</strong> Messages contain both instructions and operands,
+                            executed at idle PEs as they traverse the fabric</li>
+                            <li><strong>Enroute Execution:</strong> Computation happens during message routing, utilizing otherwise
+                            idle resources and reducing latency</li>
+                            <li><strong>Load Balancing:</strong> Work is distributed dynamically based on PE availability rather
+                            than static allocation</li>
+                            <li><strong>Irregular Workload Support:</strong> Particularly effective for sparse matrix operations
+                            and graph analytics where data dependencies are dynamic</li>
+                        </ul>
+                    </div>
+
+                    <div class="metrics-inline">
+                        <span class="metric-badge green">4× Speedup vs Shared-Memory CGRA</span>
+                        <span class="metric-badge green">1.75× Speedup vs Distributed-Memory CGRA</span>
+                        <span class="metric-badge green">78.6% PE Utilization (vs 45%)</span>
+                    </div>
+                </div>
+
+                <div class="content-visual">
+                    <div class="visual-stack">
+                        <img src="images/page22_img1.png" alt="AM-CGRA">
+                        <p class="fig-caption">Traditional CGRA vs. Active Message CGRA Execution Model</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flip Architecture -->
+    <section class="tech-section-modern alt">
+        <div class="container-wide">
+            <div class="tech-content-row reverse">
+                <div class="content-visual">
+                    <img src="images/page23_img1.png" alt="Flip">
+                    <p class="fig-caption">Operation-Centric vs Data-Centric Execution Modes</p>
+                </div>
+
+                <div class="content-text">
+                    <h2>Flip: Data-Centric CGRA Accelerator</h2>
+
+                    <p>
+                        Classic CGRAs statically map compute operations onto the processing elements (PE) and route the data
+                        dependencies among the operations through the Network-on-Chip. However, CGRAs are designed for fine-grained
+                        static instruction-level parallelism and <strong>struggle to accelerate applications with dynamic and irregular
+                        data-level parallelism</strong>, such as graph processing.
+                    </p>
+
+                    <p>
+                        Flip retains the classic CGRA execution scheme while introducing a <strong>divergent mode for efficient
+                        graph processing</strong>. Specifically, it exploits the natural data parallelism of graph algorithms by
+                        <strong>mapping graph vertices onto processing elements (PEs) rather than the operations</strong> and supporting
+                        dynamic routing of temporary data according to the runtime evolution of the graph frontier.
+                    </p>
+
+                    <div class="key-points">
+                        <h4>Data-Centric Execution</h4>
+                        <ul class="points-list">
+                            <li><strong>Vertex-to-PE Mapping:</strong> Maps graph vertices on different PEs and processes them in
+                            parallel with identical code, exploiting data-level parallelism</li>
+                            <li><strong>Dynamic Routing:</strong> Temporary data routed dynamically based on runtime graph frontier
+                            evolution rather than static routes</li>
+                            <li><strong>Memory Locality:</strong> Original compiler designed to reconcile conflicting goals of reducing
+                            communication by capturing data locality and avoiding congestion by breaking clusters</li>
+                            <li><strong>Dual Mode Support:</strong> Can switch between operation-centric (classic) and data-centric
+                            (graph) execution modes</li>
+                        </ul>
+                    </div>
+
+                    <div class="metrics-inline">
+                        <span class="metric-badge green">36× Speedup vs Classic CGRA</span>
+                        <span class="metric-badge">19% More Area</span>
+                        <span class="metric-badge green">2.2× Area Efficiency vs Large-Scale Processors</span>
+                    </div>
+
+                    <p class="small-note">
+                        Targets embedded systems with stringent energy and area budgets, achieving similar energy efficiency and
+                        better area efficiency compared to state-of-the-art large-scale graph processors
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ICED: DVFS-Aware -->
+    <section class="tech-section-modern">
+        <div class="container-wide">
+            <div class="tech-content-row">
+                <div class="content-text">
+                    <h2>ICED: DVFS-Aware Acceleration</h2>
+
+                    <p>
+                        CGRAs are promising solutions to enable energy-efficient acceleration of applications from different domains.
+                        However, the relationships of <strong>voltage and frequency with utilization of CGRA resources</strong> and
+                        dynamic management of them are not well explored, leading to inefficient designs.
+                    </p>
+
+                    <p>
+                        ICED proposes a <strong>CGRA architecture supporting DVFS islands</strong> at varying granularity (from a
+                        single tile to a group of tiles) and the related DVFS-aware compilation and mapping toolchain. ICED is the
+                        <strong>first work that introduces DVFS support for spatio-temporal CGRAs at power-island levels</strong>.
+                        For streaming applications, execution time of each kernel in pipeline might dynamically vary depending on
+                        input characteristics, leading to under-utilization of resources for dynamically changing kernels that do
+                        not limit application throughput.
+                    </p>
+
+                    <div class="key-points">
+                        <h4>DVFS Integration</h4>
+                        <ul class="points-list">
+                            <li><strong>Power Island Support:</strong> Architecture supports DVFS at multiple granularities, from
+                            individual tiles to tile groups, with dedicated voltage regulators</li>
+                            <li><strong>DVFS-Aware Compilation:</strong> Integrated compiler framework maps applications onto CGRAs
+                            with power islands, considering voltage/frequency constraints</li>
+                            <li><strong>Dynamic Adaptation:</strong> Can dynamically change voltage and frequency levels of tiles
+                            hosting non-performance-constraining kernels to save energy</li>
+                            <li><strong>Collaboration with Google:</strong> Developed in collaboration with Google and other partners</li>
+                        </ul>
+                    </div>
+
+                    <div class="metrics-inline">
+                        <span class="metric-badge green">2.3× Utilization Improvement</span>
+                        <span class="metric-badge green">1.32× Energy-Efficiency Gain</span>
+                        <span class="metric-badge green">1.26× vs Partial Dynamic Reconfig</span>
+                    </div>
+                </div>
+
+                <div class="content-visual">
+                    <div class="visual-stack">
+                        <img src="images/page28_img1.png" alt="ICED">
+                        <p class="fig-caption">ICED Integrated Compiler Framework with DVFS Islands</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plaid: Communication Pruning -->
+    <section class="tech-section-modern alt">
+        <div class="container-wide">
+            <div class="tech-content-row reverse">
+                <div class="content-visual">
+                    <img src="images/page30_img1.png" alt="Plaid">
+                    <p class="fig-caption">Plaid: Hierarchical DFG with Motifs and Collective Unit</p>
+                </div>
+
+                <div class="content-text">
+                    <h2>Plaid: Aligned Compute & Communication</h2>
+
+                    <p>
+                        CGRAs are domain-agnostic accelerators that enhance energy efficiency of resource-constrained edge devices.
+                        However, CGRAs often <strong>overprovision communication resources relative to their modest computing
+                        capabilities</strong>. This occurs because theoretically provisioned programmability for CGRAs often proves
+                        superfluous in practical implementations.
+                    </p>
+
+                    <p>
+                        Plaid is a novel CGRA architecture and compiler that <strong>aligns compute and communication capabilities</strong>,
+                        thereby significantly improving energy and area efficiency while preserving generality and performance. We
+                        demonstrate that the dataflow graph can be decomposed into smaller, <strong>recurring communication patterns
+                        called motifs</strong>. The primary contribution is identification of these structural motifs and development
+                        of efficient collective execution and routing strategy tailored to these motifs.
+                    </p>
+
+                    <div class="key-points">
+                        <h4>Motif-Based Optimization</h4>
+                        <ul class="points-list">
+                            <li><strong>Motif Identification:</strong> Dataflow graphs decomposed into recurring structural patterns
+                            that appear repeatedly across applications</li>
+                            <li><strong>Collective Processing Unit:</strong> Novel unit that can execute multiple operations of a
+                            motif and route related data dependencies together</li>
+                            <li><strong>Hierarchical Mapping:</strong> Compiler hierarchically maps dataflow graph and judiciously
+                            schedules the motifs for optimal resource utilization</li>
+                            <li><strong>Communication Pruning:</strong> Eliminates superfluous routing resources while maintaining
+                            full programmability and performance</li>
+                        </ul>
+                    </div>
+
+                    <div class="metrics-inline">
+                        <span class="metric-badge green">43% Power Reduction</span>
+                        <span class="metric-badge green">46% Area Savings</span>
+                        <span class="metric-badge green">1.4× Performance vs Spatial CGRA</span>
+                    </div>
+
+                    <p class="small-note">
+                        Compared to baseline high-performance spatio-temporal CGRA while preserving generality and performance levels
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transformer Acceleration -->
+    <section class="tech-section-modern">
+        <div class="container-wide">
+            <div class="tech-content-row">
+                <div class="content-text">
+                    <h2>Transformer Acceleration using In-Situ Computing</h2>
+
+                    <p>
+                        In ASADI, we address the performance bottleneck of the <strong>self-attention mechanism in Transformer-based
+                        language models</strong>, particularly for long sequences. Transformers have revolutionized NLP and CV due to
+                        their ability to model long-range dependencies. However, the <strong>quadratic complexity of self-attention</strong>
+                        with respect to number of tokens results in high computational overhead.
+                    </p>
+
+                    <p>
+                        We observe that sparse attention introduces significant <strong>random access overhead</strong> that limits
+                        computational efficiency. To overcome this, we propose ASADI, a novel software-hardware co-designed sparse
+                        attention accelerator. On software side, we develop new sparse matrix computation paradigm directly supporting
+                        <strong>diagonal (DIA) format</strong> with excellent diagonal locality. On hardware side, we introduce innovative
+                        sparse attention accelerator implementing this DIA-based paradigm using <strong>highly parallel in-situ computing
+                        with ReRAM</strong>.
+                    </p>
+
+                    <div class="key-points">
+                        <h4>ASADI Innovation</h4>
+                        <ul class="points-list">
+                            <li><strong>Diagonal Format:</strong> Identified DIA format as having excellent diagonal locality for
+                            sparse attention patterns</li>
+                            <li><strong>In-Situ Computing:</strong> Leverages ReRAM for highly parallel processing directly in memory,
+                            eliminating data movement overhead</li>
+                            <li><strong>Software-Hardware Co-Design:</strong> Comprehensive approach optimizing both algorithm and
+                            hardware implementation</li>
+                        </ul>
+                    </div>
+
+                    <div class="metrics-inline">
+                        <span class="metric-badge green">18.6× Performance vs PIM Baseline</span>
+                        <span class="metric-badge green">2.9× Energy Savings</span>
+                    </div>
+                </div>
+
+                <div class="content-visual">
+                    <div class="visual-stack">
+                        <img src="images/page24_img1.png" alt="ASADI">
+                        <p class="fig-caption">Diagonal Matrix Format (DIA) for Sparse Attention Acceleration</p>
+                    </div>
+                    <div class="visual-stack">
+                        <img src="images/page24_img2.png" alt="ASADI Performance">
+                        <p class="fig-caption">Performance and Energy Efficiency Comparison</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SWAT on FPGAs -->
+    <section class="tech-section-modern alt">
+        <div class="container-wide">
+            <div class="tech-content-row reverse">
+                <div class="content-visual">
+                    <img src="images/page25_img1.png" alt="SWAT">
+                    <p class="fig-caption">SWAT Microarchitecture for Window Attention</p>
+                </div>
+
+                <div class="content-text">
+                    <h2>SWAT: Window Attention on FPGAs</h2>
+
+                    <p>
+                        SWAT addresses the challenge of efficiently supporting long context lengths in Transformer models on
+                        reconfigurable computing devices. Traditional Transformers suffer from quadratic complexity. <strong>Sliding
+                        window-based static sparse attention</strong> mitigates this by limiting attention scope, reducing theoretical
+                        complexity from quadratic to linear. However, this doesn't align perfectly with conventional accelerator
+                        microarchitecture.
+                    </p>
+
+                    <p>
+                        SWAT is a <strong>dataflow-aware FPGA-based accelerator</strong> that efficiently leverages structured sparsity
+                        of window attention. Our design maximizes data reuse by combining <strong>row-wise dataflow, kernel fusion
+                        optimization, and input-stationary design</strong> that takes advantage of distributed memory and computation
+                        resources of FPGAs.
+                    </p>
+
+                    <div class="key-points">
+                        <h4>SWAT Optimizations</h4>
+                        <ul class="points-list">
+                            <li><strong>Row-Wise Dataflow:</strong> Optimized data movement pattern for window attention computation</li>
+                            <li><strong>Kernel Fusion:</strong> Combines multiple operations to reduce memory traffic</li>
+                            <li><strong>Input-Stationary Design:</strong> Keeps input data stationary while routing intermediate
+                            results, maximizing reuse</li>
+                            <li><strong>Scalable Architecture:</strong> Provides efficient solution for accelerating Transformers
+                            on FPGAs with long sequences</li>
+                        </ul>
+                    </div>
+
+                    <div class="metrics-inline">
+                        <span class="metric-badge green">22× Latency Improvement vs Baseline FPGA</span>
+                        <span class="metric-badge green">5.7× Energy Efficiency vs Baseline FPGA</span>
+                        <span class="metric-badge green">15× Energy Efficiency vs GPU</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="quick-links-section">
+        <div class="container-wide">
+            <h3>Explore Related Technology</h3>
+            <div class="quick-links-grid-modern">
+                <a href="pace1.html" class="quick-link-modern">
+                    <i class="fas fa-microchip"></i>
+                    <strong>PACE 1.0</strong>
+                    <span>Silicon-proven chip</span>
+                </a>
+                <a href="compiler.html" class="quick-link-modern">
+                    <i class="fas fa-code"></i>
+                    <strong>Morpher Compiler</strong>
+                    <span>Software framework</span>
+                </a>
+                <a href="walkingwizard.html" class="quick-link-modern">
+                    <i class="fas fa-brain"></i>
+                    <strong>WalkingWizard</strong>
+                    <span>EEG application</span>
+                </a>
+                <a href="publications.html" class="quick-link-modern">
+                    <i class="fas fa-file-pdf"></i>
+                    <strong>Publications</strong>
+                    <span>Research papers</span>
+                </a>
             </div>
         </div>
     </section>

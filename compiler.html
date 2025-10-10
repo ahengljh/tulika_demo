@@ -32,8 +32,6 @@
             </button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="overview.html" class="nav-link">Overview</a></li>
-                
-                
                 <li><a href="pace1.html" class="nav-link">PACE 1.0</a></li>
                 <li><a href="pace2.html" class="nav-link">PACE 2.0</a></li>
                 <li><a href="walkingwizard.html" class="nav-link">WalkingWizard</a></li>
@@ -46,344 +44,564 @@
     </nav>
 
     <!-- Page Header -->
-    <section class="page-header">
+    <section class="page-header compact">
         <div class="container">
             <h1>PACE Compiler Technology</h1>
-            <p class="page-subtitle">World-Class Open-Source CGRA Framework</p>
+            <p class="page-subtitle">Morpher: World-Class Open-Source CGRA Framework</p>
             <div class="status-badge success">
                 <i class="fab fa-github"></i> Open Source Available
             </div>
         </div>
     </section>
 
-    <!-- Main Content -->
-    <section class="section">
-        <div class="container">
-            <div class="content-wrapper">
-                <h2>Morpher: Best-in-Class CGRA Compiler</h2>
-                <p class="lead">
-                    Our <strong>Morpher compiler is the best in class in the world</strong> for generating
-                    quality mapping, achieving fast compilation time, offering flexibility to explore different
-                    architectural designs, and providing end-to-end design flow.
-                </p>
+    <!-- Morpher Overview -->
+    <section class="tech-section-modern">
+        <div class="container-wide">
+            <div class="tech-content-row">
+                <div class="content-text">
+                    <h2>Morpher: Best-in-Class CGRA Compiler</h2>
 
-                <div class="highlight-box">
-                    <h3><i class="fab fa-github"></i> Open Source Commitment</h3>
                     <p>
-                        Made available as open-source in December 2022, Morpher has attracted collaborations
-                        from various research groups across the world. The framework enables rapid prototyping
-                        and benchmarking of CGRA architectures through standardized interfaces.
+                        As PACE is a software-defined hardware accelerator, it requires a scalable compiler to generate high-quality
+                        mapping of applications specified in high-level programming languages such as C/C++ onto the CGRA accelerator.
+                        We have made tremendous progress in developing state-of-the-art compiler for CGRA accelerators. Our
+                        <strong>Morpher compiler is the best in class in the world</strong> in generating quality mapping, achieving
+                        fast compilation time, offering flexibility to explore different architectural designs, and providing end-to-end
+                        design flow including architecture specification, customized compiler generation, hardware synthesis, emulation,
+                        and verification/validation.
                     </p>
-                    <a href="https://github.com/ecolab-nus/morpher" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">
+
+                    <p>
+                        Morpher is a <strong>powerful, integrated compilation and simulation framework</strong> that can assist design
+                        space exploration and application-level developments of CGRA based systems. Morpher can take an application with
+                        a compute intensive kernel as input, compile the kernel onto a user-provided CGRA architecture, and automatically
+                        validate the compiled kernels through <strong>cycle-accurate simulation</strong> using test data extracted from
+                        the application.
+                    </p>
+
+                    <div class="key-points">
+                        <h4>Framework Capabilities</h4>
+                        <ul class="points-list">
+                            <li><strong>Real-World Applications:</strong> Morpher can handle real-world application kernels without being
+                            limited to simple toy kernels through its feature-rich compiler</li>
+                            <li><strong>Flexible Architecture Support:</strong> Architecture description language lets users easily specify
+                            architectural features such as complex interconnects, multi-hop routing, and memory organizations</li>
+                            <li><strong>Open-Source Since Dec 2022:</strong> Various research groups across the world have reached out for
+                            collaborations on this toolchain</li>
+                            <li><strong>Complete Toolchain:</strong> DFG generation, SPM data layout, test data extraction, CGRA mapper,
+                            mapping configurations, C++ simulation, Verilog RTL, FPGA emulation</li>
+                        </ul>
+                    </div>
+
+                    <div class="metrics-inline">
+                        <span class="metric-badge green">13× Faster Compilation</span>
+                        <span class="metric-badge green">100% Mapping Success</span>
+                        <span class="metric-badge">10+ Research Groups</span>
+                    </div>
+
+                    <a href="https://github.com/ecolab-nus/morpher" target="_blank" class="btn-inline">
                         <i class="fab fa-github"></i> View on GitHub
                     </a>
                 </div>
 
-                <h2>Framework Components</h2>
-
-                <div class="innovation-cards">
-                    <div class="innovation-detail-card">
-                        <div class="innovation-icon">
-                            <i class="fas fa-file-code"></i>
-                        </div>
-                        <h3>Architecture Description</h3>
-                        <p>Unified language for CGRA specification</p>
-                        <ul>
-                            <li>Flexible architecture definition</li>
-                            <li>Support for complex interconnects</li>
-                            <li>Multi-hop routing specification</li>
-                            <li>Memory organization modeling</li>
-                        </ul>
-                    </div>
-
-                    <div class="innovation-detail-card">
-                        <div class="innovation-icon">
-                            <i class="fas fa-code-branch"></i>
-                        </div>
-                        <h3>LLVM-based Compilation</h3>
-                        <p>Industry-standard compilation framework</p>
-                        <ul>
-                            <li>C/C++ application support</li>
-                            <li>Advanced optimization passes</li>
-                            <li>Dataflow graph generation</li>
-                            <li>Modular compiler architecture</li>
-                        </ul>
-                    </div>
-
-                    <div class="innovation-detail-card">
-                        <div class="innovation-icon">
-                            <i class="fas fa-microchip"></i>
-                        </div>
-                        <h3>Cycle-Accurate Simulation</h3>
-                        <p>Detailed performance modeling</p>
-                        <ul>
-                            <li>Architectural simulator</li>
-                            <li>Automatic test data extraction</li>
-                            <li>Performance analysis tools</li>
-                            <li>Validation against real data</li>
-                        </ul>
-                    </div>
-
-                    <div class="innovation-detail-card">
-                        <div class="innovation-icon">
-                            <i class="fas fa-cube"></i>
-                        </div>
-                        <h3>RTL Generation</h3>
-                        <p>Hardware synthesis and verification</p>
-                        <ul>
-                            <li>Verilog RTL generation</li>
-                            <li>FPGA emulation support</li>
-                            <li>Hardware verification tools</li>
-                            <li>Comprehensive benchmark suite</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <h2>Morpher Framework Architecture</h2>
-
-                <div class="image-gallery">
-                    <div class="gallery-item-large">
+                <div class="content-visual">
+                    <div class="visual-stack">
                         <img src="images/page14_img1.png" alt="Morpher Framework">
-                        <p class="image-caption">Morpher: An Open-Source Integrated Compilation and Simulation Framework for CGRA</p>
+                        <p class="fig-caption">Morpher: Open-Source Integrated Compilation and Simulation Framework</p>
                     </div>
-                </div>
-
-                <div class="image-gallery">
-                    <div class="gallery-item-large">
+                    <div class="visual-stack">
                         <img src="images/page14_img2.png" alt="Morpher Comparison">
-                        <p class="image-caption">Comparison of Morpher with State-of-the-Art CGRA Toolchains</p>
+                        <p class="fig-caption">Comparison of Morpher with State-of-the-Art CGRA Toolchains</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <h2>Advanced Compilation Techniques</h2>
-
-                <h3>PANORAMA - Hierarchical Mapping</h3>
-                <div class="image-gallery">
-                    <div class="gallery-item-large">
-                        <img src="images/page15_img1.png" alt="PANORAMA Approach">
-                        <p class="image-caption">PANORAMA Hierarchical Mapping for Complex Loop Kernels on CGRA</p>
-                    </div>
+    <!-- PANORAMA -->
+    <section class="tech-section-modern alt">
+        <div class="container-wide">
+            <div class="tech-content-row reverse">
+                <div class="content-visual">
+                    <img src="images/page15_img1.png" alt="PANORAMA">
+                    <p class="fig-caption">PANORAMA: Hierarchical Mapping for Complex Loop Kernels</p>
                 </div>
 
-                <div class="image-gallery">
-                    <div class="gallery-item-large">
-                        <img src="images/page15_img2.png" alt="PANORAMA Performance">
-                        <p class="image-caption">Quality of Mapping and Compilation Time Comparison with State-of-the-Art</p>
-                    </div>
-                </div>
+                <div class="content-text">
+                    <h2>PANORAMA: Hierarchical Mapping Approach</h2>
 
-                <h3>HiMap - Systolic Array Abstraction</h3>
-                <div class="image-gallery">
-                    <div class="gallery-item-large">
-                        <img src="images/page16_img1.png" alt="HiMap Illustration">
-                        <p class="image-caption">HiMap versus Conventional CGRA Mapping Approach</p>
-                    </div>
-                </div>
-
-                <div class="image-gallery">
-                    <div class="gallery-row">
-                        <div class="gallery-item">
-                            <img src="images/page17_img1.png" alt="HiMap Quality">
-                            <p class="image-caption">Quality of Mapping Generated by HiMap</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="images/page17_img2.png" alt="HiMap Compilation Time">
-                            <p class="image-caption">Compilation Time Comparison</p>
-                        </div>
-                    </div>
-                </div>
-
-                <h3>LISA - Portable Compilation Framework</h3>
-                <div class="image-gallery">
-                    <div class="gallery-item-large">
-                        <img src="images/page18_img1.png" alt="LISA Framework">
-                        <p class="image-caption">LISA Framework for Portable and Quality Compilation on CGRAs using GNN</p>
-                    </div>
-                </div>
-
-                <div class="technique-section">
-                    <div class="technique-card">
-                        <div class="technique-header">
-                            <h3>PANORAMA</h3>
-                            <span class="badge">Hierarchical Mapping</span>
-                        </div>
-                        <p class="technique-desc">
-                            Divide-and-conquer approach for mapping complex loop kernels on CGRA
-                        </p>
-                        <div class="technique-results">
-                            <div class="result-item">
-                                <div class="result-value">2.6×</div>
-                                <div class="result-label">Throughput Improvement</div>
-                            </div>
-                            <div class="result-item">
-                                <div class="result-value">8.7×</div>
-                                <div class="result-label">Faster Compilation</div>
-                            </div>
-                        </div>
-                        <p class="technique-detail">
-                            PANORAMA partitions the dataflow graph onto CGRA clusters and guides lower-level
-                            mapping, reducing overall complexity for irregular applications.
-                        </p>
-                    </div>
-
-                    <div class="technique-card">
-                        <div class="technique-header">
-                            <h3>HiMap</h3>
-                            <span class="badge">Systolic Abstraction</span>
-                        </div>
-                        <p class="technique-desc">
-                            Fast and scalable high-quality mapping via hierarchical abstraction
-                        </p>
-                        <div class="technique-results">
-                            <div class="result-item">
-                                <div class="result-value">17.3×</div>
-                                <div class="result-label">Performance Gain</div>
-                            </div>
-                            <div class="result-item">
-                                <div class="result-value">5×</div>
-                                <div class="result-label">Energy Efficiency</div>
-                            </div>
-                        </div>
-                        <p class="technique-detail">
-                            HiMap exploits regularity in computation by employing a virtual systolic array
-                            as an intermediate abstraction layer, achieving near-optimal mappings in under
-                            15 minutes for 64x64 CGRAs.
-                        </p>
-                    </div>
-
-                    <div class="technique-card">
-                        <div class="technique-header">
-                            <h3>LISA</h3>
-                            <span class="badge">ML-Powered</span>
-                        </div>
-                        <p class="technique-desc">
-                            Graph Neural Network based portable mapping on spatial accelerators
-                        </p>
-                        <div class="technique-results">
-                            <div class="result-item">
-                                <div class="result-value">594×</div>
-                                <div class="result-label">Faster vs ILP</div>
-                            </div>
-                            <div class="result-item">
-                                <div class="result-value">17×</div>
-                                <div class="result-label">Faster vs SA</div>
-                            </div>
-                        </div>
-                        <p class="technique-detail">
-                            LISA uses Graph Neural Networks to automatically identify the impact of dataflow
-                            graph structure, enabling portable compilation across varied spatial accelerators.
-                        </p>
-                    </div>
-                </div>
-
-                <h2>Performance Summary</h2>
-
-                <div class="performance-summary">
-                    <div class="perf-metric">
-                        <div class="metric-icon">
-                            <i class="fas fa-tachometer-alt"></i>
-                        </div>
-                        <div class="metric-content">
-                            <div class="metric-value">13×</div>
-                            <div class="metric-label">Average Compilation Speedup</div>
-                            <p>Compared to state-of-the-art techniques</p>
-                        </div>
-                    </div>
-
-                    <div class="perf-metric">
-                        <div class="metric-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <div class="metric-content">
-                            <div class="metric-value">100%</div>
-                            <div class="metric-label">Mapping Success Rate</div>
-                            <p>71/71 benchmark-accelerator combinations</p>
-                        </div>
-                    </div>
-
-                    <div class="perf-metric">
-                        <div class="metric-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <div class="metric-content">
-                            <div class="metric-value">10+</div>
-                            <div class="metric-label">Research Groups</div>
-                            <p>Using Morpher worldwide</p>
-                        </div>
-                    </div>
-                </div>
-
-                <h2>Community Impact</h2>
-
-                <div class="impact-stats">
-                    <div class="impact-item">
-                        <i class="fas fa-code-branch"></i>
-                        <h4>Active Development</h4>
-                        <p>Continuous improvements and feature additions</p>
-                    </div>
-                    <div class="impact-item">
-                        <i class="fas fa-university"></i>
-                        <h4>Academic Adoption</h4>
-                        <p>Used by leading research institutions globally</p>
-                    </div>
-                    <div class="impact-item">
-                        <i class="fas fa-plug"></i>
-                        <h4>Extensible Design</h4>
-                        <p>Plugin architecture for custom extensions</p>
-                    </div>
-                </div>
-
-                <h2>Getting Started</h2>
-
-                <div class="getting-started">
-                    <h3>Access Morpher</h3>
                     <p>
-                        The Morpher framework is available as an open-source project on GitHub.
-                        It includes comprehensive documentation, example applications, and tutorials.
+                        We have developed two hierarchical mapping approaches to improve the compilation time. The first is
+                        <strong>PANORAMA</strong>, a divide and conquer approach for mapping complex loop kernels on CGRA. Mapping
+                        complex loop kernels onto the CGRA becomes challenging mainly due to the <strong>irregular data dependencies
+                        in complex loop kernels and limited routing resources</strong> on the CGRA fabric.
                     </p>
 
-                    <div class="quick-links">
-                        <a href="https://github.com/ecolab-nus/morpher" target="_blank" class="quick-link">
-                            <i class="fab fa-github"></i>
-                            <div>
-                                <h4>GitHub Repository</h4>
-                                <p>Source code, documentation, and examples</p>
+                    <p>
+                        PANORAMA is a <strong>fast, scalable and portable compiler</strong> based on a divide-and-conquer approach
+                        to generate quality mapping for complex Dataflow Graphs (DFGs) onto larger CGRA. The higher-level mapping
+                        <strong>partitions the dataflow graph onto the CGRA clusters</strong> and guides the lower-level mapping,
+                        reducing overall complexity.
+                    </p>
+
+                    <div class="key-points">
+                        <h4>Technical Innovation</h4>
+                        <ul class="points-list">
+                            <li><strong>Hierarchical Decomposition:</strong> Complex DFG partitioned into clusters that can be mapped
+                            independently, then composed together</li>
+                            <li><strong>Cluster Dependency Graph:</strong> Higher-level abstraction guides placement of clusters onto
+                            CGRA regions</li>
+                            <li><strong>Lower-Level Optimization:</strong> Each cluster mapped optimally onto assigned CGRA sub-space</li>
+                            <li><strong>Handles Irregular Applications:</strong> Specifically designed for kernels with large, irregular
+                            DFGs that challenge conventional approaches</li>
+                        </ul>
+                    </div>
+
+                    <div class="comparison-box">
+                        <h4>PANORAMA vs. SPR (State-of-the-Art)</h4>
+                        <div class="comparison-items">
+                            <div class="comp-item">
+                                <span class="comp-label">Throughput (QoM/II)</span>
+                                <span class="comp-value">Up to 2.6× improvement</span>
                             </div>
-                        </a>
-                        <a href="publications.html" class="quick-link">
-                            <i class="fas fa-file-alt"></i>
-                            <div>
-                                <h4>Research Papers</h4>
-                                <p>Technical details and evaluation results</p>
+                            <div class="comp-item">
+                                <span class="comp-label">Compilation Time</span>
+                                <span class="comp-value">8.7× faster</span>
                             </div>
-                        </a>
-                        <a href="contact.html" class="quick-link">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Contact Us</h4>
-                                <p>Questions, collaboration, and support</p>
+                            <div class="comp-item">
+                                <span class="comp-label">Power Efficiency</span>
+                                <span class="comp-value">Comparable or better</span>
                             </div>
-                        </a>
+                        </div>
+                    </div>
+
+                    <div class="metrics-inline">
+                        <span class="metric-badge green">2.6× Throughput Improvement</span>
+                        <span class="metric-badge green">8.7× Faster Compilation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HiMap -->
+    <section class="tech-section-modern">
+        <div class="container-wide">
+            <div class="tech-content-row">
+                <div class="content-text">
+                    <h2>HiMap: Systolic Array Abstraction</h2>
+
+                    <p>
+                        While PANORAMA handles complex loop kernels, <strong>HiMap</strong> is adept at producing close to optimal
+                        solutions for <strong>regular computational kernels</strong> prevalent in existing and emerging application
+                        domains on larger CGRAs. The state-of-the-art compiler technology falls short in generating high-performance
+                        mapping within an acceptable compilation time, especially with <strong>increasing CGRA size (beyond 4×4 PE
+                        array)</strong>.
+                    </p>
+
+                    <p>
+                        The key strategy behind HiMap's efficiency and scalability is to <strong>exploit the regularity in the
+                        computation by employing a virtual systolic array as an intermediate abstraction layer</strong> in a hierarchical
+                        mapping. HiMap first maps the loop iterations of the kernel onto a virtual systolic array and then distills
+                        out the unique patterns in the mapping. These unique patterns are subsequently mapped onto sub-spaces of the
+                        physical CGRA. They are arranged together according to the systolic array mapping to create a complete mapping
+                        of the kernel.
+                    </p>
+
+                    <div class="key-points">
+                        <h4>Virtual Systolic Array Strategy</h4>
+                        <ul class="points-list">
+                            <li><strong>Intermediate Abstraction:</strong> Virtual systolic array serves as intermediate representation
+                            between loop iterations and physical CGRA</li>
+                            <li><strong>Pattern Extraction:</strong> Identifies repeating patterns in systolic mapping, reducing
+                            complexity from mapping entire kernel to mapping unique patterns</li>
+                            <li><strong>Sub-Space Mapping:</strong> Each unique pattern mapped onto CGRA sub-space independently</li>
+                            <li><strong>Composition:</strong> Final mapping assembled by replicating and arranging pattern mappings
+                            according to systolic structure</li>
+                            <li><strong>Near-Optimal Results:</strong> Can hit the performance envelope of the CGRA for regular kernels</li>
+                        </ul>
+                    </div>
+
+                    <div class="comparison-box">
+                        <h4>HiMap vs. BHC (Best of CGRA-ME & Simulated Annealing)</h4>
+                        <div class="comparison-items">
+                            <div class="comp-item">
+                                <span class="comp-label">Performance</span>
+                                <span class="comp-value">17.3× improvement</span>
+                            </div>
+                            <div class="comp-item">
+                                <span class="comp-label">Energy Efficiency</span>
+                                <span class="comp-value">5× improvement</span>
+                            </div>
+                            <div class="comp-item">
+                                <span class="comp-label">Compilation Time (64×64 CGRA)</span>
+                                <span class="comp-value">&lt;15 minutes (vs days)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="metrics-inline">
+                        <span class="metric-badge green">17.3× Performance Gain</span>
+                        <span class="metric-badge green">5× Energy Efficiency</span>
+                        <span class="metric-badge green">&lt;15 min for 64×64 CGRA</span>
                     </div>
                 </div>
 
-                <div class="next-steps">
-                    <h3>Learn More</h3>
-                    <div class="next-links">
-                        <a href="pace1.html" class="next-link">
-                            <i class="fas fa-microchip"></i>
-                            <span>PACE Hardware</span>
-                        </a>
-                        <a href="publications.html" class="next-link">
-                            <i class="fas fa-book"></i>
-                            <span>Publications</span>
-                        </a>
-                        <a href="team.html" class="next-link">
-                            <i class="fas fa-users"></i>
-                            <span>Meet the Team</span>
-                        </a>
+                <div class="content-visual">
+                    <div class="visual-stack">
+                        <img src="images/page16_img1.png" alt="HiMap">
+                        <p class="fig-caption">HiMap versus Conventional CGRA Mapping Approach</p>
+                    </div>
+                    <div class="visual-stack">
+                        <img src="images/page17_img1.png" alt="HiMap Quality">
+                        <p class="fig-caption">Quality of Mapping Generated by HiMap</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LISA -->
+    <section class="tech-section-modern alt">
+        <div class="container-wide">
+            <div class="tech-content-row reverse">
+                <div class="content-visual">
+                    <img src="images/page18_img1.png" alt="LISA Framework">
+                    <p class="fig-caption">LISA Framework for Portable and Quality Compilation on CGRAs</p>
+                </div>
+
+                <div class="content-text">
+                    <h2>LISA: Portable Compilation Framework</h2>
+
+                    <p>
+                        While PANORAMA and HiMap employ hierarchical mapping to improve the mapping quality and significantly reduce
+                        the compilation time, we still need a good-quality low-level mapper/compiler. Currently, the mappers/compilers
+                        like SPR are <strong>handcrafted for CGRAs</strong>, which is challenging especially when we develop
+                        heterogeneous CGRA accelerator with techniques like REVAMP.
+                    </p>
+
+                    <p>
+                        Therefore, we designed a <strong>portable compilation framework, called LISA</strong>, that can be tuned
+                        automatically to generate quality mapping for varied spatial accelerators. Our key contribution is to
+                        <strong>automatically identify the impact of the dataflow graph (DFG) structure characteristics</strong>
+                        (representing an application) on the mapping for a new accelerator. Towards this end, we abstract the DFG
+                        structure in graph attributes, use <strong>Graph Neural Network (GNN) to analyze</strong> the graph attributes,
+                        and identify the mapping impact for an accelerator architecture with an all-encompassing global view.
+                    </p>
+
+                    <div class="key-points">
+                        <h4>GNN-Based Approach</h4>
+                        <ul class="points-list">
+                            <li><strong>Graph Attributes Extraction:</strong> DFG structure abstracted into comprehensive graph attributes
+                            capturing structural properties</li>
+                            <li><strong>GNN Analysis:</strong> Graph Neural Network trained to analyze how graph attributes impact mapping
+                            quality for specific accelerator architectures</li>
+                            <li><strong>Label-Aware Simulated Annealing:</strong> Augments SA-based mapping approach to account for DFG
+                            structure impact in guiding placement and routing</li>
+                            <li><strong>Automatic Tuning:</strong> Framework can be automatically tuned for new accelerator architectures
+                            without manual customization</li>
+                            <li><strong>Superior Coverage:</strong> For 71 combinations of benchmarks and accelerators, LISA can map
+                            <strong>all of them</strong> while ILP cannot map 48 combinations and SA cannot map 21 combinations</li>
+                        </ul>
+                    </div>
+
+                    <div class="comparison-box">
+                        <h4>LISA vs. Traditional Approaches</h4>
+                        <div class="comparison-items">
+                            <div class="comp-item">
+                                <span class="comp-label">vs. ILP (Integer Linear Programming)</span>
+                                <span class="comp-value">594× compilation time reduction</span>
+                            </div>
+                            <div class="comp-item">
+                                <span class="comp-label">vs. SA (Simulated Annealing in SPR)</span>
+                                <span class="comp-value">17× compilation time reduction</span>
+                            </div>
+                            <div class="comp-item">
+                                <span class="comp-label">Mapping Success Rate</span>
+                                <span class="comp-value">100% (71/71 combinations)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="metrics-inline">
+                        <span class="metric-badge green">594× Faster than ILP</span>
+                        <span class="metric-badge green">17× Faster than SA</span>
+                        <span class="metric-badge green">71/71 Mappings Successful</span>
+                    </div>
+
+                    <div class="info-highlight">
+                        <strong>HPCA 2022 Distinguished Artifact Award:</strong> LISA received the Distinguished Artifact Award at
+                        the 28th IEEE International Symposium on High-Performance Computer Architecture
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Morpher Components -->
+    <section class="tech-section-modern">
+        <div class="container-wide">
+            <h2 class="section-title-centered">
+                <i class="fas fa-cogs"></i> Morpher Framework Components
+            </h2>
+
+            <div class="tech-content-row">
+                <div class="content-text">
+                    <h3>DFG Generation & Data Layout</h3>
+
+                    <p>
+                        The framework begins by taking <strong>application source code with annotated kernel</strong> as input.
+                        The DFG generation component analyzes the kernel and extracts a dataflow graph representation, capturing
+                        all operations and data dependencies. Simultaneously, the <strong>SPM Data Layout</strong> component determines
+                        optimal data placement in scratchpad memory.
+                    </p>
+
+                    <h3>Abstract Architecture Model</h3>
+
+                    <p>
+                        Users specify their CGRA architecture using Morpher's <strong>architecture description language</strong>
+                        in Chisel format. This abstract model defines PE capabilities, interconnect topology, memory organization,
+                        and other architectural parameters. The architecture interpreter and auto-generator then produce the
+                        necessary infrastructure for compilation and simulation.
+                    </p>
+
+                    <h3>CGRA Mapper</h3>
+
+                    <p>
+                        The core compilation component takes the DFG and architecture model to generate <strong>mapping configurations</strong>.
+                        This involves sophisticated algorithms (PANORAMA for complex kernels, HiMap for regular kernels, LISA for
+                        portable low-level mapping) to assign operations to PEs and route data dependencies through the interconnect.
+                    </p>
+
+                    <div class="info-highlight">
+                        <strong>Validation & Verification:</strong> Morpher includes both C++ simulation for fast functional verification
+                        and Verilog RTL generation for cycle-accurate hardware validation and FPGA emulation
+                    </div>
+                </div>
+
+                <div class="content-visual">
+                    <div class="visual-stack">
+                        <img src="images/page14_img2.png" alt="Feature Comparison">
+                        <p class="fig-caption">Feature Comparison: Morpher vs. State-of-the-Art Toolchains</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compilation Performance -->
+    <section class="tech-section-modern alt">
+        <div class="container-wide">
+            <div class="tech-content-row">
+                <div class="content-text">
+                    <h2>Compilation Performance Analysis</h2>
+
+                    <p>
+                        Morpher is enabled by underlying compilation technology that generates quality mapping but at <strong>13×
+                        faster compilation time</strong> compared to existing approaches. The combination of PANORAMA for complex
+                        kernels, HiMap for regular kernels, and LISA for portable low-level mapping provides comprehensive coverage
+                        across all application types.
+                    </p>
+
+                    <div class="key-points">
+                        <h4>Performance Highlights</h4>
+                        <ul class="points-list">
+                            <li><strong>PANORAMA:</strong> Improves throughput of mapped complex loops kernels with large and irregular
+                            DFGs by up to <strong>2.6× with 8.7× faster compilation</strong> compared to SPR</li>
+                            <li><strong>HiMap:</strong> Offers <strong>17.3× and 5× improvement</strong> in performance and energy
+                            efficiency of mappings compared to state-of-the-art, with compilation time <strong>less than 15 minutes
+                            for 64×64 CGRA</strong> while existing approaches take days</li>
+                            <li><strong>LISA:</strong> Achieves <strong>594× and 17× compilation time reduction</strong> compared to
+                            ILP and SA used in SPR, successfully mapping all 71 benchmark-accelerator combinations</li>
+                        </ul>
+                    </div>
+
+                    <div class="metrics-inline">
+                        <span class="metric-badge green">Average 13× Speedup</span>
+                        <span class="metric-badge green">Quality Mappings Maintained</span>
+                        <span class="metric-badge green">Universal Applicability</span>
+                    </div>
+                </div>
+
+                <div class="content-visual">
+                    <div class="visual-stack">
+                        <img src="images/page15_img2.png" alt="PANORAMA Performance">
+                        <p class="fig-caption">PANORAMA: Quality and Compilation Time Comparison</p>
+                    </div>
+                    <div class="visual-stack">
+                        <img src="images/page17_img2.png" alt="HiMap Time">
+                        <p class="fig-caption">HiMap: Compilation Time Comparison with BHC</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Impact -->
+    <section class="impact-section-modern">
+        <div class="container-wide">
+            <h2 class="section-title-centered">Community Impact & Adoption</h2>
+
+            <div class="impact-grid-horizontal">
+                <div class="impact-card-modern">
+                    <div class="impact-icon-large"><i class="fab fa-github"></i></div>
+                    <h3>Open Source</h3>
+                    <p>Released in December 2022, enabling global collaboration and innovation in CGRA research</p>
+                </div>
+
+                <div class="impact-card-modern">
+                    <div class="impact-icon-large"><i class="fas fa-users"></i></div>
+                    <h3>10+ Research Groups</h3>
+                    <p>Adopted by leading research institutions worldwide for CGRA development and experimentation</p>
+                </div>
+
+                <div class="impact-card-modern">
+                    <div class="impact-icon-large"><i class="fas fa-trophy"></i></div>
+                    <h3>Award Winning</h3>
+                    <p>HPCA 2022 Distinguished Artifact Award for LISA framework implementation</p>
+                </div>
+
+                <div class="impact-card-modern">
+                    <div class="impact-icon-large"><i class="fas fa-code-branch"></i></div>
+                    <h3>Active Development</h3>
+                    <p>Continuous improvements with contributions from global research community</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Getting Started -->
+    <section class="tech-section-modern">
+        <div class="container-wide">
+            <div class="tech-content-row reverse">
+                <div class="content-visual">
+                    <div class="visual-stack">
+                        <img src="images/page14_img1.png" alt="Morpher Workflow">
+                        <p class="fig-caption">Complete Morpher Workflow from Application to Hardware</p>
+                    </div>
+                </div>
+
+                <div class="content-text">
+                    <h2>Getting Started with Morpher</h2>
+
+                    <p>
+                        The Morpher framework is available as an <strong>open-source project on GitHub</strong>. It includes
+                        comprehensive documentation, example applications, benchmark suite, and tutorials to help users get started
+                        quickly with CGRA development and experimentation.
+                    </p>
+
+                    <div class="key-points">
+                        <h4>What's Included</h4>
+                        <ul class="points-list">
+                            <li><strong>Complete Source Code:</strong> Full implementation of PANORAMA, HiMap, LISA, and supporting
+                            infrastructure</li>
+                            <li><strong>Architecture Examples:</strong> Sample CGRA architectures including HyCUBE, ADRES, and others</li>
+                            <li><strong>Benchmark Applications:</strong> Comprehensive suite of kernels for testing and evaluation</li>
+                            <li><strong>Documentation:</strong> Detailed guides for architecture specification, compilation, and
+                            simulation</li>
+                            <li><strong>Validation Tools:</strong> Cycle-accurate simulator and FPGA emulation support</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-highlight">
+                        <strong>Repository:</strong> https://github.com/ecolab-nus/morpher - Clone the repository and follow the
+                        README for installation instructions and tutorials
+                    </div>
+
+                    <a href="https://github.com/ecolab-nus/morpher" target="_blank" class="btn-inline">
+                        <i class="fab fa-github"></i> Access Morpher on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications -->
+    <section class="tech-section-modern alt">
+        <div class="container-wide">
+            <h2 class="section-title-centered">
+                <i class="fas fa-file-alt"></i> Related Publications
+            </h2>
+
+            <div class="publications-compact">
+                <div class="pub-item-modern">
+                    <div class="pub-badge">DAC 2022</div>
+                    <div class="pub-content">
+                        <h4>PANORAMA: Divide-and-Conquer Approach for Mapping Complex Loop Kernels on CGRA</h4>
+                        <p class="pub-authors">Dhananjaya Wijerathne, Zhaoying Li, Thilini Kaushalya Bandara, Tulika Mitra</p>
+                        <div class="pub-links">
+                            <a href="publications.html">Paper</a>
+                            <a href="publications.html">Artifact</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-item-modern">
+                    <div class="pub-badge">HPCA 2022</div>
+                    <div class="pub-content">
+                        <h4>LISA: Graph Neural Network based Portable Mapping on Spatial Accelerators</h4>
+                        <p class="pub-authors">Zhaoying Li, Dan Wu, Dhananjaya Wijerathne, Tulika Mitra</p>
+                        <div class="pub-award">
+                            <i class="fas fa-award"></i> Distinguished Artifact Award
+                        </div>
+                        <div class="pub-links">
+                            <a href="publications.html">Paper</a>
+                            <a href="publications.html">Artifact</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-item-modern">
+                    <div class="pub-badge">TCAD 2022</div>
+                    <div class="pub-content">
+                        <h4>HiMap: Fast and Scalable High-Quality Mapping on CGRA via Hierarchical Abstraction</h4>
+                        <p class="pub-authors">Dhananjaya Wijerathne, Zhaoying Li, Anuj Pathania, Tulika Mitra, Lothar Thiele</p>
+                        <div class="pub-links">
+                            <a href="publications.html">Paper</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-item-modern">
+                    <div class="pub-badge">ICCAD 2022</div>
+                    <div class="pub-content">
+                        <h4>Morpher: An Open-Source Integrated Compilation and Simulation Framework for CGRA</h4>
+                        <p class="pub-authors">Dhananjaya Wijerathne, Zhaoying Li, Manupa Karunaratne, Li-Shiuan Peh, Tulika Mitra</p>
+                        <div class="pub-links">
+                            <a href="publications.html">Paper</a>
+                            <a href="https://github.com/ecolab-nus/morpher" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="quick-links-section">
+        <div class="container-wide">
+            <h3>Explore Related Technology</h3>
+            <div class="quick-links-grid-modern">
+                <a href="pace1.html" class="quick-link-modern">
+                    <i class="fas fa-microchip"></i>
+                    <strong>PACE 1.0</strong>
+                    <span>Silicon-proven chip</span>
+                </a>
+                <a href="pace2.html" class="quick-link-modern">
+                    <i class="fas fa-rocket"></i>
+                    <strong>PACE 2.0</strong>
+                    <span>Next-gen architecture</span>
+                </a>
+                <a href="walkingwizard.html" class="quick-link-modern">
+                    <i class="fas fa-brain"></i>
+                    <strong>WalkingWizard</strong>
+                    <span>EEG application</span>
+                </a>
+                <a href="publications.html" class="quick-link-modern">
+                    <i class="fas fa-file-pdf"></i>
+                    <strong>Publications</strong>
+                    <span>Research papers</span>
+                </a>
             </div>
         </div>
     </section>

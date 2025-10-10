@@ -32,8 +32,6 @@
             </button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="overview.html" class="nav-link">Overview</a></li>
-                
-                
                 <li><a href="pace1.html" class="nav-link active">PACE 1.0</a></li>
                 <li><a href="pace2.html" class="nav-link">PACE 2.0</a></li>
                 <li><a href="walkingwizard.html" class="nav-link">WalkingWizard</a></li>
@@ -46,312 +44,528 @@
     </nav>
 
     <!-- Page Header -->
-    <section class="page-header">
+    <section class="page-header compact">
         <div class="container">
             <h1>PACE 1.0 Accelerator Chip</h1>
-            <p class="page-subtitle">Silicon-Proven CGRA Technology</p>
+            <p class="page-subtitle">Silicon-Proven CGRA Technology Achieving 360 GOPS/W</p>
             <div class="status-badge success">
                 <i class="fas fa-check-circle"></i> Successfully Taped Out & Tested
             </div>
         </div>
     </section>
 
-    <!-- Main Content -->
-    <section class="section">
-        <div class="container">
-            <div class="content-wrapper">
-                <h2>Achievement Milestone</h2>
-                <p class="lead">
-                    The PACE 1.0 chip was sent for fabrication in December 2023 and has been successfully
-                    tested and measured. This represents a major milestone in bringing efficient edge computing
-                    to IoT devices.
-                </p>
+    <!-- Main Achievement -->
+    <section class="tech-section-modern">
+        <div class="container-wide">
+            <div class="tech-content-row">
+                <div class="content-text">
+                    <h2>Achievement Milestone</h2>
 
-                <div class="specs-grid">
-                    <div class="spec-card highlight">
-                        <div class="spec-icon">
-                            <i class="fas fa-bolt"></i>
-                        </div>
-                        <div class="spec-value">360</div>
-                        <div class="spec-unit">GOPS/W</div>
-                        <div class="spec-label">Peak Efficiency at 0.6V</div>
-                    </div>
-                    <div class="spec-card">
-                        <div class="spec-icon">
-                            <i class="fas fa-tachometer-alt"></i>
-                        </div>
-                        <div class="spec-value">105</div>
-                        <div class="spec-unit">MHz</div>
-                        <div class="spec-label">Maximum Frequency</div>
-                    </div>
-                    <div class="spec-card">
-                        <div class="spec-icon">
-                            <i class="fas fa-battery-three-quarters"></i>
-                        </div>
-                        <div class="spec-value">43</div>
-                        <div class="spec-unit">mW</div>
-                        <div class="spec-label">Power at 1V (100% PE)</div>
-                    </div>
-                    <div class="spec-card">
-                        <div class="spec-icon">
-                            <i class="fas fa-memory"></i>
-                        </div>
-                        <div class="spec-value">64</div>
-                        <div class="spec-unit">KB</div>
-                        <div class="spec-label">Total Memory</div>
-                    </div>
-                </div>
-
-                <h2>Architecture Overview</h2>
-
-                <div class="image-gallery">
-                    <div class="gallery-item-large">
-                        <img src="images/page4_img1.png" alt="PACE Block Diagram">
-                        <p class="image-caption">PACE Architecture - Block diagram showing 8x8 PE array and memory modules</p>
-                    </div>
-                </div>
-
-                <div class="image-gallery">
-                    <div class="gallery-row">
-                        <div class="gallery-item">
-                            <img src="images/page4_img2.png" alt="PE Instructions">
-                            <p class="image-caption">Supported Instructions - 17 operations per PE</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="images/page4_img3.png" alt="NOP Optimization">
-                            <p class="image-caption">NOP State Microarchitecture and Power Optimization</p>
-                        </div>
-                    </div>
-                </div>
-
-                <h3>Power Consumption by Operation</h3>
-                <div class="image-gallery">
-                    <div class="gallery-item-large">
-                        <img src="images/page5_img1.png" alt="ALU Power Consumption">
-                        <p class="image-caption">Power consumption for each ALU operation at 100MHz, 0.9V</p>
-                    </div>
-                </div>
-
-                <h2>RISC-V SoC Integration</h2>
-
-                <div class="image-gallery">
-                    <div class="gallery-item-large">
-                        <img src="images/page6_img1.png" alt="PACE-V SoC Architecture">
-                        <p class="image-caption">PACE-V SoC with Rocket CPU Integration</p>
-                    </div>
-                </div>
-
-                <div class="image-gallery">
-                    <div class="gallery-item-large">
-                        <img src="images/page6_img2.png" alt="Boot Flow Diagram">
-                        <p class="image-caption">PACE-V SoC Bootup Flow from I2C EEPROM</p>
-                    </div>
-                </div>
-
-                <h2>Physical Implementation</h2>
-
-                <div class="image-gallery">
-                    <div class="gallery-row">
-                        <div class="gallery-item">
-                            <img src="images/page7_img1.png" alt="Clock Root Schematic">
-                            <p class="image-caption">Clock Root Schematic and Specifications</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="images/page7_img2.png" alt="Clock Root Layout">
-                            <p class="image-caption">Clock Root Layout and Post-layout Simulation</p>
-                        </div>
-                    </div>
-                </div>
-
-                <h3>Chip Layout and Bonding</h3>
-                <div class="image-gallery">
-                    <div class="gallery-item-large">
-                        <img src="images/page8_img1.png" alt="PACE Chip Layout">
-                        <p class="image-caption">PACE v1.0 Chip Layout - 8x8 PE Array with Memory Modules</p>
-                    </div>
-                </div>
-
-                <div class="image-gallery">
-                    <div class="gallery-item-large">
-                        <img src="images/page8_img2.png" alt="Pin Bonding Diagram">
-                        <p class="image-caption">Pin Out and Wire Bonding Diagram for PACE v1.0</p>
-                    </div>
-                </div>
-
-                <h3>PCB Design</h3>
-                <div class="image-gallery">
-                    <div class="gallery-item-large">
-                        <img src="images/page8_img3.png" alt="PCB Design">
-                        <p class="image-caption">PCB Design for PACE 1.0 Chip Integration</p>
-                    </div>
-                </div>
-
-                <h2>FPGA Emulation</h2>
-
-                <div class="image-gallery">
-                    <div class="gallery-item-large">
-                        <img src="images/page10_img1.png" alt="FPGA Emulation System">
-                        <p class="image-caption">FPGA Emulation of PACE Design - System Diagram</p>
-                    </div>
-                </div>
-
-                <div class="image-gallery">
-                    <div class="gallery-item-large">
-                        <img src="images/page10_img2.png" alt="Digilent Genesys 2 FPGA">
-                        <p class="image-caption">Digilent Genesys 2 FPGA Board with PACE Implementation</p>
-                    </div>
-                </div>
-
-                <h2>Technical Specifications</h2>
-
-                <div class="specs-table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Parameter</th>
-                                <th>Specification</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>Process Technology</strong></td>
-                                <td>UMC 40nm CMOS</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Architecture</strong></td>
-                                <td>8x8 PE array (64 processing elements)</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Die Size</strong></td>
-                                <td>4mm x 2.4mm (PACE takes ~30% of total SoC)</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Peak Performance</strong></td>
-                                <td>142 GOPS/W @ 0.9V, 462 GOPS/W @ 0.5V, 568 GOPS/W @ 0.45V</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Instructions per PE</strong></td>
-                                <td>17 optimized operations</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Memory Configuration</strong></td>
-                                <td>8 data memory modules (8KB each)</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Router Architecture</strong></td>
-                                <td>Buffer-less single-cycle multi-hop</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <h2>RISC-V SoC Integration</h2>
-                <p>
-                    PACE 1.0 is integrated with a RISC-V processor (Rocket CPU) in a System-on-Chip configuration
-                    to maximize efficiency and minimize data transfer overhead.
-                </p>
-
-                <div class="feature-list-section">
-                    <h3>Rocket CPU Features:</h3>
-                    <ul class="feature-list">
-                        <li><i class="fas fa-check"></i> 5-stage in-order scalar core</li>
-                        <li><i class="fas fa-check"></i> RV32G/RV64G ISA support</li>
-                        <li><i class="fas fa-check"></i> Memory Management Unit (MMU)</li>
-                        <li><i class="fas fa-check"></i> Non-blocking data cache</li>
-                        <li><i class="fas fa-check"></i> Branch prediction (BTB, BHT, RAS)</li>
-                        <li><i class="fas fa-check"></i> Custom BootROM firmware (~200 bytes)</li>
-                        <li><i class="fas fa-check"></i> I2C EEPROM boot support</li>
-                    </ul>
-                </div>
-
-                <h2>Performance Analysis</h2>
-
-                <div class="performance-section">
-                    <h3>Process-Normalized Performance</h3>
                     <p>
-                        When normalized for process technology, PACE 1.0 demonstrates highly competitive performance
-                        compared to state-of-the-art accelerators:
+                        The PACE 1.0 chip was successfully sent for fabrication in <strong>December 2023</strong> and has been
+                        thoroughly tested and measured. Fabricated in <strong>UMC 40nm CMOS technology</strong>, the accelerator
+                        features an <strong>8×8 matrix of 64 processing elements (PEs)</strong> with 8 data memory modules
+                        implemented using dual-port RAMs, achieving exceptional energy efficiency for edge computing workloads.
                     </p>
-                    <div class="performance-cards">
-                        <div class="perf-card">
-                            <div class="perf-value">673</div>
-                            <div class="perf-unit">GOPS/W</div>
-                            <div class="perf-label">Normalized to 28nm</div>
-                        </div>
-                        <div class="perf-card">
-                            <div class="perf-value">~1090</div>
-                            <div class="perf-unit">GOPS/W</div>
-                            <div class="perf-label">Normalized to 22nm</div>
-                        </div>
-                    </div>
 
-                    <h3>Power Optimizations</h3>
-                    <ul class="optimization-list">
-                        <li>
-                            <strong>19.06% power reduction</strong> through improved ALU and memory integration
-                            <span class="detail">PE power consumption reduced to ~700 µW at 0.9V, 100 MHz</span>
-                        </li>
-                        <li>
-                            <strong>24% idle power reduction</strong> with NOP instruction and clock-gating
-                            <span class="detail">Individual tiles can be clock gated by the compiler</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <h2>FPGA Emulation Platform</h2>
-                <div class="highlight-box">
-                    <h3><i class="fas fa-microchip"></i> Development Platform</h3>
                     <p>
-                        PACE RTL design successfully migrated to <strong>Digilent Genesys 2 FPGA</strong>
-                        (Xilinx Kintex-7™ XC7K325T-2FFG900C) for verification and application demonstration.
+                        The PACE CGRA can run at a maximum frequency of <strong>105 MHz while consuming only 43mW at 1V supply</strong>
+                        (100% PE utilization), achieving a maximum energy efficiency of <strong>360 GOPS/W at 0.6V and 21MHz</strong>.
+                        This represents the successful achievement of our goal to deliver 500 GOPS/W peak performance with 1hr battery
+                        life at weight of 1kg by the mid-term mark of the project.
                     </p>
-                    <ul>
-                        <li>Clock generator mapped to MMCM module</li>
-                        <li>SRAM mapped to block RAM</li>
-                        <li>Two FPGA boards deployed (IME and NUS)</li>
-                        <li>Successfully verified Array Add and MicroSpeech applications</li>
-                    </ul>
-                </div>
 
-                <h2>Area and Power Breakdown</h2>
-                <div class="breakdown-stats">
-                    <div class="breakdown-item">
-                        <h4>Area Distribution</h4>
-                        <ul>
-                            <li>PACE accelerator: 30% of SoC die</li>
-                            <li>64 PEs: 71% of PACE area</li>
-                            <li>Configuration memory: 47% of PE area</li>
-                            <li>Data memory: 29% of PACE area</li>
+                    <div class="key-points">
+                        <h4>Process-Normalized Performance</h4>
+                        <ul class="points-list">
+                            <li>Currently, our design achieved simulated peak energy efficiency of <strong>142 GOPS/W, 462 GOPS/W,
+                            and 568 GOPS/W at 0.9V, 0.5V, and 0.45V</strong>, respectively</li>
+                            <li>When <strong>process normalization</strong> is considered against state-of-the-art accelerators from
+                            KU Leuven (using 22nm FDX and 28nm CMOS), PACE 1.0 offers a peak energy efficiency of <strong>673 GOPS/W
+                            and ~1090 GOPS/W</strong> when normalized to 28nm and 22nm processes, respectively</li>
+                            <li>This demonstrates <strong>highly competitive performance</strong> compared to ISSCC'19 and SSCL'20
+                            from KU Leuven when accounting for process technology differences</li>
                         </ul>
                     </div>
-                    <div class="breakdown-item">
-                        <h4>Power Distribution</h4>
-                        <ul>
-                            <li>PEs: 97% of PACE power during processing</li>
-                            <li>Configuration memory: 52% of PE power</li>
-                            <li>Tile controller: 23% of PE power</li>
-                            <li>Router: 14% of PE power</li>
-                        </ul>
+
+                    <div class="metrics-inline">
+                        <span class="metric-badge green">360 GOPS/W Measured</span>
+                        <span class="metric-badge green">~1090 GOPS/W Normalized</span>
+                        <span class="metric-badge">105 MHz Max Frequency</span>
+                        <span class="metric-badge">43mW Power Consumption</span>
                     </div>
                 </div>
 
-                <div class="next-steps">
-                    <h3>Continue Exploring</h3>
-                    <div class="next-links">
-                        <a href="pace2.html" class="next-link">
-                            <i class="fas fa-arrow-right"></i>
-                            <span>PACE 2.0 Roadmap</span>
-                        </a>
-                        <a href="walkingwizard.html" class="next-link">
-                            <i class="fas fa-brain"></i>
-                            <span>Real-World Applications</span>
-                        </a>
-                        <a href="publications.html" class="next-link">
-                            <i class="fas fa-file-pdf"></i>
-                            <span>Technical Papers</span>
-                        </a>
+                <div class="content-visual">
+                    <div class="visual-stack">
+                        <img src="images/page2_img1_highlighted.png" alt="Performance Comparison">
+                        <p class="fig-caption">Performance Comparison Against State-of-the-Art Accelerator Chips</p>
+                    </div>
+                    <div class="visual-stack">
+                        <img src="images/page8_img1.png" alt="PACE 1.0 Layout">
+                        <p class="fig-caption">PACE 1.0 Chip Layout (3.96mm × 2.4mm, 40nm CMOS)</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Overview -->
+    <section class="tech-section-modern alt">
+        <div class="container-wide">
+            <div class="tech-content-row reverse">
+                <div class="content-visual">
+                    <img src="images/page4_img1.png" alt="PACE Block Diagram">
+                    <p class="fig-caption">PACE Architecture: 8×8 PE Array with Memory Modules and Instruction Set</p>
+                </div>
+
+                <div class="content-text">
+                    <h2>Architecture Overview</h2>
+
+                    <p>
+                        The block diagram of PACE accelerator consists of an <strong>8×8 matrix of computation cores (PEs)</strong>
+                        in the center and <strong>8 data memory modules</strong> on the left and right sides of the PE matrix,
+                        implemented using dual-ports RAMs. Each PE supports <strong>17 instructions</strong> which are co-optimized
+                        and selected via analyzing the major kernels required for edge computing workloads.
+                    </p>
+
+                    <div class="key-points">
+                        <h4>Processing Element Design</h4>
+                        <ul class="points-list">
+                            <li><strong>Configuration Memory:</strong> For dynamically setting the behavior and connectivity of
+                            the tile (0.25KB per PE)</li>
+                            <li><strong>Arithmetic Logic Unit (ALU):</strong> Performs logic computation such as add, shift,
+                            and multiplication with 17 optimized operations</li>
+                            <li><strong>Input Registers & Crossbar:</strong> R0-R4 input registers and input/output crossbar to
+                            handle data flow between different tiles</li>
+                            <li><strong>Energy Efficiency Focus:</strong> With improved ALU and memory integration, PE power
+                            consumption is reduced up to <strong>19.06% to ~700 µW at 0.9V, 100 MHz</strong></li>
+                        </ul>
+                    </div>
+
+                    <div class="specs-compact-grid">
+                        <div class="spec-item"><strong>PEs:</strong> 64 (8×8 array)</div>
+                        <div class="spec-item"><strong>Instructions:</strong> 17 per PE</div>
+                        <div class="spec-item"><strong>Data Memory:</strong> 8 × 8KB dual-port</div>
+                        <div class="spec-item"><strong>Config Memory:</strong> 0.25KB per PE</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Power Optimization -->
+    <section class="tech-section-modern">
+        <div class="container-wide">
+            <div class="tech-content-row">
+                <div class="content-text">
+                    <h2>Power Optimization Techniques</h2>
+
+                    <p>
+                        CGRA workload differs depending on applications and kernels. We explore this characteristic and embed
+                        <strong>No-Operation (NOP) instruction with hardware infrastructure</strong> so that individual tiles
+                        can be clock gated by the compiler. With the NOP and clock-gating optimization, the system power consumption
+                        in idle mode is reduced by <strong>24%</strong>.
+                    </p>
+
+                    <div class="key-points">
+                        <h4>NOP State Microarchitecture</h4>
+                        <ul class="points-list">
+                            <li><strong>Compiler-Driven Clock Gating:</strong> Individual tiles can be selectively clock gated
+                            when executing NOP instructions, significantly reducing idle power</li>
+                            <li><strong>Logic-Only to Gated Clock:</strong> The implementation includes NOP decode logic, clock
+                            gate with enable signal, and PM logic with counter for cycle control</li>
+                            <li><strong>ALU Operation Power:</strong> Different instructions consume varying power - multiplication
+                            (123 µW) is highest, while comparison operations (34-42 µW) are most efficient at 100MHz, 0.9V</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-highlight">
+                        <strong>Area & Power Breakdown:</strong> In the RISC-V PACE SoC, PACE takes ~30% of die (4mm × 2.4mm).
+                        Within PACE, 64 PEs take 71% of area. During processing (microspeech kernel), PEs consume 97% of PACE
+                        power, with configuration memory dominating at 52% of PE power.
+                    </div>
+                </div>
+
+                <div class="content-visual">
+                    <div class="visual-stack">
+                        <img src="images/page4_img3.png" alt="NOP Optimization">
+                        <p class="fig-caption">PACE NOP State Microarchitecture and Optimization Results</p>
+                    </div>
+                    <div class="visual-stack">
+                        <img src="images/page5_img1.png" alt="ALU Power">
+                        <p class="fig-caption">Power Consumption for Each ALU Operation (100MHz, 0.9V)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RISC-V SoC Integration -->
+    <section class="tech-section-modern alt">
+        <div class="container-wide">
+            <div class="tech-content-row reverse">
+                <div class="content-visual">
+                    <img src="images/page6_img1.png" alt="PACE-V SoC">
+                    <p class="fig-caption">PACE-V SoC with Rocket CPU Integration and Peripherals</p>
+                </div>
+
+                <div class="content-text">
+                    <h2>RISC-V Based SoC</h2>
+
+                    <p>
+                        Although our focus is to develop highly energy-efficient PACE accelerator, our analysis showed it is
+                        <strong>extremely inefficient to operate PACE as a stand-alone chip with an external microcontroller</strong>.
+                        Not only does this greatly reduce data transfer bandwidth (and thus performance), but it also incurs
+                        additional power consumption due to chip-to-chip data transfer.
+                    </p>
+
+                    <p>
+                        Thus, we decided to integrate PACE together with a <strong>RISC-V processor (Rocket CPU) in SoC</strong>.
+                        Within this SoC chip, PACE accelerator works as one peripheral of the RISC-V core, enabling high-bandwidth
+                        on-chip communication and eliminating external data transfer overhead.
+                    </p>
+
+                    <div class="key-points">
+                        <h4>Rocket CPU Core Features</h4>
+                        <ul class="points-list">
+                            <li><strong>5-stage in-order, scalar core</strong> implementing RV32G/RV64G ISAs with MMU supporting
+                            page-based virtual memory</li>
+                            <li><strong>Non-blocking data cache</strong> and front-end with branch prediction (BTB, BHT, RAS)</li>
+                            <li><strong>Floating-point support:</strong> Berkeley's Chisel implementations of FP units</li>
+                            <li><strong>Privilege levels:</strong> RISC-V machine, supervisor, and user privilege levels</li>
+                            <li><strong>Extensively validated:</strong> Multiple functional silicon prototypes have been manufactured</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-highlight">
+                        <strong>BootROM Firmware:</strong> Fully written in RISC-V assembly (~200 bytes), fetches executable
+                        from external I2C EEPROM chip, includes 50ms bootup delay for system stability, with hardcoded settings
+                        for 8KB memory size, 400KHz speed, and vendor ID/address
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clock Root -->
+    <section class="tech-section-modern">
+        <div class="container-wide">
+            <div class="tech-content-row">
+                <div class="content-text">
+                    <h2>Clock Root for RISC-V PACE-SoC</h2>
+
+                    <p>
+                        For PACE v1.0 tape out, a <strong>clock root is implemented to supply clock source</strong> to the entire
+                        design. Clock signals are provided to both the RISC-V based microcontroller and the PACE CGRA. The maximum
+                        frequency is <strong>400MHz</strong>. Internally, 3 levels of division (divide-by-2, 4, and 8) are used
+                        to reduce clock frequency down to 50MHz.
+                    </p>
+
+                    <div class="key-points">
+                        <h4>Clock Distribution</h4>
+                        <ul class="points-list">
+                            <li><strong>clk_ref (50 MHz):</strong> Reference clock for PLL</li>
+                            <li><strong>clk_pll (400 MHz):</strong> PLL-HiP output clock for internal system</li>
+                            <li><strong>clk_div* (50-400 MHz):</strong> Clock divider array with configurable division</li>
+                            <li><strong>SDRAM clocks:</strong> Dedicated clocks for SDRAM with configurable delay</li>
+                            <li><strong>SD card & Debug:</strong> Separate clocks for SD card and JTAG debug interfaces</li>
+                        </ul>
+                    </div>
+
+                    <p>
+                        Post-layout simulation was performed to verify the outputs of the clock root, ensuring proper timing
+                        and signal integrity across all clock domains in the SoC.
+                    </p>
+                </div>
+
+                <div class="content-visual">
+                    <div class="visual-stack">
+                        <img src="images/page7_img1.png" alt="Clock Root">
+                        <p class="fig-caption">Clock Root Schematic and Specifications</p>
+                    </div>
+                    <div class="visual-stack">
+                        <img src="images/page7_img2.png" alt="Clock Layout">
+                        <p class="fig-caption">Clock Root Layout and Post-Layout Simulation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Physical Implementation -->
+    <section class="tech-section-modern alt">
+        <div class="container-wide">
+            <div class="tech-content-row reverse">
+                <div class="content-visual">
+                    <img src="images/page7_img1.png" alt="SoC Diagram">
+                    <p class="fig-caption">PACE and RISC-V Core Integration with Specifications</p>
+                </div>
+
+                <div class="content-text">
+                    <h2>Physical Implementation & Performance Analysis</h2>
+
+                    <p>
+                        The final system diagram shows the complete RISC-V PACE SoC design with detailed specifications.
+                        The chip layout and bonding diagram illustrate the physical implementation, with PCB layout finalized
+                        for fabrication and testing.
+                    </p>
+
+                    <div class="specs-compact-grid">
+                        <div class="spec-item"><strong>Tech Node:</strong> UMC 40nm CMOS</div>
+                        <div class="spec-item"><strong>Supply Voltage:</strong> 0.6V-0.9V</div>
+                        <div class="spec-item"><strong>Processor:</strong> RISC-V 64-bit Rocket Core</div>
+                        <div class="spec-item"><strong>Memory:</strong> Micro SDHC/SDRAM/SD (32MB)</div>
+                        <div class="spec-item"><strong>On-chip SRAM:</strong> 512KB</div>
+                        <div class="spec-item"><strong>Operating Temp:</strong> 0°C - 85°C</div>
+                        <div class="spec-item"><strong>PACE Frequency:</strong> 100MHz</div>
+                        <div class="spec-item"><strong>PACE Power:</strong> 65 mW @ 0.9V</div>
+                    </div>
+
+                    <div class="key-points">
+                        <h4>Area Breakdown</h4>
+                        <ul class="points-list">
+                            <li><strong>PACE:</strong> 30% of SoC die (4mm × 2.4mm total area)</li>
+                            <li><strong>64 PEs:</strong> 71% of PACE area</li>
+                            <li><strong>Configuration Memory:</strong> 47% of each PE</li>
+                            <li><strong>Data Memory:</strong> 29% of PACE area</li>
+                            <li><strong>Router & ALU:</strong> 12% each of PE area</li>
+                        </ul>
+                    </div>
+
+                    <div class="key-points">
+                        <h4>Power Breakdown (MicroSpeech Kernel)</h4>
+                        <ul class="points-list">
+                            <li><strong>PEs:</strong> 97% of PACE power during processing</li>
+                            <li><strong>Configuration Memory:</strong> 52% of PE power</li>
+                            <li><strong>Tile Controller:</strong> 23% of PE power</li>
+                            <li><strong>Router:</strong> 14% of PE power</li>
+                            <li><strong>ALU:</strong> 8% of PE power</li>
+                            <li><strong>Data Memory:</strong> 3% of PE power</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FPGA Emulation -->
+    <section class="tech-section-modern">
+        <div class="container-wide">
+            <div class="tech-content-row">
+                <div class="content-text">
+                    <h2>FPGA Emulation Platform</h2>
+
+                    <p>
+                        We migrated the PACE RTL design to the <strong>Digilent Genesys 2 FPGA</strong> (Xilinx Kintex-7™ FPGA
+                        XC7K325T-2FFG900C) board for verification and application demonstration purposes. With the clock generator
+                        being mapped to MMCM module and SRAM being mapped to the block RAM module, the emulation of the PACE
+                        design is successful on the evaluation board.
+                    </p>
+
+                    <div class="key-points">
+                        <h4>Verification & Development</h4>
+                        <ul class="points-list">
+                            <li><strong>Successfully Verified Applications:</strong> As of March 2023, we have verified two applications
+                            (Array Add and MicroSpeech) running on FPGA-based PACE design</li>
+                            <li><strong>Dual Deployment:</strong> Two FPGA boards (one in IME and one in NUS) are currently deployed
+                            to enable our team members to develop different applications on this platform</li>
+                            <li><strong>MMCM Mapping:</strong> Clock generator mapped to FPGA's Mixed-Mode Clock Manager for precise
+                            frequency control</li>
+                            <li><strong>Block RAM Utilization:</strong> SRAM efficiently mapped to FPGA's block RAM resources for
+                            optimal performance</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-highlight">
+                        <strong>Development Platform:</strong> The FPGA emulation enables rapid prototyping and testing of
+                        applications before chip fabrication, supporting the complete development workflow from algorithm
+                        design to hardware validation
+                    </div>
+                </div>
+
+                <div class="content-visual">
+                    <div class="visual-stack">
+                        <img src="images/page10_img1.png" alt="FPGA System">
+                        <p class="fig-caption">FPGA Emulation of PACE Design - System Diagram</p>
+                    </div>
+                    <div class="visual-stack">
+                        <img src="images/page10_img2.png" alt="FPGA Board">
+                        <p class="fig-caption">Digilent Genesys 2 FPGA Board with PACE Implementation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WalkingWizard Integration -->
+    <section class="tech-section-modern alt">
+        <div class="container-wide">
+            <div class="tech-content-row reverse">
+                <div class="content-visual">
+                    <img src="images/page3_img2.png" alt="WalkingWizard Usage">
+                    <p class="fig-caption">WalkingWizard EEG System in Use with PACE Integration</p>
+                </div>
+
+                <div class="content-text">
+                    <h2>Real-World Application: WalkingWizard</h2>
+
+                    <p>
+                        We have leveraged the PACE 1.0 accelerator chip to enhance the performance of EEG devices. The PACE 1.0
+                        chip aligns well with the demands of <strong>wearable EEG systems</strong>, providing the necessary
+                        computational power while maintaining portability and energy efficiency.
+                    </p>
+
+                    <p>
+                        <strong>WalkingWizard</strong>, a truly wearable EEG headset designed for everyday use, integrates dry
+                        electrodes with flexible PCB assembly to achieve accurate EEG sensing even under motion. By incorporating
+                        the PACE 1.0 chip, we aim to improve the <strong>real-time processing capabilities</strong> of WalkingWizard,
+                        enhancing its performance in capturing and analyzing EEG signals during various activities such as walking
+                        or engaging in VR environments.
+                    </p>
+
+                    <div class="key-points">
+                        <h4>Integration Benefits</h4>
+                        <ul class="points-list">
+                            <li><strong>Real-Time Processing:</strong> On-device signal processing for emotion monitoring and
+                            cognitive state assessment</li>
+                            <li><strong>Mobile Brain-Computer Interfaces:</strong> Advanced applications for VR interaction and
+                            daily activity monitoring</li>
+                            <li><strong>Energy Efficiency:</strong> Extended battery life through PACE's ultra-low power consumption</li>
+                            <li><strong>System Integration:</strong> Mapped EEG application on PACE 1.0 and designed new PCB system
+                            to integrate the chip</li>
+                        </ul>
+                    </div>
+
+                    <a href="walkingwizard.html" class="btn-inline">
+                        <i class="fas fa-brain"></i> Learn More About WalkingWizard
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="tech-section-modern">
+        <div class="container-wide">
+            <h2 class="section-title-centered">Complete Technical Specifications</h2>
+
+            <div class="specs-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Specification</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Process Technology</strong></td>
+                            <td>UMC 40nm CMOS</td>
+                            <td>Normalized: 673 GOPS/W @ 28nm, ~1090 GOPS/W @ 22nm</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Die Size</strong></td>
+                            <td>3.96mm × 2.4mm total SoC</td>
+                            <td>PACE occupies ~30% (4mm × 2.4mm)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Architecture</strong></td>
+                            <td>8×8 PE array (64 PEs)</td>
+                            <td>71% of PACE area</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Peak Efficiency</strong></td>
+                            <td>360 GOPS/W @ 0.6V, 21MHz</td>
+                            <td>Measured on silicon</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Simulated Efficiency</strong></td>
+                            <td>142/462/568 GOPS/W</td>
+                            <td>@ 0.9V / 0.5V / 0.45V respectively</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Maximum Frequency</strong></td>
+                            <td>105 MHz @ 1V</td>
+                            <td>100% PE utilization</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Power Consumption</strong></td>
+                            <td>43mW @ 1V, 105MHz</td>
+                            <td>Full utilization, 65mW @ 0.9V for PACE</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Instructions per PE</strong></td>
+                            <td>17 optimized operations</td>
+                            <td>ADD, SUB, MULT, LS, RS, ARS, AND, OR, XOR, SEL, MERGE, CMP, CLT, BR, CGT, MOVC</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Data Memory</strong></td>
+                            <td>8 modules × 8KB</td>
+                            <td>Dual-port SRAM, 29% of PACE area</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Config Memory</strong></td>
+                            <td>0.25KB per PE</td>
+                            <td>47% of PE area, 52% of PE power</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Router Architecture</strong></td>
+                            <td>Buffer-less single-cycle multi-hop</td>
+                            <td>12% of PE area, 14% of PE power</td>
+                        </tr>
+                        <tr>
+                            <td><strong>PE Power</strong></td>
+                            <td>~700 µW @ 0.9V, 100MHz</td>
+                            <td>19.06% reduction through optimization</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Idle Power Savings</strong></td>
+                            <td>24% reduction</td>
+                            <td>Through NOP instruction and clock-gating</td>
+                        </tr>
+                        <tr>
+                            <td><strong>On-chip SRAM</strong></td>
+                            <td>512KB</td>
+                            <td>For RISC-V system</td>
+                        </tr>
+                        <tr>
+                            <td><strong>External Memory</strong></td>
+                            <td>Micron SDRAM (64MB)</td>
+                            <td>Plus SD card support</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Steps -->
+    <section class="quick-links-section">
+        <div class="container-wide">
+            <h3>Explore Related Technology</h3>
+            <div class="quick-links-grid-modern">
+                <a href="pace2.html" class="quick-link-modern">
+                    <i class="fas fa-rocket"></i>
+                    <strong>PACE 2.0</strong>
+                    <span>Next-generation design</span>
+                </a>
+                <a href="compiler.html" class="quick-link-modern">
+                    <i class="fas fa-code"></i>
+                    <strong>Morpher Compiler</strong>
+                    <span>Software framework</span>
+                </a>
+                <a href="walkingwizard.html" class="quick-link-modern">
+                    <i class="fas fa-brain"></i>
+                    <strong>WalkingWizard</strong>
+                    <span>EEG application</span>
+                </a>
+                <a href="publications.html" class="quick-link-modern">
+                    <i class="fas fa-file-pdf"></i>
+                    <strong>Publications</strong>
+                    <span>Research papers</span>
+                </a>
             </div>
         </div>
     </section>
