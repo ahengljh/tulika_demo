@@ -26,6 +26,27 @@ body {
     line-height: 1.6;
     color: var(--text-dark);
     background-color: var(--bg-white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+/* Mobile performance optimizations */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Image optimization for all devices */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* Navigation Header */
@@ -576,33 +597,146 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+/* Medium mobile devices (landscape phones, small tablets) */
+@media (max-width: 640px) {
     .nav-container {
-        flex-direction: column;
-        gap: 1.5rem;
+        height: 65px;
+        padding: 0 0.85rem;
     }
 
-    .nav-right {
-        flex-direction: column;
-        gap: 1rem;
-        text-align: center;
+    .nav-brand h1 {
+        font-size: 1.35rem;
     }
 
+    .nav-subtitle {
+        font-size: 0.7rem;
+    }
 
+    .hero-title {
+        font-size: 1.9rem;
+    }
+
+    .hero-overview {
+        padding: 1.75rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.65rem;
+    }
+
+    .research-title {
+        font-size: 1.65rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Navigation optimizations */
+    .nav-container {
+        height: 70px;
+        padding: 0 1rem;
+    }
+
+    .nav-brand {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .nav-brand h1 {
+        font-size: 1.5rem;
+    }
+
+    .nav-subtitle {
+        font-size: 0.75rem;
+        padding-left: 1rem;
+    }
+
+    .nav-logos {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .nav-logo {
+        max-height: 50px;
+    }
+
+    .nav-orange-block {
+        width: 40px;
+    }
+
+    /* Hero Section */
     .hero-section {
         padding: 3rem 1.5rem;
     }
 
     .hero-title {
         font-size: 2rem;
+        line-height: 1.3;
     }
 
     .hero-lead {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-professor {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .hero-profile-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .hero-prof-text {
+        font-size: 1rem;
+    }
+
+    .hero-overview {
+        padding: 2rem;
+        border-radius: 16px;
+        margin-top: 2rem;
+    }
+
+    .hero-overview p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        text-align: left;
+    }
+
+    /* Quick Intro Section */
+    .quick-intro {
+        padding: 2rem 1rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .section-header p {
         font-size: 1rem;
     }
 
     .intro-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .intro-card {
+        padding: 1.5rem;
+    }
+
+    .intro-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .intro-card p {
+        font-size: 0.9rem;
+    }
+
+    /* Research Cards */
+    .research-card {
+        scroll-margin-top: 90px;
     }
 
     .research-image-top {
@@ -615,52 +749,311 @@ body {
     }
 
     .research-content-vertical {
-        padding: 2rem;
+        padding: 2rem 1.5rem;
     }
 
     .research-title {
         font-size: 1.8rem;
     }
 
-    .research-description {
+    .research-subtitle {
         font-size: 1rem;
     }
 
-}
-
-@media (max-width: 480px) {
-    .main-content {
-        padding: 0 1rem;
+    .research-description {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        text-align: left;
     }
 
-    .research-card {
-        margin-bottom: 2.5rem;
-        border-radius: 12px;
+    .research-highlights {
+        padding: 1.25rem;
     }
 
-    .research-image-top {
-        padding: 1.5rem 0.5rem;
+    .research-highlights h3 {
+        font-size: 1.2rem;
     }
 
-    .research-image-top img {
-        padding: 0.5rem;
-        max-height: 250px;
+    .research-highlights li {
+        font-size: 0.9rem;
     }
 
-    .research-content-vertical {
-        padding: 1.5rem;
+    /* Contact Section */
+    .contact-section {
+        padding: 3rem 1.5rem;
     }
 
-    .hero-title {
+    .contact-title {
         font-size: 1.8rem;
     }
 
-    .intro-card {
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-info, .contact-address {
         padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Navigation - Extra compact */
+    .nav-container {
+        height: 60px;
+        padding: 0 0.75rem;
+    }
+
+    .nav-brand {
+        flex-direction: column;
+        gap: 0.25rem;
+        align-items: flex-start;
+        padding: 0.5rem 0.75rem;
+    }
+
+    .nav-brand h1 {
+        font-size: 1.2rem;
+    }
+
+    .nav-subtitle {
+        font-size: 0.65rem;
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .nav-logo {
+        max-height: 40px;
+    }
+
+    .nav-orange-block {
+        width: 30px;
+    }
+
+    /* Typography - Mobile optimized */
+    .main-content {
+        padding: 0 1rem 2rem;
+    }
+
+    .hero-section {
+        padding: 2rem 1rem 2.5rem;
+    }
+
+    .hero-title {
+        font-size: 1.75rem;
+        line-height: 1.3;
+    }
+
+    .hero-lead {
+        font-size: 0.9rem;
+    }
+
+    .hero-profile-img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .hero-prof-text {
+        font-size: 0.9rem;
+    }
+
+    .hero-overview {
+        padding: 1.5rem;
+        border-radius: 12px;
+        margin-top: 1.5rem;
+    }
+
+    .hero-overview p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    /* Quick Intro */
+    .quick-intro {
+        padding: 2rem 0.75rem;
+    }
+
+    .section-header {
+        margin-bottom: 2rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .section-header p {
+        font-size: 0.9rem;
+    }
+
+    .intro-grid {
+        gap: 1.25rem;
+    }
+
+    .intro-card {
+        padding: 1.25rem;
+    }
+
+    .intro-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .intro-card p {
+        font-size: 0.85rem;
+    }
+
+    .learn-more {
+        font-size: 0.85rem;
+        margin-top: 0.75rem;
+    }
+
+    /* Research Cards - Ultra compact */
+    .research-card {
+        margin-bottom: 2.5rem;
+        border-radius: 12px;
+        scroll-margin-top: 80px;
+    }
+
+    .research-image-top {
+        padding: 1.5rem 0.75rem;
+    }
+
+    .research-image-top img {
+        padding: 0.75rem;
+        max-height: 200px;
+        border-radius: 8px;
+    }
+
+    .image-caption {
+        font-size: 0.85rem;
+        margin-top: 1rem;
+    }
+
+    .research-content-vertical {
+        padding: 1.5rem 1rem;
+    }
+
+    .research-title {
+        font-size: 1.5rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .research-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .research-description {
+        font-size: 0.9rem;
+        line-height: 1.65;
+        margin-bottom: 1.25rem;
     }
 
     .research-highlights {
         padding: 1rem;
+        border-radius: 8px;
+        margin-top: 1.5rem;
+    }
+
+    .research-highlights h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .research-highlights li {
+        font-size: 0.85rem;
+        padding: 0.5rem 0;
+        padding-left: 1.5rem;
+    }
+
+    .research-highlights li:before {
+        font-size: 1rem;
+    }
+
+    .publication-link {
+        margin-top: 1.5rem;
+    }
+
+    .pub-button {
+        padding: 0.6rem 1.25rem;
+        font-size: 0.85rem;
+    }
+
+    .pub-icon {
+        font-size: 1rem;
+    }
+
+    /* Contact Section */
+    .contact-section {
+        padding: 2.5rem 1rem;
+        margin-top: 2rem;
+    }
+
+    .contact-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-content {
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .contact-info, .contact-address {
+        padding: 1.25rem;
+        border-radius: 8px;
+    }
+
+    .contact-info h3, .contact-address h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .contact-info p, .contact-address p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    /* Footer */
+    .site-footer {
+        padding: 1.25rem 0;
+    }
+
+    .footer-bottom {
+        font-size: 0.85rem;
+        padding: 0 1rem;
+    }
+}
+
+/* Touch-friendly interactions for mobile */
+@media (hover: none) and (pointer: coarse) {
+    /* Increase tap targets for touch devices */
+    .intro-card {
+        min-height: 180px;
+    }
+
+    .pub-button {
+        padding: 0.85rem 1.75rem;
+        min-height: 44px;
+    }
+
+    .contact-info a {
+        padding: 0.25rem 0;
+        display: inline-block;
+    }
+
+    /* Remove hover effects on touch devices */
+    .intro-card:hover,
+    .research-card:hover {
+        transform: none;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .nav-orange-block:hover {
+        background: var(--nus-orange);
+    }
+
+    .nav-logo:hover {
+        opacity: 1;
     }
 }
 
