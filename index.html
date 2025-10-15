@@ -2,15 +2,263 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=overview.html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PACE Project - Redirecting...</title>
-    <link rel="canonical" href="overview.html">
+    <title>eCO Lab - Embedded Computing Lab | NUS</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles-single.css">
 </head>
 <body>
-    <p>Redirecting to <a href="overview.html">PACE Project Overview</a>...</p>
-    <script>
-        window.location.href = "overview.html";
-    </script>
+    <!-- Navigation Header -->
+    <nav class="nav-header">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>eCO Lab</h1>
+                <span class="nav-subtitle">Embedded COmputing Laboratory</span>
+            </div>
+            <div class="nav-right">
+                <div class="nav-info">
+                    <span class="nav-lead">Led by <a href="https://www.comp.nus.edu.sg/~tulika/" target="_blank" class="nav-prof-link">Prof. Tulika Mitra</a></span>
+                </div>
+                <div class="nav-logos">
+                    <img src="LogoNUS.jpg" alt="NUS" class="nav-logo">
+                    <img src="soc-logo.svg" alt="School of Computing" class="nav-logo">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Overview -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to eCO Lab</h1>
+            <p class="hero-lead">Embedded Computing Laboratory at National University of Singapore</p>
+            <div class="hero-overview">
+                <p>
+                    Our research spans the entire computing stack—from systems and compilers to architectures and circuits culminating in silicon-proven innovations through custom chip tapeouts. We develop novel techniques to advance reconfigurable dataflow systems, enabling high-performance execution across diverse machine learning workloads and beyond.
+                </p>
+                <p>
+                    At the architectural level, we rethink the design of programmable fabrics and build specialized compiler infrastructures that efficiently map computations onto them. Our work further extends into sparse tensor algebra acceleration, tackling the memory bottlenecks that limit scalability in modern AI workloads. Beyond CMOS, we actively explore emerging computing paradigms, including in-memory computing and photonic architectures, to push the limits of energy efficiency and performance. These aim to redefine the boundaries of what is achievable in post-Moore-era computing.
+                </p>
+                <p>
+                    On the systems side, we integrate our custom taped-out chips into energy-efficient sensor systems for ubiquitous computing applications, such as wearable EEG platforms. At the opposite end of the scale, our research in hyperscale systems explores performance modeling and scheduling for large-scale heterogeneous clusters, paving the way for the next generation of server architectures.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Intro Section -->
+    <section class="quick-intro">
+        <div class="section-header">
+            <h2>Our Research Projects</h2>
+            <p>Click on any project to learn more</p>
+        </div>
+        <div class="intro-grid">
+            <a href="#canon" class="intro-card">
+                <h3>Canon</h3>
+                <p>Data-driven parallel architecture bridging specialized and programmable architectures with dynamic execution orchestration</p>
+                <span class="learn-more">Learn More →</span>
+            </a>
+            <a href="#plaid" class="intro-card">
+                <h3>Plaid</h3>
+                <p>Novel CGRA architecture aligning compute and communication for 43% power reduction and 46% area savings</p>
+                <span class="learn-more">Learn More →</span>
+            </a>
+            <a href="#zed" class="intro-card">
+                <h3>ZeD</h3>
+                <p>Sparse matrix accelerator with hierarchical bit-tree compression achieving 3.2× performance/area improvement</p>
+                <span class="learn-more">Learn More →</span>
+            </a>
+            <a href="#swat" class="intro-card">
+                <h3>SWAT</h3>
+                <p>FPGA-based window attention accelerator with 22× latency reduction for Transformer models</p>
+                <span class="learn-more">Learn More →</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Canon Section -->
+        <section class="research-card" id="canon">
+            <div class="research-image-top">
+                <img src="canon.png" alt="Canon 3D Architecture">
+            </div>
+            <div class="research-content-vertical">
+                    <h2 class="research-title">Canon</h2>
+                    <div class="research-subtitle">Data-Driven Parallel Architecture</div>
+
+                    <p class="research-description">
+                        Canon is a data-driven parallel architecture that bridges the gap between highly specialized and fully programmable architectures. It introduces dynamic execution orchestration, where programmable finite-state machines translate runtime data into control, enabling fine-grained adaptation to irregular or sparse workloads.
+                    </p>
+
+                    <p class="research-description">
+                        Combined with time-lapsed SIMD execution to amortize control overhead, Canon sustains high utilization and deterministic performance across diverse kernels. Canon matches or exceeds the performance of domain-specific accelerators in their own specialization domains, including dense, structured, and unstructured sparse workloads, while retaining the flexibility of a general purpose architecture.
+                    </p>
+
+                    <div class="research-highlights">
+                        <h3>Key Innovations</h3>
+                        <ul>
+                            <li>Dynamic execution orchestration via programmable FSMs</li>
+                            <li>Time-lapsed SIMD execution for control overhead reduction</li>
+                            <li>Adaptation to irregular and sparse workloads</li>
+                            <li>Deterministic performance across diverse kernels</li>
+                        </ul>
+                    </div>
+
+                    <div class="publication-link">
+                        <a href="https://www.comp.nus.edu.sg/~tulika/ASPLOS26.pdf" target="_blank" class="pub-button">
+                            <span class="pub-icon">📄</span>
+                            View Publication
+                        </a>
+                    </div>
+            </div>
+        </section>
+
+        <!-- Plaid Section -->
+        <section class="research-card alt-background" id="plaid">
+            <div class="research-image-top">
+                <img src="plaid.png" alt="Plaid Architecture">
+            </div>
+            <div class="research-content-vertical">
+                    <h2 class="research-title">Plaid</h2>
+                    <div class="research-subtitle">Aligned Compute & Communication CGRA</div>
+
+                    <p class="research-description">
+                        Plaid is a novel Coarse-Grained Reconfigurable Array (CGRA) architecture and compiler that aligns compute and communication provisioning to overcome inefficiencies in existing CGRAs. Plaid identifies and exploits recurring dataflow motifs within applications to enable collective execution and routing, significantly improving hardware utilization.
+                    </p>
+
+                    <p class="research-description">
+                        By integrating a hierarchical on-chip network and motif-aware compiler, Plaid achieves a 43% power reduction and 46% area savings compared to high-performance spatio-temporal CGRAs, while maintaining performance and generality. Against energy-efficient spatial CGRAs, Plaid delivers 1.4× higher performance and 48% lower area. Plaid is a step toward balanced, general-purpose, and energy-efficient reconfigurable computing at the edge.
+                    </p>
+
+                    <div class="research-highlights">
+                        <h3>Key Achievements</h3>
+                        <ul>
+                            <li>43% power reduction vs. high-performance CGRAs</li>
+                            <li>46% area savings while maintaining performance</li>
+                            <li>1.4× higher performance than spatial CGRAs</li>
+                            <li>Hierarchical on-chip network design</li>
+                            <li>Motif-aware compiler optimization</li>
+                        </ul>
+                    </div>
+
+                    <div class="publication-link">
+                        <a href="https://dl.acm.org/doi/10.1145/3669940.3707230" target="_blank" class="pub-button">
+                            <span class="pub-icon">📄</span>
+                            View Publication
+                        </a>
+                    </div>
+            </div>
+        </section>
+
+        <!-- ZeD Section -->
+        <section class="research-card" id="zed">
+            <div class="research-image-top">
+                <img src="images/page31_img1.png" alt="ZeD Architecture">
+            </div>
+            <div class="research-content-vertical">
+                    <h2 class="research-title">ZeD</h2>
+                    <div class="research-subtitle">Variably Sparse Matrix Accelerator</div>
+
+                    <p class="research-description">
+                        ZeD develops techniques for efficiently handling the packing, storage, retrieval, and processing of variably sparse matrices in modern machine learning workloads. The work identifies fundamental limitations of prior compression techniques, showing how coordinate-based formats become increasingly inefficient as ML arithmetic precision decreases, due to overwhelming metadata overheads.
+                    </p>
+
+                    <p class="research-description">
+                        ZeD addresses this through a hierarchical bit-tree compression format and zero-detection hardware, enabling compact representation and dynamic zero skipping with minimal hardware cost. Furthermore, by analyzing sparsity patterns and reorganizing matrix rows based on their similarity, ZeD significantly enhances memory reuse. ZeD demonstrates a 3.2× improvement in performance per area over state-of-the-art solutions across a spectrum of ML workloads characterized by wide-ranging sparsities.
+                    </p>
+
+                    <div class="research-highlights">
+                        <h3>Technical Innovations</h3>
+                        <ul>
+                            <li>Hierarchical bit-tree compression format</li>
+                            <li>Zero-detection hardware with minimal overhead</li>
+                            <li>Dynamic zero skipping capability</li>
+                            <li>3.2× performance/area improvement</li>
+                            <li>Optimized for variable sparsity patterns</li>
+                        </ul>
+                    </div>
+
+                    <div class="publication-link">
+                        <a href="https://www.comp.nus.edu.sg/~tulika/PACT24.pdf" target="_blank" class="pub-button">
+                            <span class="pub-icon">📄</span>
+                            View Publication
+                        </a>
+                    </div>
+            </div>
+        </section>
+
+        <!-- SWAT Section -->
+        <section class="research-card alt-background" id="swat">
+            <div class="research-image-top">
+                <img src="swat.png" alt="SWAT Architecture">
+            </div>
+            <div class="research-content-vertical">
+                    <h2 class="research-title">SWAT</h2>
+                    <div class="research-subtitle">Window Attention FPGA Accelerator</div>
+
+                    <p class="research-description">
+                        SWAT is a scalable and energy-efficient FPGA-based accelerator designed to optimize window attention-based Transformer models. SWAT addresses the inefficiency of sliding window attention which reduces attention complexity from quadratic to linear but misaligns with traditional accelerator architectures by employing a dataflow-aware, input-stationary design that maximizes data reuse and minimizes redundant computation.
+                    </p>
+
+                    <p class="research-description">
+                        Through innovations like row-major dataflow, kernel fusion, and FIFO-managed buffering, SWAT aligns computation with the distributed memory and logic resources of FPGAs. The result is a 22× latency reduction and 5.7× energy efficiency improvement over baseline FPGA accelerators, and up to 15× higher energy efficiency than GPU-based implementations, making SWAT a powerful and scalable solution for long-context Transformer workloads across NLP and vision tasks.
+                    </p>
+
+                    <div class="research-highlights">
+                        <h3>Performance Gains</h3>
+                        <ul>
+                            <li>22× latency reduction vs. baseline FPGAs</li>
+                            <li>5.7× energy efficiency improvement</li>
+                            <li>15× higher efficiency than GPU implementations</li>
+                            <li>Row-major dataflow optimization</li>
+                            <li>Kernel fusion and FIFO-managed buffering</li>
+                            <li>Scalable for long-context Transformers</li>
+                        </ul>
+                    </div>
+
+                    <div class="publication-link">
+                        <a href="https://dl.acm.org/doi/10.1145/3649329.3658488" target="_blank" class="pub-button">
+                            <span class="pub-icon">📄</span>
+                            View Publication
+                        </a>
+                    </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>eCO Lab</h3>
+                <p>Embedded COmputing Laboratory<br>
+                Led by Prof. Tulika Mitra<br>
+                Advancing the frontiers of embedded systems and computer architecture</p>
+            </div>
+            <div class="footer-section">
+                <h3>Location</h3>
+                <p>National University of Singapore<br>
+                School of Computing<br>
+                Computing 3, 11 Research Link<br>
+                Singapore 119391</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="team.html">Research Team</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="https://www.comp.nus.edu.sg/~tulika/" target="_blank">Prof. Mitra's Page</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 eCO Lab, National University of Singapore. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
