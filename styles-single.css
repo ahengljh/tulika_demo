@@ -448,6 +448,41 @@ img {
     font-weight: 500;
 }
 
+/* HiMap dual image layout */
+.himap-images-container {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    align-items: flex-end;
+}
+
+.himap-image-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.himap-image-item img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+.image-caption-small {
+    margin-top: 1rem;
+    color: white;
+    font-size: 0.95rem;
+    text-align: center;
+    font-weight: 500;
+}
+
 /* Research Content Section - Vertical Layout */
 .research-content-vertical {
     padding: 3rem;
@@ -811,6 +846,17 @@ img {
         max-height: 300px;
     }
 
+    /* HiMap responsive */
+    .himap-images-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .himap-image-item img {
+        padding: 1rem;
+        max-height: 300px;
+    }
+
     .research-content-vertical {
         padding: 2rem 1.5rem;
     }
@@ -1019,6 +1065,22 @@ img {
     .image-caption {
         font-size: 0.85rem;
         margin-top: 1rem;
+    }
+
+    /* HiMap responsive */
+    .himap-images-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .himap-image-item img {
+        padding: 0.75rem;
+        max-height: 200px;
+    }
+
+    .image-caption-small {
+        font-size: 0.8rem;
+        margin-top: 0.75rem;
     }
 
     .research-content-vertical {
