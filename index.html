@@ -78,6 +78,61 @@
                 <p>FPGA-based window attention accelerator with 22× latency reduction for Transformer models</p>
                 <span class="learn-more">Learn More →</span>
             </a>
+            <a href="#splim" class="intro-card">
+                <h3>SPLIM</h3>
+                <p>PUM accelerator bridging unstructured SpGEMM and structured in-situ computing with 276× performance improvement</p>
+                <span class="learn-more">Learn More →</span>
+            </a>
+            <a href="#sadimm" class="intro-card">
+                <h3>SADIMM</h3>
+                <p>DIMM-based near-memory processing accelerator for sparse attention with heterogeneous NMP architectures</p>
+                <span class="learn-more">Learn More →</span>
+            </a>
+            <a href="#asadi" class="intro-card">
+                <h3>ASADI</h3>
+                <p>In-situ computing accelerator for sparse attention using diagonal-based compression with 18.6× performance improvement</p>
+                <span class="learn-more">Learn More →</span>
+            </a>
+            <a href="#hyatten" class="intro-card">
+                <h3>HyAtten</h3>
+                <p>Hybrid photonic-digital architecture for attention with 9.8× performance-per-area improvement</p>
+                <span class="learn-more">Learn More →</span>
+            </a>
+            <a href="#flex" class="intro-card">
+                <h3>Flex</h3>
+                <p>Flexible spatio-temporal vector dataflow CGRA with 45% energy reduction and 1.9× higher power efficiency</p>
+                <span class="learn-more">Learn More →</span>
+            </a>
+            <a href="#revamp" class="intro-card">
+                <h3>REVAMP</h3>
+                <p>Design-space exploration framework for heterogeneous CGRAs achieving 52.4% power and 38.1% area reduction</p>
+                <span class="learn-more">Learn More →</span>
+            </a>
+            <a href="#hycube" class="intro-card">
+                <h3>HyCUBE</h3>
+                <p>CGRA with reconfigurable multi-hop interconnect delivering 3× performance-per-watt improvement</p>
+                <span class="learn-more">Learn More →</span>
+            </a>
+            <a href="#panorama" class="intro-card">
+                <h3>PANORAMA</h3>
+                <p>Divide-and-conquer CGRA compiler achieving 2.6× higher throughput and 8.7× faster compilation</p>
+                <span class="learn-more">Learn More →</span>
+            </a>
+            <a href="#himap" class="intro-card">
+                <h3>HiMap</h3>
+                <p>Hierarchical systolic-aware CGRA mapping with 17.3× performance improvement and compilation in under 15 minutes</p>
+                <span class="learn-more">Learn More →</span>
+            </a>
+            <a href="#lisa" class="intro-card">
+                <h3>LISA</h3>
+                <p>GNN-based portable compiler framework for spatial accelerators with superior mapping quality and compilation time</p>
+                <span class="learn-more">Learn More →</span>
+            </a>
+            <a href="#cascade" class="intro-card">
+                <h3>CASCADE</h3>
+                <p>Decoupled access-execute CGRA with 3× performance and 2.2× performance-per-watt improvements</p>
+                <span class="learn-more">Learn More →</span>
+            </a>
         </div>
     </section>
 
@@ -107,8 +162,7 @@
                         <ul>
                             <li>Dynamic execution orchestration via programmable FSMs</li>
                             <li>Time-lapsed SIMD execution for control overhead reduction</li>
-                            <li>Adaptation to irregular and sparse workloads</li>
-                            <li>Deterministic performance across diverse kernels</li>
+                            <li>Matches domain-specific accelerators while retaining general-purpose flexibility</li>
                         </ul>
                     </div>
 
@@ -142,11 +196,9 @@
                     <div class="research-highlights">
                         <h3>Key Achievements</h3>
                         <ul>
-                            <li>43% power reduction vs. high-performance CGRAs</li>
-                            <li>46% area savings while maintaining performance</li>
-                            <li>1.4× higher performance than spatial CGRAs</li>
-                            <li>Hierarchical on-chip network design</li>
-                            <li>Motif-aware compiler optimization</li>
+                            <li>Aligns compute and communication provisioning via dataflow motifs</li>
+                            <li>43% power reduction and 46% area savings vs. spatio-temporal CGRAs</li>
+                            <li>1.4× higher performance than spatial CGRAs at 48% lower area</li>
                         </ul>
                     </div>
 
@@ -180,11 +232,9 @@
                     <div class="research-highlights">
                         <h3>Technical Innovations</h3>
                         <ul>
-                            <li>Hierarchical bit-tree compression format</li>
-                            <li>Zero-detection hardware with minimal overhead</li>
-                            <li>Dynamic zero skipping capability</li>
-                            <li>3.2× performance/area improvement</li>
-                            <li>Optimized for variable sparsity patterns</li>
+                            <li>Hierarchical bit-tree compression format with zero-detection hardware</li>
+                            <li>Matrix row reorganization for enhanced memory reuse</li>
+                            <li>3.2× performance/area improvement across variable sparsity patterns</li>
                         </ul>
                     </div>
 
@@ -218,12 +268,9 @@
                     <div class="research-highlights">
                         <h3>Performance Gains</h3>
                         <ul>
-                            <li>22× latency reduction vs. baseline FPGAs</li>
-                            <li>5.7× energy efficiency improvement</li>
-                            <li>15× higher efficiency than GPU implementations</li>
-                            <li>Row-major dataflow optimization</li>
-                            <li>Kernel fusion and FIFO-managed buffering</li>
-                            <li>Scalable for long-context Transformers</li>
+                            <li>Input-stationary dataflow maximizes data reuse for sliding window attention</li>
+                            <li>22× latency reduction and 5.7× energy efficiency vs. baseline FPGAs</li>
+                            <li>15× higher energy efficiency than GPU implementations</li>
                         </ul>
                     </div>
 
@@ -232,6 +279,329 @@
                             <span class="pub-icon">📄</span>
                             View Publication
                         </a>
+                    </div>
+            </div>
+        </section>
+
+        <!-- SPLIM Section -->
+        <section class="research-card" id="splim">
+            <div class="research-image-top">
+                <img src="splim.jpg" alt="SPLIM Architecture" loading="lazy" width="900" height="400">
+                <div class="image-caption">SPLIM: Bridging the Gap Between Unstructured SpGEMM and Structured In-Situ Computing</div>
+            </div>
+            <div class="research-content-vertical">
+                    <h2 class="research-title">SPLIM</h2>
+                    <div class="research-subtitle">Processing-Using-Memory Accelerator for SpGEMM</div>
+
+                    <p class="research-description">
+                        SPLIM is a novel Processing-using-memory (PUM) accelerator for sparse matrix-matrix multiplication (SpGEMM). It introduces a new computation paradigm for SpGEMM, namely the ELLPACK-based computation paradigm (ECP). ECP can perform in-situ structured vector multiplication with fewer zeros and higher hardware utilization, while the accumulation phase remains unstructured.
+                    </p>
+
+                    <p class="research-description">
+                        SPLIM adopts in-situ search operations for coordinates alignment, converting unstructured accumulation to highly parallel search operations. Compared with state-of-the-art GPU, ASIC, and PUM-based SpGEMM accelerators, SPLIM achieves 276×, 11.2×, and 3.9× performance improvement, respectively.
+                    </p>
+
+                    <div class="research-highlights">
+                        <h3>Key Innovations</h3>
+                        <ul>
+                            <li>ELLPACK-based computation paradigm (ECP) for structured in-situ SpGEMM</li>
+                            <li>In-situ search operations convert unstructured accumulation to parallel searches</li>
+                            <li>276× over GPU, 11.2× over ASIC, 3.9× over PUM accelerators</li>
+                        </ul>
+                    </div>
+            </div>
+        </section>
+
+        <!-- SADIMM Section -->
+        <section class="research-card alt-background" id="sadimm">
+            <div class="research-image-top">
+                <img src="sadimm.jpg" alt="SADIMM Architecture" loading="lazy" width="900" height="400">
+                <div class="image-caption">SADIMM: Accelerating Sparse Attention Using DIMM-Based Near-Memory Processing</div>
+            </div>
+            <div class="research-content-vertical">
+                    <h2 class="research-title">SADIMM</h2>
+                    <div class="research-subtitle">DIMM-Based Near-Memory Processing for Sparse Attention</div>
+
+                    <p class="research-description">
+                        SADIMM is an innovative hardware-software co-designed near-memory-processing accelerator for sparse attention. On the hardware side, SADIMM employs heterogeneous NMP architectures by integrating distinct logic units across different hierarchies of DIMM. Different logic units are assigned to support corresponding operations, enhancing overall hardware efficiency.
+                    </p>
+
+                    <p class="research-description">
+                        On the software side, SADIMM adopts a dimension-based dataflow, partitioning input sequences based on model dimensions. By storing identical dimensions of all tokens in the same memory bank, it can efficiently support sparse attention with balanced loads. SADIMM exhibits remarkable performance and energy efficiency compared to state-of-the-art sparse attention accelerators.
+                    </p>
+
+                    <div class="research-highlights">
+                        <h3>Technical Innovations</h3>
+                        <ul>
+                            <li>Heterogeneous NMP architectures across DIMM hierarchies</li>
+                            <li>Dimension-based dataflow with balanced load distribution</li>
+                            <li>Hardware-software co-design for efficient sparse attention</li>
+                        </ul>
+                    </div>
+            </div>
+        </section>
+
+        <!-- ASADI Section -->
+        <section class="research-card" id="asadi">
+            <div class="research-image-top">
+                <img src="asadi.jpg" alt="ASADI Architecture" loading="lazy" width="900" height="400">
+                <div class="image-caption">ASADI: Accelerating Sparse Attention using Diagonal-based In-situ Computing</div>
+            </div>
+            <div class="research-content-vertical">
+                    <h2 class="research-title">ASADI</h2>
+                    <div class="research-subtitle">Diagonal-Based In-Situ Computing for Sparse Attention</div>
+
+                    <p class="research-description">
+                        ASADI is a novel in-situ computing accelerator for sparse attention. ASADI proposes a novel compression method that can efficiently compress various sparse attention to diagonal compression (DIA) format and introduce DIA-based sparse matrix computation paradigm to exploit the inherent diagonal locality.
+                    </p>
+
+                    <p class="research-description">
+                        To support the new DIA-based paradigm, ASADI presents a comprehensive architecture and dataflow utilizing in-situ computing, reducing on-chip transmission. ASADI achieves an average performance improvement of 18.6× and energy savings of 2.9× compared to a near-memory-processing based baseline.
+                    </p>
+
+                    <div class="research-highlights">
+                        <h3>Key Achievements</h3>
+                        <ul>
+                            <li>Diagonal compression (DIA) format exploits diagonal locality in sparse attention</li>
+                            <li>In-situ computing reduces on-chip transmission</li>
+                            <li>18.6× performance improvement and 2.9× energy savings</li>
+                        </ul>
+                    </div>
+            </div>
+        </section>
+
+        <!-- HyAtten Section -->
+        <section class="research-card alt-background" id="hyatten">
+            <div class="research-image-top">
+                <img src="hyatten.jpg" alt="HyAtten Architecture" loading="lazy" width="900" height="400">
+                <div class="image-caption">HyAtten: Hybrid Photonic-digital Architecture for Accelerating Attention Mechanism</div>
+            </div>
+            <div class="research-content-vertical">
+                    <h2 class="research-title">HyAtten</h2>
+                    <div class="research-subtitle">Hybrid Photonic-Digital Architecture for Attention</div>
+
+                    <p class="research-description">
+                        HyAtten is a photonic-based attention accelerator with minimal signal conversion overhead. The significant signal conversion overhead limits the performance of photonic-based accelerators. HyAtten incorporates a signal comparator to classify signals into two categories based on whether they can be processed by low-resolution converters.
+                    </p>
+
+                    <p class="research-description">
+                        HyAtten integrates low-resolution converters to process all low-resolution signals, thereby boosting the parallelism of photonic computing. For signals requiring high-resolution conversion, HyAtten uses digital circuits instead of signal converters to reduce area and latency overhead. Compared to the state-of-the-art photonic-based Transformer accelerator, HyAtten achieves a 9.8× improvement in performance-per-area and a 2.2× increase in energy-efficiency-per-area.
+                    </p>
+
+                    <div class="research-highlights">
+                        <h3>Performance Gains</h3>
+                        <ul>
+                            <li>Hybrid photonic-digital design minimizes signal conversion overhead</li>
+                            <li>Low-resolution converters for high-parallelism signals, digital circuits for high-resolution</li>
+                            <li>9.8× performance-per-area and 2.2× energy-efficiency-per-area improvement</li>
+                        </ul>
+                    </div>
+            </div>
+        </section>
+
+        <!-- Flex Section -->
+        <section class="research-card" id="flex">
+            <div class="research-image-top">
+                <img src="flex.png" alt="Flex Architecture" loading="lazy" width="900" height="400">
+                <div class="image-caption">FLEX execution model spans spatio-temporal, spatial and spatio-temporal vector dataflow with variable vector lengths (v)</div>
+            </div>
+            <div class="research-content-vertical">
+                    <h2 class="research-title">Flex</h2>
+                    <div class="research-subtitle">Flexible Spatio-Temporal Vector Dataflow CGRA</div>
+
+                    <p class="research-description">
+                        Flex introduces a flexible spatio-temporal vector dataflow execution model, unifying the efficiency of spatial execution with the performance of spatio-temporal designs. By adaptively processing variable-length data vectors and chaining them across space and time, FLEX achieves the same performance as spatio-temporal CGRAs while consuming 45% less energy and offering 1.9× higher power efficiency.
+                    </p>
+
+                    <p class="research-description">
+                        Compared to spatial CGRAs, it delivers 1.5× higher throughput at 35% lower energy. Supported by a dedicated compiler and design space exploration framework, FLEX dynamically selects the optimal execution mode per application, enabling superior energy efficiency and versatility across diverse workloads.
+                    </p>
+
+                    <div class="research-highlights">
+                        <h3>Key Achievements</h3>
+                        <ul>
+                            <li>Flexible spatio-temporal vector dataflow unifies spatial and spatio-temporal execution</li>
+                            <li>45% energy reduction and 1.9× power efficiency vs. spatio-temporal CGRAs</li>
+                            <li>1.5× throughput and 35% energy savings vs. spatial CGRAs</li>
+                        </ul>
+                    </div>
+            </div>
+        </section>
+
+        <!-- REVAMP Section -->
+        <section class="research-card alt-background" id="revamp">
+            <div class="research-image-top">
+                <img src="revamp.png" alt="REVAMP Framework" loading="lazy" width="900" height="400">
+                <div class="image-caption">Derived Heterogeneous Architectures (The letters A, M, L, C and Mem stands for Adder, Multiplier, Logic unit, Comparator and Memory unit respectively. The local memories are specified in Bytes(B))</div>
+            </div>
+            <div class="research-content-vertical">
+                    <h2 class="research-title">REVAMP</h2>
+                    <div class="research-subtitle">Design-Space Exploration for Heterogeneous CGRAs</div>
+
+                    <p class="research-description">
+                        REVAMP is a systematic design-space exploration framework that enables architects to automatically introduce and optimize heterogeneity in traditionally homogeneous CGRAs. By jointly exploring compute, interconnect, and memory-level diversities alongside compiler co-design, REVAMP transforms uniform CGRAs into power- and area-efficient heterogeneous variants tailored to target application suites.
+                    </p>
+
+                    <p class="research-description">
+                        Demonstrated on three state-of-the-art CGRAs, REVAMP achieves up to 52.4% power, 38.1% area, and 36% average energy reduction with minimal performance loss.
+                    </p>
+
+                    <div class="research-highlights">
+                        <h3>Key Innovations</h3>
+                        <ul>
+                            <li>Automatic heterogeneity introduction via design-space exploration and compiler co-design</li>
+                            <li>Joint exploration of compute, interconnect, and memory diversities</li>
+                            <li>52.4% power, 38.1% area, 36% energy reduction with minimal performance loss</li>
+                        </ul>
+                    </div>
+            </div>
+        </section>
+
+        <!-- HyCUBE Section -->
+        <section class="research-card" id="hycube">
+            <div class="research-image-top">
+                <img src="hycube.png" alt="HyCUBE Architecture" loading="lazy" width="900" height="400">
+                <div class="image-caption">(a) HyCUBE chip layout (b) Power-Performance comparison with commercial processors and accelerators</div>
+            </div>
+            <div class="research-content-vertical">
+                    <h2 class="research-title">HyCUBE</h2>
+                    <div class="research-subtitle">CGRA with Reconfigurable Multi-Hop Interconnect</div>
+
+                    <p class="research-description">
+                        HyCUBE introduces a novel CGRA architecture that breaks the limitations of traditional neighbor-to-neighbor connectivity by enabling single-cycle, multi-hop communication between distant functional units through a reconfigurable interconnect. This innovation allows efficient data movement without occupying compute resources, simplifying compilation and improving mapping quality.
+                    </p>
+
+                    <p class="research-description">
+                        The accompanying HyCUBE compiler leverages a new formulation of the mapping problem to exploit this dynamic connectivity, achieving near-optimal schedules with reduced compilation time. HyCUBE delivers up to 3× performance-per-watt improvement over conventional CGRAs and 1.5× over CGRAs with standard NoCs, marking a significant advancement in energy-efficient, programmable accelerator design for embedded and multimedia workloads.
+                    </p>
+
+                    <div class="research-highlights">
+                        <h3>Key Innovations</h3>
+                        <ul>
+                            <li>Single-cycle, multi-hop reconfigurable interconnect breaks neighbor-to-neighbor limitations</li>
+                            <li>Novel compiler formulation achieves near-optimal schedules with reduced compilation time</li>
+                            <li>3× performance-per-watt over conventional CGRAs, 1.5× over CGRAs with NoCs</li>
+                        </ul>
+                    </div>
+            </div>
+        </section>
+
+        <!-- PANORAMA Section -->
+        <section class="research-card alt-background" id="panorama">
+            <div class="research-image-top">
+                <img src="Panorama.png" alt="PANORAMA Compiler" loading="lazy" width="900" height="400">
+                <div class="image-caption">Cluster mapping with imbalanced clusters</div>
+            </div>
+            <div class="research-content-vertical">
+                    <h2 class="research-title">PANORAMA</h2>
+                    <div class="research-subtitle">Divide-and-Conquer CGRA Compiler</div>
+
+                    <p class="research-description">
+                        PANORAMA introduces a divide-and-conquer approach, combining global dataflow clustering with hierarchical mapping to manage large and irregular dataflow graphs effectively. By providing a panoramic, global view of application dataflows, the compiler achieves up to 2.6× higher throughput and 8.7× faster compilation compared to state-of-the-art CGRA mappers.
+                    </p>
+
+                    <p class="research-description">
+                        PANORAMA's modular design allows seamless integration with existing low-level mapping tools, making it a portable solution for accelerating complex workloads on large CGRAs.
+                    </p>
+
+                    <div class="research-highlights">
+                        <h3>Key Achievements</h3>
+                        <ul>
+                            <li>Divide-and-conquer with global dataflow clustering and hierarchical mapping</li>
+                            <li>2.6× higher throughput and 8.7× faster compilation vs. state-of-the-art</li>
+                            <li>Modular, portable design for seamless integration with existing tools</li>
+                        </ul>
+                    </div>
+            </div>
+        </section>
+
+        <!-- HiMap Section -->
+        <section class="research-card" id="himap">
+            <div class="research-image-top">
+                <img src="himap_1.png" alt="HiMap GEMM DFG" loading="lazy" width="900" height="400">
+                <div class="image-caption">GEMM DFG (b = 2)</div>
+            </div>
+            <div class="research-image-top">
+                <img src="himap_2.png" alt="HiMap Systolic Mapping" loading="lazy" width="900" height="400">
+                <div class="image-caption">Systolic Mapping</div>
+            </div>
+            <div class="research-content-vertical">
+                    <h2 class="research-title">HiMap</h2>
+                    <div class="research-subtitle">Hierarchical Systolic-Aware CGRA Mapping</div>
+
+                    <p class="research-description">
+                        HiMap employs a hierarchical abstraction that leverages the regularity of multi-dimensional computations through a Virtual Systolic Array (VSA). This two-level mapping — from the Iteration Space Dependency Graph to the VSA, and then to the physical CGRA — enables near-optimal performance and energy efficiency even on large CGRAs.
+                    </p>
+
+                    <p class="research-description">
+                        HiMap achieves up to 17.3× performance and 5× energy efficiency improvements over state-of-the-art methods, while reducing compilation time from days to under 15 minutes for 64×64 CGRAs. This work demonstrates that hierarchical, systolic-aware mapping can bridge the gap between scalability and high-quality compilation in reconfigurable computing.
+                    </p>
+
+                    <div class="research-highlights">
+                        <h3>Key Innovations</h3>
+                        <ul>
+                            <li>Virtual Systolic Array (VSA) hierarchical abstraction for two-level mapping</li>
+                            <li>17.3× performance and 5× energy efficiency improvements</li>
+                            <li>Compilation time reduced from days to under 15 minutes for 64×64 CGRAs</li>
+                        </ul>
+                    </div>
+            </div>
+        </section>
+
+        <!-- LISA Section -->
+        <section class="research-card alt-background" id="lisa">
+            <div class="research-image-top">
+                <img src="LISA.png" alt="LISA Framework" loading="lazy" width="900" height="400">
+                <div class="image-caption">Overview of GNN-based portable mapping framework - LISA</div>
+            </div>
+            <div class="research-content-vertical">
+                    <h2 class="research-title">LISA</h2>
+                    <div class="research-subtitle">GNN-Based Portable Compiler for Spatial Accelerators</div>
+
+                    <p class="research-description">
+                        LISA is a novel compiler framework that leverages Graph Neural Networks to enable portable, high-quality mapping across diverse spatial accelerators such as CGRAs and systolic arrays. Unlike traditional handcrafted compilers that are labor-intensive and architecture-specific, LISA automatically learns the relationship between an application's dataflow graph structure and an accelerator's architectural characteristics.
+                    </p>
+
+                    <p class="research-description">
+                        By generating structural "labels" through GNN analysis and integrating them into a label-aware simulated annealing mapping process, LISA achieves an all-encompassing global view of computation and communication during mapping. Experimental results demonstrate that LISA significantly outperforms state-of-the-art compilers in mapping quality, compilation time, and portability, marking the first successful use of GNNs for spatial accelerator compilation.
+                    </p>
+
+                    <div class="research-highlights">
+                        <h3>Key Innovations</h3>
+                        <ul>
+                            <li>First GNN-based compiler framework for portable spatial accelerator mapping</li>
+                            <li>Automatic learning of dataflow-architecture relationships via structural labels</li>
+                            <li>Superior mapping quality, compilation time, and portability across CGRAs and systolic arrays</li>
+                        </ul>
+                    </div>
+            </div>
+        </section>
+
+        <!-- CASCADE Section -->
+        <section class="research-card" id="cascade">
+            <div class="research-image-top">
+                <img src="casade.png" alt="CASCADE Architecture" loading="lazy" width="900" height="400">
+                <div class="image-caption">Abstract diagram showing data transfer from multi-bank memory via SE to CGRA</div>
+            </div>
+            <div class="research-content-vertical">
+                    <h2 class="research-title">CASCADE</h2>
+                    <div class="research-subtitle">Decoupled Access-Execute CGRA</div>
+
+                    <p class="research-description">
+                        CASCADE overcomes the data access bottleneck inherent in conventional CGRAs by fully decoupling memory access from computation. It introduces a decoupled access-execute model featuring a custom-designed Stream Engine for programmable multi-bank memory address generation and an automated compiler that ensures conflict-free data streaming between memory and compute arrays.
+                    </p>
+
+                    <p class="research-description">
+                        This holistic hardware–software co-design enables CASCADE to deliver up to 3× performance and 2.2× performance-per-watt improvements over iso-area conventional CGRAs, while significantly reducing compilation time. By seamlessly orchestrating memory and compute operations, CASCADE achieves near-ideal throughput for compute-intensive loop kernels, paving the way for more power-efficient, high-performance reconfigurable accelerators.
+                    </p>
+
+                    <div class="research-highlights">
+                        <h3>Key Innovations</h3>
+                        <ul>
+                            <li>Decoupled access-execute model with Stream Engine for multi-bank memory orchestration</li>
+                            <li>Automated compiler ensures conflict-free data streaming</li>
+                            <li>3× performance and 2.2× performance-per-watt over iso-area CGRAs</li>
+                        </ul>
                     </div>
             </div>
         </section>
