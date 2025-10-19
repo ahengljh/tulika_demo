@@ -62,6 +62,11 @@
             <button class="category-btn" data-category="arch">Architecture</button>
             <button class="category-btn" data-category="compiler">Compiler</button>
         </div>
+        <div class="category-intro" id="category-intro" style="display: none;">
+            <div class="category-intro-content">
+                <p id="category-intro-text"></p>
+            </div>
+        </div>
     </section>
 
     <!-- Main Content -->
@@ -575,6 +580,14 @@
         document.addEventListener('DOMContentLoaded', function() {
             const categoryBtns = document.querySelectorAll('.category-btn');
             const researchCards = document.querySelectorAll('.research-card');
+            const categoryIntro = document.getElementById('category-intro');
+            const categoryIntroText = document.getElementById('category-intro-text');
+
+            // Category descriptions
+            const descriptions = {
+                arch: "Since 2019, alongside our CGRA hardware work, we have built a full end-to-end compiler stack for CGRAs—from front ends that take standard programs, to mapping, scheduling, placement, routing, and code generation. Our tools aim to make mapping easy and fast, with sensible defaults, autotuning when helpful, and clear feedback to the user. As our architecture research moves toward more general reconfigurable dataflow systems for AI, we are building AI-focused compilers that lower neural-network graphs to these targets, handle sparse operators, and manage dataflow efficiently. The goal is simple: let users write or import AI models, press \"compile,\" and get strong performance without heavy manual tuning—while still allowing experts to guide the mapper when needed.",
+                compiler: "Since 2019, alongside our CGRA hardware work, we have built a full end-to-end compiler stack for CGRAs—from front ends that take standard programs, to mapping, scheduling, placement, routing, and code generation. As our architecture research moves toward more general reconfigurable dataflow systems for AI, we are building AI-focused compilers that lower neural-network graphs to these targets, handle sparse operators, and manage dataflow efficiently."
+            };
 
             categoryBtns.forEach(btn => {
                 btn.addEventListener('click', function() {
@@ -583,6 +596,14 @@
                     // Update active button
                     categoryBtns.forEach(b => b.classList.remove('active'));
                     this.classList.add('active');
+
+                    // Update category intro
+                    if (selectedCategory === 'all') {
+                        categoryIntro.style.display = 'none';
+                    } else {
+                        categoryIntroText.textContent = descriptions[selectedCategory];
+                        categoryIntro.style.display = 'block';
+                    }
 
                     // Filter research cards
                     researchCards.forEach(card => {

@@ -18,7 +18,7 @@
     --shadow-sm: 0 2px 4px rgba(0,0,0,0.08);
     --shadow-md: 0 4px 12px rgba(0,0,0,0.12);
     --shadow-lg: 0 8px 24px rgba(0,0,0,0.15);
-    --max-width: 1400px;
+    --max-width: 1265px;
 }
 
 body {
@@ -244,7 +244,7 @@ img {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.95) 100%);
     backdrop-filter: blur(10px);
     border-radius: 24px;
-    padding: 3rem;
+    padding: 3.2rem;
     margin-top: 2.5rem;
     box-shadow:
         0 0 0 1px rgba(0, 61, 124, 0.08),
@@ -341,6 +341,30 @@ img {
     box-shadow: 0 4px 12px rgba(37, 150, 255, 0.3);
 }
 
+/* Category Introduction */
+.category-intro {
+    max-width: 1200px;
+    margin: 2.5rem auto 0;
+    padding: 0 2rem;
+}
+
+.category-intro-content {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.95) 100%);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 2.12rem 2.65rem;
+    box-shadow: 0 4px 12px rgba(0, 61, 124, 0.08);
+    border: 2px solid rgba(37, 150, 255, 0.1);
+}
+
+.category-intro-content p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-dark);
+    margin: 0;
+    text-align: justify;
+}
+
 /* Intro Grid */
 .intro-grid {
     max-width: var(--max-width);
@@ -352,7 +376,7 @@ img {
 
 .intro-card {
     background: white;
-    padding: 1.8rem;
+    padding: 1.91rem;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     text-decoration: none;
@@ -485,7 +509,7 @@ img {
 
 /* Research Content Section - Vertical Layout */
 .research-content-vertical {
-    padding: 3rem;
+    padding: 3.2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -515,7 +539,7 @@ img {
 /* Research Highlights */
 .research-highlights {
     margin-top: 2rem;
-    padding: 1.5rem;
+    padding: 1.59rem;
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     border-radius: 12px;
 }
@@ -608,7 +632,7 @@ img {
 
 .contact-info, .contact-address {
     background: white;
-    padding: 2rem;
+    padding: 2.12rem;
     border-radius: 12px;
     box-shadow: var(--shadow-md);
 }
@@ -782,7 +806,7 @@ img {
     }
 
     .hero-overview {
-        padding: 2rem;
+        padding: 2.12rem;
         border-radius: 16px;
         margin-top: 2rem;
     }
@@ -815,13 +839,28 @@ img {
         font-size: 0.95rem;
     }
 
+    .category-intro {
+        margin: 2rem auto 0;
+        padding: 0 1.5rem;
+    }
+
+    .category-intro-content {
+        padding: 1.86rem 2.12rem;
+    }
+
+    .category-intro-content p {
+        font-size: 1rem;
+        line-height: 1.7;
+        text-align: left;
+    }
+
     .intro-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
 
     .intro-card {
-        padding: 1.5rem;
+        padding: 1.59rem;
     }
 
     .intro-card h3 {
@@ -858,7 +897,7 @@ img {
     }
 
     .research-content-vertical {
-        padding: 2rem 1.5rem;
+        padding: 2.12rem 1.59rem;
     }
 
     .research-title {
@@ -876,7 +915,7 @@ img {
     }
 
     .research-highlights {
-        padding: 1.25rem;
+        padding: 1.33rem;
     }
 
     .research-highlights h3 {
@@ -902,7 +941,7 @@ img {
     }
 
     .contact-info, .contact-address {
-        padding: 1.5rem;
+        padding: 1.59rem;
     }
 }
 
@@ -987,7 +1026,7 @@ img {
     }
 
     .hero-overview {
-        padding: 1.5rem;
+        padding: 1.59rem;
         border-radius: 12px;
         margin-top: 1.5rem;
     }
@@ -1023,12 +1062,27 @@ img {
         font-size: 0.85rem;
     }
 
+    .category-intro {
+        margin: 1.5rem auto 0;
+        padding: 0 1rem;
+    }
+
+    .category-intro-content {
+        padding: 1.59rem;
+        border-radius: 12px;
+    }
+
+    .category-intro-content p {
+        font-size: 0.9rem;
+        line-height: 1.65;
+    }
+
     .intro-grid {
         gap: 1.25rem;
     }
 
     .intro-card {
-        padding: 1.25rem;
+        padding: 1.33rem;
     }
 
     .intro-card h3 {
@@ -1084,7 +1138,7 @@ img {
     }
 
     .research-content-vertical {
-        padding: 1.5rem 1rem;
+        padding: 1.59rem 1.06rem;
     }
 
     .research-title {
@@ -1104,7 +1158,7 @@ img {
     }
 
     .research-highlights {
-        padding: 1rem;
+        padding: 1.06rem;
         border-radius: 8px;
         margin-top: 1.5rem;
     }
@@ -1154,7 +1208,7 @@ img {
     }
 
     .contact-info, .contact-address {
-        padding: 1.25rem;
+        padding: 1.33rem;
         border-radius: 8px;
     }
 
