@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Artifacts - Programmable Accelerators for Energy Efficient Computing | NUS</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles-single.css?v=2.1">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="nav-header">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>Programmable Accelerators for Energy Efficient Computing</h1>
+            </div>
+            <div class="nav-right">
+                <div class="nav-tabs">
+                    <a href="overview.html" class="nav-tab">Overview</a>
+                    <a href="projects.html" class="nav-tab">Publications</a>
+                    <a href="artifacts.html" class="nav-tab active">Artifacts</a>
+                    <a href="acknowledgements.html" class="nav-tab">Acknowledgements</a>
+                    <a href="people.html" class="nav-tab">People</a>
+                    <a href="projects.html#contact" class="nav-tab">Contact</a>
+                </div>
+                <div class="nav-orange-block"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Open-Source Artifacts</h1>
+            <p class="hero-lead">Tools, frameworks, and simulators from our research</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="artifacts-section">
+            <div class="artifacts-container">
+                <p class="artifacts-intro">
+                    All our research artifacts are open-source and available on GitHub. We believe in reproducible research and encourage the community to use, extend, and contribute to our tools.
+                </p>
+
+                <div class="artifacts-grid">
+                    <!-- Morpher v2 -->
+                    <div class="artifact-card">
+                        <div class="artifact-header">
+                            <h3 class="artifact-title">Morpher v2</h3>
+                            <span class="artifact-badge">Python</span>
+                        </div>
+                        <p class="artifact-description">An Open-Source Tool for CGRA Accelerators. Advanced mapper for coarse-grained reconfigurable architectures.</p>
+                        <div class="artifact-footer">
+                            <span class="artifact-license">MIT License</span>
+                            <a href="https://github.com/ecolab-nus/morpher-v2" target="_blank" class="artifact-link">
+                                <svg class="github-icon" viewBox="0 0 16 16" width="16" height="16">
+                                    <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                                </svg>
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- LISA -->
+                    <div class="artifact-card">
+                        <div class="artifact-header">
+                            <h3 class="artifact-title">LISA</h3>
+                            <span class="artifact-badge">Python</span>
+                        </div>
+                        <p class="artifact-description">A portable framework to map DFG (dataflow graph) on spatial accelerators. Features GNN-based mapping optimization.</p>
+                        <div class="artifact-tags">
+                            <span class="artifact-tag">compiler</span>
+                            <span class="artifact-tag">cgra</span>
+                            <span class="artifact-tag">gnn</span>
+                        </div>
+                        <div class="artifact-footer">
+                            <span class="artifact-license">MIT License</span>
+                            <a href="https://github.com/ecolab-nus/lisa" target="_blank" class="artifact-link">
+                                <svg class="github-icon" viewBox="0 0 16 16" width="16" height="16">
+                                    <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                                </svg>
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- FLEX -->
+                    <div class="artifact-card">
+                        <div class="artifact-header">
+                            <h3 class="artifact-title">FLEX</h3>
+                            <span class="artifact-badge">C++</span>
+                        </div>
+                        <p class="artifact-description">A CGRA with flexible execution paradigm. Supports multiple execution modes for enhanced performance and energy efficiency.</p>
+                        <div class="artifact-footer">
+                            <span class="artifact-license">MIT License</span>
+                            <a href="https://github.com/ecolab-nus/FLEX" target="_blank" class="artifact-link">
+                                <svg class="github-icon" viewBox="0 0 16 16" width="16" height="16">
+                                    <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                                </svg>
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- DAOP -->
+                    <div class="artifact-card">
+                        <div class="artifact-header">
+                            <h3 class="artifact-title">DAOP</h3>
+                            <span class="artifact-badge">Python</span>
+                        </div>
+                        <p class="artifact-description">Data-Aware Offloading and Predictive Pre-Calculation for Efficient MoE Inference. Optimizes mixture-of-experts model execution.</p>
+                        <div class="artifact-footer">
+                            <span class="artifact-license">Apache 2.0</span>
+                            <a href="https://github.com/ecolab-nus/DAOP" target="_blank" class="artifact-link">
+                                <svg class="github-icon" viewBox="0 0 16 16" width="16" height="16">
+                                    <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                                </svg>
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- HyCUBE -->
+                    <div class="artifact-card">
+                        <div class="artifact-header">
+                            <h3 class="artifact-title">HyCUBE</h3>
+                            <span class="artifact-badge">C++</span>
+                        </div>
+                        <p class="artifact-description">Simulator for the HyCUBE CGRA architecture. Enables performance and power analysis of hybrid execution modes.</p>
+                        <div class="artifact-footer">
+                            <a href="https://github.com/ecolab-nus/HyCUBE" target="_blank" class="artifact-link">
+                                <svg class="github-icon" viewBox="0 0 16 16" width="16" height="16">
+                                    <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                                </svg>
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- PANORAMA -->
+                    <div class="artifact-card">
+                        <div class="artifact-header">
+                            <h3 class="artifact-title">PANORAMA</h3>
+                            <span class="artifact-badge">C++</span>
+                        </div>
+                        <p class="artifact-description">Divide-and-conquer CGRA compiler. Efficiently maps large dataflow graphs onto CGRA architectures.</p>
+                        <div class="artifact-footer">
+                            <a href="https://github.com/ecolab-nus/panorama" target="_blank" class="artifact-link">
+                                <svg class="github-icon" viewBox="0 0 16 16" width="16" height="16">
+                                    <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                                </svg>
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Morpher (original) -->
+                    <div class="artifact-card">
+                        <div class="artifact-header">
+                            <h3 class="artifact-title">Morpher</h3>
+                            <span class="artifact-badge">Python</span>
+                        </div>
+                        <p class="artifact-description">Original Morpher tool for CGRA accelerators. Provides dataflow graph mapping and optimization capabilities.</p>
+                        <div class="artifact-footer">
+                            <span class="artifact-license">MIT License</span>
+                            <a href="https://github.com/ecolab-nus/morpher" target="_blank" class="artifact-link">
+                                <svg class="github-icon" viewBox="0 0 16 16" width="16" height="16">
+                                    <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                                </svg>
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Chameleon -->
+                    <div class="artifact-card">
+                        <div class="artifact-header">
+                            <h3 class="artifact-title">Chameleon</h3>
+                        </div>
+                        <p class="artifact-description">Adaptive architecture framework for energy-efficient computing.</p>
+                        <div class="artifact-footer">
+                            <a href="https://github.com/ecolab-nus/Chameleon" target="_blank" class="artifact-link">
+                                <svg class="github-icon" viewBox="0 0 16 16" width="16" height="16">
+                                    <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                                </svg>
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artifacts-footer">
+                    <p>Visit our <a href="https://github.com/ecolab-nus" target="_blank" class="org-link">GitHub organization</a> to explore all 22 repositories.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-bottom">
+            <p>&copy; 2025 PACE Project, National University of Singapore. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
