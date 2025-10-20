@@ -81,11 +81,12 @@ img {
 }
 
 .nav-brand h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 800;
     letter-spacing: -0.5px;
     color: white;
     margin: 0;
+    white-space: nowrap;
 }
 
 .nav-subtitle {
@@ -104,24 +105,41 @@ img {
     height: 100%;
 }
 
-.nav-logos {
+.nav-tabs {
     display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    gap: 0;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0 1.5rem;
     height: 100%;
 }
 
-.nav-logo {
-    height: 100%;
-    width: auto;
-    display: block;
-    background: transparent;
+.nav-tab {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px 8px 0 0;
     transition: all 0.3s ease;
+    position: relative;
+    height: 100%;
 }
 
-.nav-logo:hover {
-    opacity: 0.8;
+.nav-tab:hover {
+    background: var(--bg-light);
+    color: var(--accent-color);
+}
+
+.nav-tab.active {
+    color: var(--nus-orange);
+    font-weight: 600;
+}
+
+.nav-tab.active:hover {
+    color: var(--nus-orange);
+    background: var(--bg-light);
 }
 
 .nav-orange-block {
@@ -716,6 +734,46 @@ img {
     text-decoration: underline;
 }
 
+/* Acknowledgements Section */
+.acknowledgement-section {
+    padding: 2rem 2rem 4rem;
+}
+
+.ack-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.ack-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.ack-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--nus-orange);
+}
+
+.ack-project-title {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.ack-description {
+    color: var(--text-dark);
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
 /* Footer */
 .site-footer {
     background: linear-gradient(135deg, var(--primary-color), #005299);
@@ -762,15 +820,22 @@ img {
     }
 
     .nav-brand h1 {
-        font-size: 1.25rem;
+        font-size: 1rem;
+        white-space: nowrap;
     }
 
     .nav-subtitle {
         font-size: 0.68rem;
     }
 
-    .nav-logo {
-        max-height: 47px;
+    .nav-tabs {
+        padding: 0 0.5rem;
+        gap: 0.25rem;
+    }
+
+    .nav-tab {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.77rem;
     }
 
     .nav-orange-block {
@@ -807,7 +872,8 @@ img {
     }
 
     .nav-brand h1 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        white-space: nowrap;
     }
 
     .nav-subtitle {
@@ -815,18 +881,14 @@ img {
         padding-left: 1rem;
     }
 
-    .nav-logos {
-        flex-direction: row;
-        gap: 0.5rem;
+    .nav-tabs {
+        padding: 0 0.75rem;
+        gap: 0.25rem;
     }
 
-    .nav-logo {
-        max-height: 50px;
-    }
-
-    /* Hide SOC logo on tablet */
-    .nav-logo:last-of-type {
-        display: none;
+    .nav-tab {
+        padding: 0.5rem 1rem;
+        font-size: 0.81rem;
     }
 
     .nav-orange-block {
@@ -1027,7 +1089,7 @@ img {
     }
 
     .nav-brand h1 {
-        font-size: 1.1rem;
+        font-size: 0.88rem;
         white-space: nowrap;
     }
 
@@ -1045,17 +1107,14 @@ img {
         flex-shrink: 0;
     }
 
-    .nav-logos {
-        gap: 0;
+    .nav-tabs {
+        padding: 0 0.25rem;
+        gap: 0.1rem;
     }
 
-    .nav-logo {
-        max-height: 45px;
-    }
-
-    /* Keep only NUS logo on small mobile */
-    .nav-logo:last-of-type {
-        display: none;
+    .nav-tab {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.72rem;
     }
 
     .nav-orange-block {
@@ -1327,10 +1386,6 @@ img {
 
     .nav-orange-block:hover {
         background: var(--nus-orange);
-    }
-
-    .nav-logo:hover {
-        opacity: 1;
     }
 }
 
