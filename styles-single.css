@@ -480,6 +480,20 @@ img {
     border-bottom: 3px solid var(--accent-color);
 }
 
+.category-intro {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem 2rem;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: var(--text-dark);
+    background: linear-gradient(to right, rgba(37, 150, 255, 0.05), rgba(37, 150, 255, 0.02));
+    border-left: 4px solid var(--accent-color);
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
 .category-header h2 {
     font-size: 2rem;
     font-weight: 700;
